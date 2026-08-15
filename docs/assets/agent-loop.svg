@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 320" width="1400" height="320" role="img" aria-label="Agent loop: the agent edits the UI, runs stm --json, gets back only the changed pages, views their fold images, fixes and runs again" text-rendering="geometricPrecision" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <title>The agent loop</title>
+  <desc>An agent edits the UI, runs stm with the json flag, receives only the pages that changed, and looks at the fold image of each one before fixing and running again.</desc>
+
+  <defs>
+    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="258" y1="120" x2="1022" y2="120">
+      <stop offset="0" stop-color="#FF6600"/>
+      <stop offset="1" stop-color="#FF9A1F"/>
+    </linearGradient>
+
+    <linearGradient id="flowBack" gradientUnits="userSpaceOnUse" x1="1201" y1="240" x2="140" y2="240">
+      <stop offset="0" stop-color="#FF9A1F"/>
+      <stop offset="1" stop-color="#FF6600"/>
+    </linearGradient>
+
+    <radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="700" cy="130" r="640" gradientTransform="matrix(1 0 0 0.34 0 85.8)">
+      <stop offset="0" stop-color="#FF8A18" stop-opacity="0.11"/>
+      <stop offset="0.45" stop-color="#FF9A1F" stop-opacity="0.055"/>
+      <stop offset="1" stop-color="#FFC46B" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="cardShadow" x="-6%" y="-16%" width="112%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4.5" flood-color="#0F172A" flood-opacity="0.07"/>
+    </filter>
+
+    <clipPath id="panelClip">
+      <rect x="0" y="0" width="1400" height="320" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- panel -->
+  <rect x="0" y="0" width="1400" height="320" rx="20" fill="#FFFFFF"/>
+  <g clip-path="url(#panelClip)">
+    <rect x="0" y="0" width="1400" height="320" fill="url(#glow)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1399" height="319" rx="19.5" fill="none" stroke="#E9EDF2" stroke-width="1"/>
+
+  <!-- return path -->
+  <g fill="none" stroke="url(#flowBack)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M1201 196V252a20 20 0 0 1-20 20H160a20 20 0 0 1-20-20V204"/>
+    <path d="M134.5 203.5 140 196 145.5 203.5"/>
+  </g>
+  <circle cx="1201" cy="207" r="3" fill="#FF9A1F"/>
+
+  <!-- forward connectors -->
+  <g stroke="url(#flow)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M267 120H293"/>
+    <path d="M293 114.5 300 120 293 125.5"/>
+    <path d="M534 120H560"/>
+    <path d="M560 114.5 567 120 560 125.5"/>
+    <path d="M989 120H1015"/>
+    <path d="M1015 114.5 1022 120 1015 125.5"/>
+  </g>
+  <g fill="url(#flow)">
+    <circle cx="258" cy="120" r="3"/>
+    <circle cx="525" cy="120" r="3"/>
+    <circle cx="980" cy="120" r="3"/>
+  </g>
+
+  <!-- cards -->
+  <g filter="url(#cardShadow)">
+    <rect x="28" y="44" width="224" height="152" rx="14" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+    <rect x="308" y="44" width="211" height="152" rx="14" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+    <rect x="575" y="44" width="399" height="152" rx="14" fill="#FFF7ED" stroke="#FF6600" stroke-width="1.25"/>
+    <rect x="1030" y="44" width="342" height="152" rx="14" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  </g>
+
+  <!-- step numbers -->
+  <g fill="#FF6600">
+    <circle cx="51" cy="86" r="3.5"/>
+    <circle cx="331" cy="86" r="3.5"/>
+    <circle cx="598" cy="86" r="3.5"/>
+    <circle cx="1053" cy="86" r="3.5"/>
+  </g>
+  <g fill="#FF6600" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="0.08em">
+    <text x="62" y="90">01</text>
+    <text x="342" y="90">02</text>
+    <text x="609" y="90">03</text>
+    <text x="1064" y="90">04</text>
+  </g>
+
+  <!-- titles -->
+  <g font-size="22" font-weight="700" letter-spacing="-0.012em" fill="#0F172A">
+    <text x="48" y="128">agent edits UI</text>
+    <text x="328" y="128" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" letter-spacing="0">stm --json</text>
+    <text x="595" y="128" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" letter-spacing="0" fill="#B4460F" xml:space="preserve">changed: /pricing  /about</text>
+    <text x="1050" y="128">agent views 2 fold images</text>
+  </g>
+
+  <!-- subtitles -->
+  <g fill="#475569" font-size="13">
+    <text x="48" y="156">in the running app</text>
+    <text x="328" y="156">capture and compare</text>
+    <text x="595" y="156">only what differs</text>
+    <text x="1050" y="156">the top of each changed page</text>
+  </g>
+
+  <!-- return label -->
+  <rect x="606" y="257" width="128" height="30" rx="15" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <text x="670" y="276.5" font-size="13" fill="#475569" text-anchor="middle">fix, run again</text>
+</svg>

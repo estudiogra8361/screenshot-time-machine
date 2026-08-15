@@ -1,0 +1,60 @@
+{
+  "name": "screenshot-time-machine",
+  "version": "0.0.1",
+  "description": "Full-page screenshots of every localhost page, in dated folders. Tells your AI agent which pages changed.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mohammed Sohaib Uddin (https://github.com/mdsohaib)",
+  "bin": {
+    "stm": "bin/stm.js",
+    "screenshot-time-machine": "bin/stm.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdsohaib/screenshot-time-machine.git"
+  },
+  "homepage": "https://github.com/mdsohaib/screenshot-time-machine#readme",
+  "bugs": "https://github.com/mdsohaib/screenshot-time-machine/issues",
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test --test-force-exit \"test/*.test.js\"",
+    "check": "tsc -p jsconfig.json",
+    "lint": "biome ci .",
+    "format": "biome format --write .",
+    "fixture": "node test/fixture/site.js"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.8",
+    "@types/node": "26.2.0",
+    "typescript": "7.0.2"
+  },
+  "keywords": [
+    "screenshot",
+    "time-machine",
+    "full-page-screenshot",
+    "localhost",
+    "visual-history",
+    "visual-regression",
+    "screenshot-cli",
+    "playwright",
+    "claude-code",
+    "agent-skills",
+    "cursor",
+    "codex",
+    "vibe-coding"
+  ],
+  "dependencies": {
+    "playwright-core": "1.62.1"
+  }
+}

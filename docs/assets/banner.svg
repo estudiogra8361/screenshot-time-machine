@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" width="1600" height="460" role="img" aria-labelledby="stmBannerTitle" text-rendering="geometricPrecision">
+  <title id="stmBannerTitle">screenshot-time-machine: every page of your localhost app, screenshotted, dated, and diffed, in one command</title>
+  <defs>
+    <clipPath id="stmClip">
+      <rect x="0" y="0" width="1600" height="460" rx="20"/>
+    </clipPath>
+    <clipPath id="stmScreenClip">
+      <rect x="1058" y="116" width="460" height="284" rx="16"/>
+    </clipPath>
+
+    <radialGradient id="stmGlow">
+      <stop offset="0" stop-color="#FF6600" stop-opacity="0.34"/>
+      <stop offset="0.45" stop-color="#FF6600" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#FF6600" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stmGlowWarm">
+      <stop offset="0" stop-color="#FF9A1F" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#FF9A1F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stmSheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.055"/>
+      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0.012"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stmEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFC46B"/>
+      <stop offset="0.38" stop-color="#FF9A1F"/>
+      <stop offset="1" stop-color="#F04E23"/>
+    </linearGradient>
+    <linearGradient id="stmRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F04E23"/>
+      <stop offset="0.4" stop-color="#FF9A1F"/>
+      <stop offset="1" stop-color="#FF9A1F" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stmScreen" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#141C27"/>
+      <stop offset="1" stop-color="#0C1219"/>
+    </linearGradient>
+
+    <pattern id="stmDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.6" cy="1.6" r="1.6" fill="#A9B6C6"/>
+    </pattern>
+
+    <filter id="stmHalo" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#stmClip)">
+    <rect x="0" y="0" width="1600" height="460" fill="#0A0E14"/>
+    <rect x="0" y="0" width="1600" height="460" fill="url(#stmDots)" opacity="0.05"/>
+    <ellipse cx="1252" cy="204" rx="640" ry="440" fill="url(#stmGlow)"/>
+    <ellipse cx="1300" cy="146" rx="340" ry="250" fill="url(#stmGlowWarm)"/>
+    <rect x="0" y="0" width="1600" height="460" fill="url(#stmSheen)"/>
+
+    <!-- receding snapshot history -->
+    <g opacity="0.5">
+      <rect x="1000" y="58" width="460" height="284" rx="16" fill="#0E141C"/>
+      <rect x="1000" y="58" width="460" height="36" fill="#161F2B"/>
+      <rect x="1000.75" y="58.75" width="458.5" height="282.5" rx="15.25" fill="none" stroke="url(#stmEdge)" stroke-width="1.5" opacity="0.45"/>
+      <g fill="#3A4658">
+        <circle cx="1024" cy="76" r="3.5"/>
+        <circle cx="1040" cy="76" r="3.5"/>
+        <circle cx="1056" cy="76" r="3.5"/>
+      </g>
+    </g>
+
+    <g opacity="0.78">
+      <rect x="1029" y="87" width="460" height="284" rx="16" fill="#0F1620"/>
+      <rect x="1029" y="87" width="460" height="36" fill="#18212E"/>
+      <rect x="1029.75" y="87.75" width="458.5" height="282.5" rx="15.25" fill="none" stroke="url(#stmEdge)" stroke-width="1.5" opacity="0.6"/>
+      <g fill="#42505F">
+        <circle cx="1053" cy="105" r="3.5"/>
+        <circle cx="1069" cy="105" r="3.5"/>
+        <circle cx="1085" cy="105" r="3.5"/>
+      </g>
+    </g>
+
+    <!-- today's snapshot -->
+    <rect x="1058" y="116" width="460" height="284" rx="16" fill="url(#stmEdge)" opacity="0.32" filter="url(#stmHalo)"/>
+    <rect x="1058" y="116" width="460" height="284" rx="16" fill="url(#stmScreen)"/>
+    <g clip-path="url(#stmScreenClip)">
+      <rect x="1058" y="116" width="460" height="36" fill="#151E2A"/>
+      <rect x="1058" y="151" width="460" height="1" fill="#232C3A"/>
+      <g fill="#4A5768">
+        <circle cx="1082" cy="134" r="4"/>
+        <circle cx="1098" cy="134" r="4"/>
+        <circle cx="1114" cy="134" r="4"/>
+      </g>
+      <rect x="1180" y="124" width="216" height="20" rx="10" fill="#1B2532"/>
+
+      <rect x="1082" y="180" width="196" height="14" rx="7" fill="#E8EDF3" opacity="0.88"/>
+      <rect x="1082" y="208" width="300" height="9" rx="4.5" fill="#8A97A8" opacity="0.42"/>
+      <rect x="1082" y="225" width="244" height="9" rx="4.5" fill="#8A97A8" opacity="0.26"/>
+
+      <g fill="#131A24" stroke="#232C3A" stroke-width="1">
+        <rect x="1082.5" y="264.5" width="123" height="87" rx="12"/>
+        <rect x="1226.5" y="264.5" width="123" height="87" rx="12"/>
+      </g>
+      <g fill="#1D2734">
+        <rect x="1098" y="280" width="22" height="22" rx="7"/>
+        <rect x="1242" y="280" width="22" height="22" rx="7"/>
+      </g>
+      <g fill="#8A97A8">
+        <rect x="1098" y="316" width="68" height="7" rx="3.5" opacity="0.38"/>
+        <rect x="1098" y="331" width="44" height="7" rx="3.5" opacity="0.22"/>
+        <rect x="1242" y="316" width="68" height="7" rx="3.5" opacity="0.38"/>
+        <rect x="1242" y="331" width="44" height="7" rx="3.5" opacity="0.22"/>
+      </g>
+
+      <!-- the one element that changed -->
+      <rect x="1370" y="264" width="124" height="88" rx="12" fill="#1A212C"/>
+      <rect x="1370" y="264" width="124" height="88" rx="12" fill="#FF6600" opacity="0.07"/>
+      <rect x="1370.75" y="264.75" width="122.5" height="86.5" rx="11.25" fill="none" stroke="url(#stmEdge)" stroke-width="1.5"/>
+      <rect x="1386" y="280" width="22" height="22" rx="7" fill="#FF6600" opacity="0.55"/>
+      <g fill="#FFC46B">
+        <rect x="1386" y="316" width="68" height="7" rx="3.5" opacity="0.55"/>
+        <rect x="1386" y="331" width="44" height="7" rx="3.5" opacity="0.34"/>
+      </g>
+
+      <rect x="1082" y="370" width="412" height="10" rx="5" fill="#8A97A8" opacity="0.16"/>
+    </g>
+    <circle cx="1494" cy="264" r="17" fill="#FF6600" opacity="0.2"/>
+    <circle cx="1494" cy="264" r="8" fill="#FF6600"/>
+    <rect x="1058.75" y="116.75" width="458.5" height="282.5" rx="15.25" fill="none" stroke="url(#stmEdge)" stroke-width="1.5"/>
+
+    <!-- wordmark block -->
+    <text x="88" y="152" textLength="740" lengthAdjust="spacingAndGlyphs" font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">screenshot<tspan fill="#FF6600">-</tspan>time<tspan fill="#FF6600">-</tspan>machine</text>
+    <rect x="88" y="182" width="264" height="3" rx="1.5" fill="url(#stmRule)"/>
+    <g font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="24" fill="#8A97A8">
+      <text x="88" y="226">Every page of your localhost app.</text>
+      <text x="88" y="258">Screenshotted, dated, and diffed. One command.</text>
+    </g>
+    <rect x="88.5" y="298.5" width="457" height="55" rx="14" fill="#131A24" stroke="#232C3A" stroke-width="1"/>
+    <text x="112" y="333" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="20" fill="#FFC46B">npx screenshot-time-machine@latest</text>
+
+    <rect x="0.75" y="0.75" width="1598.5" height="458.5" rx="19.25" fill="none" stroke="#232C3A" stroke-width="1.5"/>
+  </g>
+</svg>

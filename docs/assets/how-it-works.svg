@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 280" width="1400" height="280" role="img" aria-label="How stm works: detect, discover, capture, compare, report" text-rendering="geometricPrecision" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <title>How stm works</title>
+  <desc>Five steps in a row: detect the app, discover its pages, capture screenshots, compare hashes, report what changed.</desc>
+
+  <defs>
+    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="252" y1="140" x2="1148" y2="140">
+      <stop offset="0" stop-color="#FF6600"/>
+      <stop offset="1" stop-color="#FF9A1F"/>
+    </linearGradient>
+
+    <radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="700" cy="140" r="620" gradientTransform="matrix(1 0 0 0.34 0 92.4)">
+      <stop offset="0" stop-color="#FF8A18" stop-opacity="0.11"/>
+      <stop offset="0.45" stop-color="#FF9A1F" stop-opacity="0.055"/>
+      <stop offset="1" stop-color="#FFC46B" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="cardShadow" x="-6%" y="-16%" width="112%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4.5" flood-color="#0F172A" flood-opacity="0.07"/>
+    </filter>
+
+    <clipPath id="panelClip">
+      <rect x="0" y="0" width="1400" height="280" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- panel -->
+  <rect x="0" y="0" width="1400" height="280" rx="20" fill="#FFFFFF"/>
+  <g clip-path="url(#panelClip)">
+    <rect x="0" y="0" width="1400" height="280" fill="url(#glow)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1399" height="279" rx="19.5" fill="none" stroke="#E9EDF2" stroke-width="1"/>
+
+  <!-- connectors -->
+  <g stroke="url(#flow)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M267 140H293"/>
+    <path d="M293 134.5 300 140 293 145.5"/>
+    <path d="M547 140H573"/>
+    <path d="M573 134.5 580 140 573 145.5"/>
+    <path d="M827 140H853"/>
+    <path d="M853 134.5 860 140 853 145.5"/>
+    <path d="M1107 140H1133"/>
+    <path d="M1133 134.5 1140 140 1133 145.5"/>
+  </g>
+  <g fill="url(#flow)">
+    <circle cx="258" cy="140" r="3"/>
+    <circle cx="538" cy="140" r="3"/>
+    <circle cx="818" cy="140" r="3"/>
+    <circle cx="1098" cy="140" r="3"/>
+  </g>
+
+  <!-- cards -->
+  <g fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1" filter="url(#cardShadow)">
+    <rect x="28" y="58" width="224" height="164" rx="14"/>
+    <rect x="308" y="58" width="224" height="164" rx="14"/>
+    <rect x="588" y="58" width="224" height="164" rx="14"/>
+    <rect x="868" y="58" width="224" height="164" rx="14"/>
+    <rect x="1148" y="58" width="224" height="164" rx="14"/>
+  </g>
+
+  <!-- step numbers -->
+  <g fill="#FF6600">
+    <circle cx="51" cy="93" r="3.5"/>
+    <circle cx="331" cy="93" r="3.5"/>
+    <circle cx="611" cy="93" r="3.5"/>
+    <circle cx="891" cy="93" r="3.5"/>
+    <circle cx="1171" cy="93" r="3.5"/>
+  </g>
+  <g fill="#FF6600" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="0.08em">
+    <text x="62" y="97">01</text>
+    <text x="342" y="97">02</text>
+    <text x="622" y="97">03</text>
+    <text x="902" y="97">04</text>
+    <text x="1182" y="97">05</text>
+  </g>
+
+  <!-- titles -->
+  <g fill="#0F172A" font-size="22" font-weight="700" letter-spacing="-0.012em">
+    <text x="48" y="135">detect</text>
+    <text x="328" y="135">discover</text>
+    <text x="608" y="135">capture</text>
+    <text x="888" y="135">compare</text>
+    <text x="1168" y="135">report</text>
+  </g>
+
+  <!-- subtitles -->
+  <g fill="#475569" font-size="13">
+    <text x="48" y="163">ports 3000 to 5000,</text>
+    <text x="48" y="183">or <tspan font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5">--url</tspan></text>
+
+    <text x="328" y="163">sitemap plus links,</text>
+    <text x="328" y="183">same origin</text>
+
+    <text x="608" y="163">scroll, wait, freeze,</text>
+    <text x="608" y="183">full plus fold PNG</text>
+
+    <text x="888" y="163">sha256 against the</text>
+    <text x="888" y="183">last snapshot</text>
+
+    <text x="1168" y="163">summary, or <tspan font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5">--json</tspan></text>
+    <text x="1168" y="183">for agents</text>
+  </g>
+</svg>

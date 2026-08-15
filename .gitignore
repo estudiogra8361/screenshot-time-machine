@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# stm output when dogfooding this repo
+screenshots/
+
+# anything marked private stays local
+private*/
+*.private.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# logs / temp
+npm-debug.log*
+*.log
+.tmp/
+coverage/

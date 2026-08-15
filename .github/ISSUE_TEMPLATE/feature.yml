@@ -1,0 +1,17 @@
+name: Feature request
+description: Something stm should do. (Heads-up: new flags and dependencies usually get a "no"; problems get a "yes".)
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem (what you were trying to do, and what happened)
+    validations: { required: true }
+  - type: textarea
+    id: shape
+    attributes:
+      label: Proposed shape (command / output / file layout)
+  - type: textarea
+    id: tried
+    attributes:
+      label: What existing commands or flags you already tried

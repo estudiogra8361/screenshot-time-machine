@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 520" width="1600" height="520" role="img" aria-label="Twelve page thumbnails. One is marked as the page you looked at. Four others came back with broken layouts. Your AI edited twelve pages, you looked at one." text-rendering="geometricPrecision">
+  <title>Your AI edited 12 pages. You looked at one.</title>
+
+  <defs>
+    <!-- healthy page layouts, drawn at the card origin -->
+    <g id="pA" fill="#94A3B8">
+      <rect x="14" y="14" width="199" height="9" rx="4.5" fill-opacity="0.60"/>
+      <rect x="14" y="31" width="199" height="32" rx="6" fill-opacity="0.20"/>
+      <rect x="14" y="71" width="136" height="7" rx="3.5" fill-opacity="0.32"/>
+      <rect x="14" y="84" width="100" height="7" rx="3.5" fill-opacity="0.32"/>
+      <rect x="14" y="97" width="48" height="7" rx="3.5" fill-opacity="0.32"/>
+    </g>
+
+    <g id="pB" fill="#94A3B8">
+      <rect x="14" y="14" width="199" height="9" rx="4.5" fill-opacity="0.60"/>
+      <rect x="14" y="31" width="61" height="50" rx="5" fill-opacity="0.20"/>
+      <rect x="83" y="31" width="61" height="50" rx="5" fill-opacity="0.20"/>
+      <rect x="152" y="31" width="61" height="50" rx="5" fill-opacity="0.20"/>
+      <rect x="14" y="87" width="40" height="6" rx="3" fill-opacity="0.32"/>
+      <rect x="83" y="87" width="40" height="6" rx="3" fill-opacity="0.32"/>
+      <rect x="152" y="87" width="40" height="6" rx="3" fill-opacity="0.32"/>
+      <rect x="14" y="97" width="26" height="6" rx="3" fill-opacity="0.32"/>
+      <rect x="83" y="97" width="26" height="6" rx="3" fill-opacity="0.32"/>
+      <rect x="152" y="97" width="26" height="6" rx="3" fill-opacity="0.32"/>
+    </g>
+
+    <g id="pC" fill="#94A3B8">
+      <rect x="14" y="14" width="199" height="9" rx="4.5" fill-opacity="0.60"/>
+      <rect x="14" y="31" width="46" height="73" rx="5" fill-opacity="0.20"/>
+      <rect x="68" y="33" width="145" height="7" rx="3.5" fill-opacity="0.32"/>
+      <rect x="68" y="47" width="112" height="7" rx="3.5" fill-opacity="0.32"/>
+      <rect x="68" y="61" width="131" height="7" rx="3.5" fill-opacity="0.32"/>
+      <rect x="68" y="75" width="90" height="7" rx="3.5" fill-opacity="0.32"/>
+      <rect x="68" y="89" width="118" height="7" rx="3.5" fill-opacity="0.32"/>
+    </g>
+
+    <g id="pD" fill="#94A3B8">
+      <rect x="14" y="14" width="199" height="9" rx="4.5" fill-opacity="0.60"/>
+      <rect x="14" y="31" width="199" height="20" rx="6" fill-opacity="0.20"/>
+      <rect x="14" y="57" width="199" height="15" rx="5" fill-opacity="0.18"/>
+      <rect x="14" y="76" width="199" height="15" rx="5" fill-opacity="0.18"/>
+      <rect x="14" y="95" width="64" height="9" rx="4.5" fill-opacity="0.60"/>
+    </g>
+  </defs>
+
+  <!-- warm surface -->
+  <rect x="0" y="0" width="1600" height="520" rx="24" fill="#FFF7ED"/>
+
+  <!-- ============ row 1 ============ -->
+  <!-- col 1, healthy -->
+  <rect x="64" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pB" x="64" y="54"/>
+
+  <!-- col 2, healthy -->
+  <rect x="313" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pC" x="313" y="54"/>
+
+  <!-- col 3, broken: a block is missing -->
+  <rect x="562" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <g fill="#94A3B8">
+    <rect x="576" y="68" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
+    <rect x="576" y="85" width="199" height="34" rx="6" fill="none" stroke="#94A3B8" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <rect x="576" y="129" width="140" height="7" rx="3.5" fill-opacity="0.32"/>
+    <rect x="576" y="142" width="98" height="7" rx="3.5" fill-opacity="0.32"/>
+  </g>
+  <circle cx="773" cy="76" r="5" fill="#FF6600"/>
+
+  <!-- col 4, healthy -->
+  <rect x="811" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pA" x="811" y="54"/>
+
+  <!-- col 5, healthy -->
+  <rect x="1060" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pD" x="1060" y="54"/>
+
+  <!-- col 6, broken: content overflows the page -->
+  <rect x="1309" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <g fill="#94A3B8">
+    <rect x="1323" y="68" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
+    <rect x="1323" y="85" width="199" height="28" rx="6" fill-opacity="0.20"/>
+    <rect x="1323" y="122" width="238" height="10" rx="5" fill-opacity="0.34"/>
+    <rect x="1323" y="140" width="150" height="7" rx="3.5" fill-opacity="0.32"/>
+    <rect x="1323" y="153" width="98" height="7" rx="3.5" fill-opacity="0.32"/>
+  </g>
+  <circle cx="1520" cy="76" r="5" fill="#FF6600"/>
+
+  <!-- ============ row 2 ============ -->
+  <!-- col 1, the one page you opened -->
+  <rect x="64" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#3DD68C" stroke-width="2"/>
+  <use href="#pA" x="64" y="192"/>
+
+  <!-- col 2, broken: a column slipped out of line -->
+  <rect x="313" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <g fill="#94A3B8">
+    <rect x="327" y="206" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
+    <rect x="327" y="223" width="61" height="46" rx="5" fill-opacity="0.20"/>
+    <rect x="396" y="223" width="61" height="46" rx="5" fill-opacity="0.20"/>
+    <rect x="451" y="239" width="61" height="46" rx="5" fill-opacity="0.38"/>
+    <rect x="327" y="280" width="104" height="7" rx="3.5" fill-opacity="0.32"/>
+    <rect x="327" y="293" width="72" height="7" rx="3.5" fill-opacity="0.32"/>
+  </g>
+  <circle cx="524" cy="214" r="5" fill="#FF6600"/>
+
+  <!-- col 3, healthy -->
+  <rect x="562" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pD" x="562" y="192"/>
+
+  <!-- col 4, healthy -->
+  <rect x="811" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pC" x="811" y="192"/>
+
+  <!-- col 5, broken: the second column dropped -->
+  <rect x="1060" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <g fill="#94A3B8">
+    <rect x="1074" y="206" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
+    <rect x="1074" y="223" width="92" height="60" rx="6" fill-opacity="0.20"/>
+    <rect x="1150" y="241" width="96" height="60" rx="6" fill-opacity="0.34"/>
+    <rect x="1074" y="290" width="64" height="7" rx="3.5" fill-opacity="0.32"/>
+  </g>
+  <circle cx="1271" cy="214" r="5" fill="#FF6600"/>
+
+  <!-- col 6, healthy -->
+  <rect x="1309" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
+  <use href="#pB" x="1309" y="192"/>
+
+  <!-- ============ annotations ============ -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569">
+    <circle cx="70" cy="328" r="4" fill="#3DD68C"/>
+    <text x="84" y="332">you looked here</text>
+    <circle cx="1066" cy="328" r="4" fill="#FF6600"/>
+    <text x="1080" y="332">4 of them came back broken</text>
+  </g>
+
+  <line x1="64" y1="372" x2="1536" y2="372" stroke="#FFEDD9" stroke-width="1.5"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="64" y="424" font-size="34" font-weight="700" fill="#0F172A">Your AI edited 12 pages. You looked at one.</text>
+    <text x="64" y="460" font-size="18" fill="#475569">stm looks at all of them, then tells you which ones actually changed.</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      dev:
+        dependency-type: development
+    # playwright-core is deliberately NOT grouped: each release pins a new
+    # Chromium build, which is the "changed" baseline. Review its PR alone and
+    # run the capture matrix before merging.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

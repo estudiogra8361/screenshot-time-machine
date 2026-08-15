@@ -1,0 +1,54 @@
+# Publishes to npm via trusted publishing (OIDC) when a v* tag is pushed.
+# No NPM_TOKEN anywhere. Local ritual: move Unreleased into a versioned CHANGELOG
+# section, then `npm version <bump>` and `git push --follow-tags`.
+name: release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm test
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      id-token: write # OIDC for npm trusted publishing + provenance, nothing else
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24 # bundles npm 11, required for trusted publishing
+          registry-url: https://registry.npmjs.org
+      - name: Tag must match package.json version
+        run: test "v$(node -p 'require("./package.json").version')" = "$GITHUB_REF_NAME"
+      - run: npm publish
+  github-release:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write # gh release create
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - name: GitHub release from the top versioned CHANGELOG section
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          node -e '
+            const md = require("fs").readFileSync("CHANGELOG.md", "utf8");
+            const m = md.match(/^## \[(?!Unreleased)[^\]]+\][^\n]*\n([\s\S]*?)(?=^## \[|\s*$)/m);
+            require("fs").writeFileSync("/tmp/notes.md", (m ? m[1] : "").trim() || "See CHANGELOG.md");
+          '
+          gh release create "$GITHUB_REF_NAME" --verify-tag --title "$GITHUB_REF_NAME" --notes-file /tmp/notes.md
