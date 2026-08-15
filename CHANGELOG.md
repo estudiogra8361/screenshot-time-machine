@@ -13,4 +13,5 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 - Agent skill (`skills/stm/SKILL.md`) installable with `npx skills add mdsohaib/screenshot-time-machine`, and a Claude Code plugin marketplace file.
 - Browser bootstrap: cached Playwright build, then Chrome, then Edge, then a one-time headless-shell download.
 - Dev toolbars hidden, dev error overlays flagged; animations frozen; lazy images loaded; incremental manifest; graceful SIGINT/SIGTERM.
+- Paths in the summary and in `--json` always use forward slashes, on every platform.
 

@@ -17,3 +17,4 @@ One line per irreversible or deliberately-refused choice. Add a row every time y
 | 2026-08-15 | No new flag or command without an issue first; good-first-issues never add flags. | Small surface is the product; every flag is a promise. | never |
 | 2026-08-15 | An interrupted run (Ctrl+C, SIGTERM) exits 2 and says so, instead of 130/143. | Agents already branch on 0/1/2; the summary and JSON carry `interrupted`, which is the useful signal. | someone needs the signal code |
 | 2026-08-15 | Windows-reserved page names (`/con`, `/nul`, ...) get a `page-` prefix, not an underscore. | No file or identifier in this project starts with an underscore. | never |
+| 2026-08-15 | Every path stm prints, in the summary and in `--json`, uses forward slashes on all platforms. | One output format everywhere, copy-pasteable, and JSON never needs escaped backslashes. Windows accepts forward slashes. Caught by the Windows CI job printing a mixed `screenshots\name/` path. | never |
