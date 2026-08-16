@@ -64,7 +64,7 @@ export async function launchBrowser({ log }) {
   }
   // Nothing usable on this machine. Download the headless shell once, then try again.
   log(
-    'One-time setup: downloading a headless Chrome for screenshots (~120 MB, about a minute). Next runs skip this.',
+    'One-time setup: downloading a headless Chrome for screenshots (about a 120 MB download, 200 MB on disk). Next runs skip this.',
   );
   installHeadlessShell();
   const retry = await tryLaunch(attempts[0]);

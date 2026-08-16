@@ -105,7 +105,7 @@ npx screenshot-time-machine@latest
 
 **Needs Node 22 or newer.** Run `node -v` to check. If it prints 21 or lower, update Node from [nodejs.org](https://nodejs.org) first.
 
-The first run uses the Chrome or Edge already on your machine. If you have neither, it downloads a browser once, about 120 MB, and tells you before it does. That download is the only thing stm ever fetches from the internet.
+The first run uses the Chrome or Edge already on your machine. If you have neither, it downloads a headless browser once, about a 120 MB download that takes roughly 200 MB on disk, and tells you before it does. That download is the only thing stm ever fetches from the internet.
 
 Change something, run it again, and read the `changed` line. That is the whole workflow.
 
@@ -276,6 +276,19 @@ Exit codes: `0` everything captured, `1` nothing captured (no app, no browser, b
 <p align="center">
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/how-it-works.svg" alt="detect, discover, capture, compare, report" width="820">
 </p>
+
+### How it knows what changed
+
+It screenshots every page on every run. What it compares is not the images, it is their fingerprints:
+
+1. After saving a page's PNG, stm computes a **sha256 hash** of that file's bytes.
+2. The hash is stored in that run's manifest, next to the page path.
+3. On the next run, stm looks up the same page in the **previous run's manifest** and compares the two hashes.
+4. Different hash means the page changed. Same hash means it did not. No earlier entry means it is new.
+
+Old screenshots are never reopened, only the small manifest is read, so comparing a hundred pages is instant.
+
+This only works because an unchanged page produces a byte-for-byte identical file. That is the point of the work below: freezing animations, pinning the device pixel ratio, waiting for fonts and images, and hiding dev toolbars. Without it every page would look changed on every run and the number would be meaningless.
 
 The details that make the screenshots trustworthy:
 
