@@ -12,10 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=7FB0F5&labelColor=0A0E14" alt="npm version"></a>
-  <a href="https://github.com/mdsohaib/screenshot-time-machine/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/mdsohaib/screenshot-time-machine/ci.yml?branch=main&style=flat-square&label=tests&color=A98BEB&labelColor=0A0E14" alt="tests"></a>
-  <img src="https://img.shields.io/badge/dependencies-1-C88AE0?style=flat-square&labelColor=0A0E14" alt="one dependency">
-  <img src="https://img.shields.io/badge/node-22%2B-FF8C1A?style=flat-square&labelColor=0A0E14&logo=nodedotjs&logoColor=white" alt="Node 22+">
+  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=FF8C1A&labelColor=0A0E14" alt="npm version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-FFC24A?style=flat-square&labelColor=0A0E14" alt="MIT license"></a>
   <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Sohaib%20Uddin-F0509F?style=flat-square&labelColor=0A0E14&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
@@ -45,16 +42,8 @@ npx skills add mdsohaib/screenshot-time-machine  # teach Claude Code, Cursor, Co
 
 <p align="center">
   <b>Works with</b><br>
-  <img src="https://img.shields.io/badge/Claude%20Code-0A0E14?style=flat-square&logo=claude&logoColor=FF8C1A" alt="Claude Code">
-  <img src="https://img.shields.io/badge/Codex-0A0E14?style=flat-square" alt="Codex">
-  <img src="https://img.shields.io/badge/Cursor-0A0E14?style=flat-square&logo=cursor&logoColor=FF8C1A" alt="Cursor">
-  <img src="https://img.shields.io/badge/Gemini%20CLI-0A0E14?style=flat-square&logo=googlegemini&logoColor=FF8C1A" alt="Gemini CLI">
-  <img src="https://img.shields.io/badge/Antigravity-0A0E14?style=flat-square" alt="Antigravity">
-  <img src="https://img.shields.io/badge/Copilot-0A0E14?style=flat-square&logo=githubcopilot&logoColor=FF8C1A" alt="GitHub Copilot">
-  <img src="https://img.shields.io/badge/Windsurf-0A0E14?style=flat-square&logo=windsurf&logoColor=FF8C1A" alt="Windsurf">
-  <img src="https://img.shields.io/badge/OpenCode-0A0E14?style=flat-square&logo=opencode&logoColor=FF8C1A" alt="OpenCode">
-  <img src="https://img.shields.io/badge/Cline-0A0E14?style=flat-square" alt="Cline">
-  <br><i>and the humans who prompt them</i>
+  Claude Code · Codex · Cursor · Gemini CLI · Antigravity · GitHub Copilot · Windsurf · OpenCode · Cline<br>
+  <i>and the humans who prompt them</i>
 </p>
 
 ---
@@ -91,7 +80,7 @@ Git tracks every line of your code and not a single pixel of your site. Visual t
 
 ## Why it helps
 
-- **Catch broken pages before your users do.** One command, every page, a list of what changed.
+- **Catch broken pages before your users do.** One command, every page, and a list of which pages changed so you know where to look.
 - **Give your AI agent eyes.** `stm --json` hands it the file paths of the changed pages, so it opens only those and fixes what it broke.
 - **Keep a visual history.** Every run is a dated folder of plain PNGs. Scroll back and see what your site looked like in March, straight from Finder or Explorer.
 
@@ -241,7 +230,7 @@ A run that cannot start prints a much smaller object instead: `{"code": 1, "erro
 ```
 screenshots/
 └── localhost-3000_2026-08-15_14-32/
-    ├── manifest_2026-08-15_14-32.json          what was captured, from where, with which browser, what changed
+    ├── manifest_2026-08-15_14-32.json          what was captured, from where, with which browser, which pages changed
     ├── index_2026-08-15_14-32.png              full page, 1440 px wide, as tall as the page
     ├── pricing_2026-08-15_14-32.png
     ├── blog--hello-world_2026-08-15_14-32.png  "/" becomes "--" in file names
@@ -287,6 +276,8 @@ It screenshots every page on every run. What it compares is not the images, it i
 4. Different hash means the page changed. Same hash means it did not. No earlier entry means it is new.
 
 Old screenshots are never reopened, only the small manifest is read, so comparing a hundred pages is instant.
+
+**What this does and does not give you.** stm tells you *which pages* changed. It does not tell you *what* changed inside a page: there is no visual diff, no highlighted regions, no before-and-after overlay. You get the page names and the file paths, then you open those screenshots and look, or your agent does. Region-level diffing is `stm diff` on the roadmap.
 
 This only works because an unchanged page produces a byte-for-byte identical file. That is the point of the work below: freezing animations, pinning the device pixel ratio, waiting for fonts and images, and hiding dev toolbars. Without it every page would look changed on every run and the number would be meaningless.
 

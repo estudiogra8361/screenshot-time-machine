@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 280" width="1400" height="280" role="img" aria-label="How stm works: detect, discover, capture, compare, report" text-rendering="geometricPrecision" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
   <title>How stm works</title>
-  <desc>Five steps in a row: detect the app, discover its pages, capture screenshots, compare hashes, report what changed.</desc>
+  <desc>Five steps in a row: detect the app, discover its pages, capture screenshots, compare hashes, report which pages changed.</desc>
 
   <defs>
     <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="252" y1="140" x2="1180" y2="140">

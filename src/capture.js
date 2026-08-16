@@ -347,6 +347,12 @@ function settlePage() {
       Promise.all(pending.map(settled)),
       new Promise((r) => setTimeout(r, 3000)),
     ]);
+    // Wait for webfonts as well. Without this a page can render with a
+    // fallback font on one run and the real font on the next, which moves
+    // pixels and reports a page as changed when nothing about it changed.
+    if (document.fonts?.ready) {
+      await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 3000))]);
+    }
     try {
       for (const a of document.getAnimations()) a.pause();
     } catch {

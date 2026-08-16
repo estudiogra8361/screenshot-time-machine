@@ -1,6 +1,6 @@
 {
   "name": "screenshot-time-machine",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Full-page screenshots of every localhost page, in dated folders. Tells your AI agent which pages changed.",
   "type": "module",
   "license": "MIT",

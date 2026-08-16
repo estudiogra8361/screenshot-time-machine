@@ -4,6 +4,14 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-08-15
+### Fixed
+- A page could be reported as changed when nothing about it had changed. The capture waited for images but not for webfonts, so a page could render with a fallback font on one run and the real font on the next. Caught by the macOS CI job, which reported `/p/4` as changed between two identical runs. The capture now waits for `document.fonts.ready` (up to 3 seconds) before screenshotting.
+
+### Changed
+- The README no longer claims to show what changed inside a page. stm names the pages that changed and hands you the files; there is no visual diff, and that limit is now stated where the mechanism is explained.
+- Trimmed the badge row to the version, the licence and the author, and replaced the nine agent logos with plain text.
+
 ## [0.1.1] - 2026-08-15
 ### Fixed
 - `npx skills add mdsohaib/screenshot-time-machine` installed nothing. The `description` in `skills/stm/SKILL.md` contained an unquoted `": "`, which YAML reads as a nested mapping, so the installer rejected the file and reported "No skills found". Reworded, and a test now fails if any frontmatter value can break the parser again.
