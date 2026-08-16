@@ -3,6 +3,8 @@
 All notable changes to this project are documented here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [SemVer](https://semver.org/).
 
 ## [Unreleased]
+
+## [0.1.4] - 2026-08-16
 ### Changed
 - Repositioned the README around what the tool does first: screenshot every page with one command, look at them, and build a visual history you can watch evolve. The changed-pages list is still there and still works, but it is now a supporting benefit rather than the headline, and it is worded so it cannot be read as a visual diff.
 - The docs now say "website" rather than "localhost app". `--url` has always accepted any http(s) origin, and a capture of a live site was verified end to end, so the copy no longer implies stm is localhost-only.
