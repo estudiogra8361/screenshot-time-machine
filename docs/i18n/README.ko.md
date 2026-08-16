@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="날짜가 다른 세 개의 스냅샷에 담긴 같은 페이지, 디자인이 어떻게 변해 왔는지 되감아 보는 모습" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="한 스토어 홈페이지의 디자인 열 개 버전, 첫 초안부터 완성된 레이아웃까지" width="820">
 </p>
 
-<p align="center"><i>어느 저녁 리디자인 중에 실행한 세 번의 결과를, stm이 저장해 둔 날짜별 폴더에서 되감아 본 모습입니다.</i></p>
+<p align="center"><i>같은 페이지의 열 개 버전을 순서대로 재생한 것입니다. 날짜별 스크린샷 폴더는 결국 이런 모습이 됩니다.</i></p>
 
 <h3 align="center">이런 도구와 함께 씁니다</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="70개 이상의 에이전트"></a>
+  <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="70개 이상의 에이전트"></a>
 </p>
 
 <p align="center"><i>그리고 이 도구들에게 프롬프트를 쓰는 사람들</i></p>
@@ -184,7 +184,7 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **그 밖의 도구** | `npx skills add mdsohaib/screenshot-time-machine` | 70개가 넘는 에이전트 목록에서 선택 |
+| **그 밖의 도구** | `npx skills add mdsohaib/screenshot-time-machine` | 76개 에이전트 전체 목록에서 선택 |
 
 위 명령에 `-g`를 붙이면 이 프로젝트가 아니라 모든 프로젝트에 설치됩니다.
 

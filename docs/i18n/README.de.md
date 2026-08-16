@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="Dieselbe Seite in drei datierten Snapshots, die noch einmal zeigen, wie sich das Design entwickelt hat" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="Die Startseite eines Shops über zehn Design-Versionen hinweg, vom ersten Entwurf bis zum fertigen Layout" width="820">
 </p>
 
-<p align="center"><i>Drei Läufe während eines Redesign-Abends, abgespielt aus den datierten Ordnern, in denen stm sie gespeichert hat.</i></p>
+<p align="center"><i>Zehn Versionen einer Seite, der Reihe nach. Genau das wird aus einem Ordner mit datierten Screenshots.</i></p>
 
 <h3 align="center">Funktioniert mit</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="über 70 weitere Agenten"></a>
+  <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="über 70 weitere Agenten"></a>
 </p>
 
 <p align="center"><i>und mit den Menschen, die sie steuern</i></p>
@@ -184,7 +184,7 @@ Ein Befehl installiert `stm` als Skill: eine kurze Anweisungsdatei, die dein Age
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Alles andere** | `npx skills add mdsohaib/screenshot-time-machine` | wähl aus der Liste von über 70 Agenten |
+| **Alles andere** | `npx skills add mdsohaib/screenshot-time-machine` | wähl aus der vollständigen Liste von 76 Agenten |
 
 Häng an jeden dieser Befehle `-g` an, um es für alle Projekte statt nur für dieses zu installieren.
 

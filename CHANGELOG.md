@@ -11,9 +11,10 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 - All ten translations regenerated against the new English. They had been lagging since 0.1.1 and still carried the retired badge row and the old brand colour.
 
 ### Added
-- `docs/assets/demo.gif`: three real stm runs against a demo store as it gets redesigned, showing the dated folders stacking up beside the page as it looked at each one.
+- `docs/assets/demo.gif`: one store home page played through ten design versions, from the first rough draft to the finished layout, so the README shows what a visual history actually looks like.
 
 ### Fixed
+- The "70+ more" badge sat next to nine named agents, which implied 79. The installer lists 76 agents in total, so the badge now reads "60+ more" and the table gives the real number. Counted from the installer itself, not estimated.
 - `docs/assets/the-problem.svg` marked four pages as broken, but one of them was not. The injected CSS targeted `.hero`, which product pages do not have, so that thumbnail rendered perfectly while being labelled a failure. Re-shot with a failure the page can actually suffer.
 - The README said `stm` was four letters.
 

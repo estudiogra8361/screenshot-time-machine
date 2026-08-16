@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="A mesma página em três snapshots datados, mostrando como o design evoluiu" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="A página inicial de uma loja ao longo de dez versões de design, do primeiro rascunho ao layout final" width="820">
 </p>
 
-<p align="center"><i>Três execuções durante o redesign de uma noite, revistas a partir das pastas datadas em que o stm as salvou.</i></p>
+<p align="center"><i>Dez versões de uma mesma página, em ordem. É nisso que se transforma uma pasta de screenshots datados.</i></p>
 
 <h3 align="center">Funciona com</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="mais de 70 outros agentes"></a>
+  <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="mais de 70 outros agentes"></a>
 </p>
 
 <p align="center"><i>e com as pessoas que escrevem os prompts deles</i></p>
@@ -184,7 +184,7 @@ Um comando instala o `stm` como uma skill: um arquivo curto de instruções que 
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Qualquer outro** | `npx skills add mdsohaib/screenshot-time-machine` | escolha na lista de mais de 70 agentes |
+| **Qualquer outro** | `npx skills add mdsohaib/screenshot-time-machine` | escolha na lista completa de 76 agentes |
 
 Acrescente `-g` a qualquer um desses para instalar para todos os projetos, em vez de só para este.
 

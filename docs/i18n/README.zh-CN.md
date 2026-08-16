@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="同一个页面在三个按日期归档的快照中的样子，重放出设计一路演进的过程" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="一个商店首页的十个设计版本，从最初的草稿到最终的布局" width="820">
 </p>
 
-<p align="center"><i>一个晚上的改版里跑了三次，从 stm 保存它们的日期文件夹中重放出来。</i></p>
+<p align="center"><i>同一个页面的十个版本，按顺序播放。一个按日期归档的截图文件夹，最后就是这样。</i></p>
 
 <h3 align="center">支持以下工具</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="另有 70 多个智能体"></a>
+  <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="另有 70 多个智能体"></a>
 </p>
 
 <p align="center"><i>以及使用它们的人</i></p>
@@ -184,7 +184,7 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **其他工具** | `npx skills add mdsohaib/screenshot-time-machine` | 从 70 多个智能体的列表里挑 |
+| **其他工具** | `npx skills add mdsohaib/screenshot-time-machine` | 从 76 个智能体的完整列表里挑 |
 
 给上面任意一条加上 `-g`，就会为所有项目安装，而不只是当前这个。
 

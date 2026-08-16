@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="الصفحة نفسها عبر ثلاث لقطات مؤرخة، تعيد عرض كيف تطوّر التصميم" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="الصفحة الرئيسية لمتجر عبر عشر نسخ من التصميم، من المسودة الأولى إلى التخطيط النهائي" width="820">
 </p>
 
-<p align="center"><i>ثلاثة تشغيلات خلال أمسية واحدة من إعادة التصميم، معادة من المجلدات المؤرخة التي حفظتها فيها stm.</i></p>
+<p align="center"><i>عشر نسخ من الصفحة نفسها، بالترتيب. هذا ما يتحول إليه مجلد من لقطات الشاشة المؤرخة.</i></p>
 
 <h3 align="center">تعمل مع</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#التثبيت-في-وكيل-البرمجة-لديك"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#التثبيت-في-وكيل-البرمجة-لديك"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#التثبيت-في-وكيل-البرمجة-لديك"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#التثبيت-في-وكيل-البرمجة-لديك"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="أكثر من 70 وكيلًا آخر"></a>
+  <a href="#التثبيت-في-وكيل-البرمجة-لديك"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="أكثر من 70 وكيلًا آخر"></a>
 </p>
 
 <p align="center"><i>ومع البشر الذين يوجّهونها</i></p>
@@ -184,7 +184,7 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **أي شيء آخر** | `npx skills add mdsohaib/screenshot-time-machine` | اختر من قائمة تضم أكثر من 70 وكيلًا |
+| **أي شيء آخر** | `npx skills add mdsohaib/screenshot-time-machine` | اختر من القائمة الكاملة التي تضم 76 وكيلًا |
 
 أضف `-g` إلى أي منها لتثبيتها لكل مشاريعك بدلًا من هذا المشروع وحده.
 

@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="Одна и та же страница в трёх датированных снимках: видно, как менялся дизайн" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="Главная страница магазина в десяти версиях дизайна, от первого черновика до финального макета" width="820">
 </p>
 
-<p align="center"><i>Три запуска за один вечер редизайна, воспроизведённые из датированных папок, в которые их сохранил stm.</i></p>
+<p align="center"><i>Десять версий одной страницы по порядку. Вот во что превращается папка со скриншотами по датам.</i></p>
 
 <h3 align="center">Работает с</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="ещё 70+ агентов"></a>
+  <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="ещё 70+ агентов"></a>
 </p>
 
 <p align="center"><i>и с людьми, которые ими управляют</i></p>
@@ -184,7 +184,7 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Что-то другое** | `npx skills add mdsohaib/screenshot-time-machine` | выберите из списка 70+ агентов |
+| **Что-то другое** | `npx skills add mdsohaib/screenshot-time-machine` | выберите из полного списка 76 агентов |
 
 Добавьте `-g` к любой из этих команд, чтобы поставить навык для всех проектов, а не только для текущего.
 

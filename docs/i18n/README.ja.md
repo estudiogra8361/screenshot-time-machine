@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="同じページを 3 つの日付付きスナップショットで並べ、デザインの移り変わりを再生したもの" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="あるストアのトップページを、最初のラフから完成したレイアウトまで 10 バージョン分" width="820">
 </p>
 
-<p align="center"><i>ある晩のリデザイン中に実行した 3 回分を、stm が保存した日付付きフォルダから再生したものです。</i></p>
+<p align="center"><i>同じページの 10 バージョンを順番に再生しています。日付ごとのスクリーンショットのフォルダは、こうなります。</i></p>
 
 <h3 align="center">対応ツール</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="70 以上のエージェント"></a>
+  <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="70 以上のエージェント"></a>
 </p>
 
 <p align="center"><i>そして、それらに指示を出す人間たち</i></p>
@@ -184,7 +184,7 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **その他すべて** | `npx skills add mdsohaib/screenshot-time-machine` | 70 以上のエージェント一覧から選択 |
+| **その他すべて** | `npx skills add mdsohaib/screenshot-time-machine` | 76 エージェントの一覧から選択 |
 
 どのコマンドにも `-g` を付ければ、このプロジェクトだけでなく全プロジェクトに導入できます。
 

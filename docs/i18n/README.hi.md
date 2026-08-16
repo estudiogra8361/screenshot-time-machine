@@ -43,10 +43,10 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="तीन तारीख वाले स्नैपशॉट में वही एक पेज, जो दिखाता है कि डिज़ाइन कैसे आगे बढ़ा" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="एक स्टोर का होम पेज, पहले ड्राफ़्ट से लेकर तैयार लेआउट तक, दस डिज़ाइन वर्ज़न में" width="820">
 </p>
 
-<p align="center"><i>एक ही शाम के रीडिज़ाइन के दौरान लिए गए तीन रन, उन्हीं तारीख वाले फ़ोल्डरों से दोबारा चलाकर दिखाए गए जिनमें stm ने उन्हें सहेजा था।</i></p>
+<p align="center"><i>एक ही पेज के दस वर्ज़न, क्रम में। तारीख़ वाले screenshots का फ़ोल्डर आख़िर में यही बन जाता है।</i></p>
 
 <h3 align="center">इनके साथ काम करता है</h3>
 
@@ -61,7 +61,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#इसे-अपने-ai-कोडिंग-एजेंट-में-इंस्टॉल-कीजिए"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#इसे-अपने-ai-कोडिंग-एजेंट-में-इंस्टॉल-कीजिए"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#इसे-अपने-ai-कोडिंग-एजेंट-में-इंस्टॉल-कीजिए"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#इसे-अपने-ai-कोडिंग-एजेंट-में-इंस्टॉल-कीजिए"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="70+ और एजेंट"></a>
+  <a href="#इसे-अपने-ai-कोडिंग-एजेंट-में-इंस्टॉल-कीजिए"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="70+ और एजेंट"></a>
 </p>
 
 <p align="center"><i>और उन लोगों के साथ भी जो इन्हें प्रॉम्प्ट करते हैं</i></p>
@@ -184,7 +184,7 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **कोई और** | `npx skills add mdsohaib/screenshot-time-machine` | 70+ एजेंट की सूची में से चुनिए |
+| **कोई और** | `npx skills add mdsohaib/screenshot-time-machine` | 76 एजेंट की पूरी सूची में से चुनिए |
 
 इनमें से किसी में भी `-g` जोड़ दीजिए, तो यह सिर्फ़ इस प्रोजेक्ट के बजाय हर प्रोजेक्ट के लिए इंस्टॉल हो जाएगा।
 
