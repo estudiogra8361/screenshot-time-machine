@@ -4,6 +4,15 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-08-15
+### Fixed
+- `npx skills add mdsohaib/screenshot-time-machine` installed nothing. The `description` in `skills/stm/SKILL.md` contained an unquoted `": "`, which YAML reads as a nested mapping, so the installer rejected the file and reported "No skills found". Reworded, and a test now fails if any frontmatter value can break the parser again.
+
+### Changed
+- README and artwork corrections found by a full audit against the code: the browser order (a cached Playwright build is used before system Chrome), the token estimates (measured with a tokenizer: about 200 tokens plus 90 per changed page), the stderr guarantee (the one-time browser download also writes there), and the `bad_args` JSON shape.
+- The page previews inside the README images are now real screenshots of a real site, including the four genuinely broken pages, instead of drawn placeholder boxes.
+- Wording that promised more than the tool does: the banner no longer says "diffed", and the artwork now says which screenshots changed rather than which pages actually changed.
+
 ## [0.1.0] - 2026-08-15
 ### Added
 - `stm`: find the app on localhost, discover pages (sitemap, then links), full-page screenshots into `screenshots/<app>_<timestamp>/`, every file named `<page>_<timestamp>.png`, plus a `fold/` viewport image per page.

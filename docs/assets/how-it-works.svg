@@ -110,7 +110,7 @@
 
   <!-- subtitles -->
   <g fill="#475569" font-size="13">
-    <text x="48" y="163">ports 3000 to 5000,</text>
+    <text x="48" y="163">10 common dev ports,</text>
     <text x="48" y="183">or <tspan font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12.5">--url</tspan></text>
 
     <text x="328" y="163">sitemap plus links,</text>

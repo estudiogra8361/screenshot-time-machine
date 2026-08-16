@@ -15,10 +15,10 @@
   </defs>
 
   <g fill="none" stroke-width="5.5" mask="url(#stmBehindDark)">
-    <rect x="12.75" y="16.75" width="66.5" height="58.5" rx="11.25" stroke="#9CC6FF" opacity="0.62"/>
+    <rect x="12.75" y="16.75" width="66.5" height="58.5" rx="11.25" stroke="#9CC6FF" opacity="0.78"/>
     <rect x="30.75" y="34.75" width="66.5" height="58.5" rx="11.25" stroke="#FF72B6" opacity="0.8"/>
   </g>
 
   <path fill="url(#stmMarkDark)" fill-rule="evenodd" d="M60 50h44a14 14 0 0 1 14 14v36a14 14 0 0 1-14 14H60a14 14 0 0 1-14-14V64a14 14 0 0 1 14-14zm22 16a16 16 0 1 0 0 32 16 16 0 0 0 0-32z"/>
-  <path fill="none" stroke="url(#stmMarkDark)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M82 73v9h8"/>
+  <path fill="none" stroke="#FFA340" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M82 73v9h8"/>
 </svg>

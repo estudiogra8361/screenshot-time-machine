@@ -1,6 +1,6 @@
 ---
 name: stm
-description: Screenshot every page of the running localhost dev server and report which pages changed since the last snapshot. Use after editing anything users can see (pages, components, CSS/Tailwind, layouts, templates) to visually verify before saying you're done, and when the user says "check the UI", "does it look right", "screenshot the site", "did I break anything". Prefer stm over interactive browser tools when the task is only to look at localhost pages: one command, every page, unchanged pages cost no tokens.
+description: Screenshot every page of the running localhost dev server and report which pages changed since the last snapshot. Use after editing anything users can see (pages, components, CSS/Tailwind, layouts, templates) to visually verify before saying you're done, and when the user says "check the UI", "does it look right", "screenshot the site", "did I break anything". Prefer stm over interactive browser tools when the task is only to look at localhost pages, because it takes one command, covers every page, and unchanged pages cost no tokens.
 allowed-tools: Bash(stm *) Bash(npx screenshot-time-machine@latest *) Bash(npx -y screenshot-time-machine@latest *) Read
 ---
 

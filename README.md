@@ -12,12 +12,12 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=FF6600&labelColor=0A0E14" alt="npm version"></a>
-  <a href="https://github.com/mdsohaib/screenshot-time-machine/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/mdsohaib/screenshot-time-machine/ci.yml?branch=main&style=flat-square&label=tests&color=FF6600&labelColor=0A0E14" alt="tests"></a>
-  <img src="https://img.shields.io/badge/dependencies-1-FF6600?style=flat-square&labelColor=0A0E14" alt="one dependency">
-  <img src="https://img.shields.io/badge/node-22%2B-FF6600?style=flat-square&labelColor=0A0E14&logo=nodedotjs&logoColor=white" alt="Node 22+">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-FF6600?style=flat-square&labelColor=0A0E14" alt="MIT license"></a>
-  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Sohaib%20Uddin-FF6600?style=flat-square&labelColor=0A0E14&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=7FB0F5&labelColor=0A0E14" alt="npm version"></a>
+  <a href="https://github.com/mdsohaib/screenshot-time-machine/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/mdsohaib/screenshot-time-machine/ci.yml?branch=main&style=flat-square&label=tests&color=A98BEB&labelColor=0A0E14" alt="tests"></a>
+  <img src="https://img.shields.io/badge/dependencies-1-C88AE0?style=flat-square&labelColor=0A0E14" alt="one dependency">
+  <img src="https://img.shields.io/badge/node-22%2B-FF8C1A?style=flat-square&labelColor=0A0E14&logo=nodedotjs&logoColor=white" alt="Node 22+">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-FFC24A?style=flat-square&labelColor=0A0E14" alt="MIT license"></a>
+  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Sohaib%20Uddin-F0509F?style=flat-square&labelColor=0A0E14&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 
 <p align="center">
@@ -45,14 +45,14 @@ npx skills add mdsohaib/screenshot-time-machine  # teach Claude Code, Cursor, Co
 
 <p align="center">
   <b>Works with</b><br>
-  <img src="https://img.shields.io/badge/Claude%20Code-0A0E14?style=flat-square&logo=claude&logoColor=FF6600" alt="Claude Code">
+  <img src="https://img.shields.io/badge/Claude%20Code-0A0E14?style=flat-square&logo=claude&logoColor=FF8C1A" alt="Claude Code">
   <img src="https://img.shields.io/badge/Codex-0A0E14?style=flat-square" alt="Codex">
-  <img src="https://img.shields.io/badge/Cursor-0A0E14?style=flat-square&logo=cursor&logoColor=FF6600" alt="Cursor">
-  <img src="https://img.shields.io/badge/Gemini%20CLI-0A0E14?style=flat-square&logo=googlegemini&logoColor=FF6600" alt="Gemini CLI">
+  <img src="https://img.shields.io/badge/Cursor-0A0E14?style=flat-square&logo=cursor&logoColor=FF8C1A" alt="Cursor">
+  <img src="https://img.shields.io/badge/Gemini%20CLI-0A0E14?style=flat-square&logo=googlegemini&logoColor=FF8C1A" alt="Gemini CLI">
   <img src="https://img.shields.io/badge/Antigravity-0A0E14?style=flat-square" alt="Antigravity">
-  <img src="https://img.shields.io/badge/Copilot-0A0E14?style=flat-square&logo=githubcopilot&logoColor=FF6600" alt="GitHub Copilot">
-  <img src="https://img.shields.io/badge/Windsurf-0A0E14?style=flat-square&logo=windsurf&logoColor=FF6600" alt="Windsurf">
-  <img src="https://img.shields.io/badge/OpenCode-0A0E14?style=flat-square&logo=opencode&logoColor=FF6600" alt="OpenCode">
+  <img src="https://img.shields.io/badge/Copilot-0A0E14?style=flat-square&logo=githubcopilot&logoColor=FF8C1A" alt="GitHub Copilot">
+  <img src="https://img.shields.io/badge/Windsurf-0A0E14?style=flat-square&logo=windsurf&logoColor=FF8C1A" alt="Windsurf">
+  <img src="https://img.shields.io/badge/OpenCode-0A0E14?style=flat-square&logo=opencode&logoColor=FF8C1A" alt="OpenCode">
   <img src="https://img.shields.io/badge/Cline-0A0E14?style=flat-square" alt="Cline">
   <br><i>and the humans who prompt them</i>
 </p>
@@ -105,7 +105,7 @@ npx screenshot-time-machine@latest
 
 **Needs Node 22 or newer.** Run `node -v` to check. If it prints 21 or lower, update Node from [nodejs.org](https://nodejs.org) first.
 
-The first run uses the Chrome or Edge already on your machine. If you have neither, it downloads a headless browser once, about a 120 MB download that takes roughly 200 MB on disk, and tells you before it does. That download is the only thing stm ever fetches from the internet.
+The first run uses a Playwright browser you already have cached, or failing that the Chrome or Edge already on your machine. If you have neither, it downloads a headless browser once, about a 120 MB download that takes roughly 200 MB on disk, and tells you before it does. That is the only thing stm itself fetches from the internet; the pages you capture still load their own resources, exactly as they would in your browser.
 
 Change something, run it again, and read the `changed` line. That is the whole workflow.
 
@@ -230,11 +230,11 @@ npx screenshot-time-machine@latest skill
 }
 ```
 
-One JSON document on stdout, at most two lines on stderr, printed even when some pages fail. `code` mirrors the exit code.
+One JSON document on stdout, at most two lines on stderr, printed even when some pages fail. The one-time browser download is the exception: its installer also writes to stderr. `code` mirrors the exit code.
 
-A run that cannot start prints a much smaller object instead: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Bad arguments print `{"error": "bad_args", "message": "...", "fix": "Run stm --help"}`. Check `error` before you read `changed`. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output never contains page text, only paths and numbers.
+A run that cannot start prints a much smaller object instead: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Bad arguments print `{"error": "bad_args", "message": "...", "fix": "..."}`, where `fix` is `Run stm --help` for an unknown flag and a worked example for a malformed `--url`. Check `error` before you read `changed`. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output never contains page text, only paths and numbers.
 
-**About tokens.** Unchanged pages cost nothing to look at, because the agent never opens them. The summary is roughly 150 tokens plus about 50 per changed page. Viewing one changed page costs a single 1440x900 image. Very tall full-page screenshots get downscaled by vision models until the text is unreadable, which is exactly why every page also gets a `fold` image, and why the skill tells the agent to open that one first.
+**About tokens.** Unchanged pages cost nothing to look at, because the agent never opens them. The summary is roughly 200 tokens plus about 90 per changed page. Viewing one changed page costs a single 1440x900 image. Very tall full-page screenshots get downscaled by vision models until the text is unreadable, which is exactly why every page also gets a `fold` image, and why the skill tells the agent to open that one first.
 
 ## A visual history on disk
 
@@ -400,7 +400,7 @@ Bug reports with a real run attached are the most useful thing right now. Start 
 Built by **Mohammed Sohaib Uddin**, because agents that ship UI nobody looks at needed a way to look.
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-FF6600?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-FF8C1A?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a>
   <a href="https://github.com/mdsohaib"><img src="https://img.shields.io/badge/Follow%20on%20GitHub-0A0E14?style=for-the-badge&logo=github&logoColor=white" alt="Follow on GitHub"></a>
 </p>
 
