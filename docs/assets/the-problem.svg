@@ -2,6 +2,23 @@
   <title>Your AI edited 12 pages. You looked at one.</title>
 
   <defs>
+    <!-- the brand sweep, held very faint so the cards stay the subject -->
+    <linearGradient id="panelWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FB0F5" stop-opacity="0.10"/>
+      <stop offset="0.19" stop-color="#A98BEB" stop-opacity="0.10"/>
+      <stop offset="0.36" stop-color="#C88AE0" stop-opacity="0.11"/>
+      <stop offset="0.60" stop-color="#FF8C1A" stop-opacity="0.16"/>
+      <stop offset="0.81" stop-color="#FFC24A" stop-opacity="0.17"/>
+      <stop offset="1" stop-color="#F0509F" stop-opacity="0.11"/>
+    </linearGradient>
+
+    <linearGradient id="ruleTint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C88AE0" stop-opacity="0.30"/>
+      <stop offset="0.42" stop-color="#FF8C1A" stop-opacity="0.42"/>
+      <stop offset="0.72" stop-color="#FFC24A" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#F0509F" stop-opacity="0.26"/>
+    </linearGradient>
+
     <!-- healthy page layouts, drawn at the card origin -->
     <g id="pA" fill="#94A3B8">
       <rect x="14" y="14" width="199" height="9" rx="4.5" fill-opacity="0.60"/>
@@ -43,8 +60,9 @@
     </g>
   </defs>
 
-  <!-- warm surface -->
+  <!-- warm surface, with a soft prism wash across it -->
   <rect x="0" y="0" width="1600" height="520" rx="24" fill="#FFF7ED"/>
+  <rect x="0" y="0" width="1600" height="520" rx="24" fill="url(#panelWash)"/>
 
   <!-- ============ row 1 ============ -->
   <!-- col 1, healthy -->
@@ -56,14 +74,14 @@
   <use href="#pC" x="313" y="54"/>
 
   <!-- col 3, broken: a block is missing -->
-  <rect x="562" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <rect x="562" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF8C1A" stroke-width="2"/>
   <g fill="#94A3B8">
     <rect x="576" y="68" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
     <rect x="576" y="85" width="199" height="34" rx="6" fill="none" stroke="#94A3B8" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 5"/>
     <rect x="576" y="129" width="140" height="7" rx="3.5" fill-opacity="0.32"/>
     <rect x="576" y="142" width="98" height="7" rx="3.5" fill-opacity="0.32"/>
   </g>
-  <circle cx="773" cy="76" r="5" fill="#FF6600"/>
+  <circle cx="773" cy="76" r="5" fill="#FF8C1A"/>
 
   <!-- col 4, healthy -->
   <rect x="811" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
@@ -74,7 +92,7 @@
   <use href="#pD" x="1060" y="54"/>
 
   <!-- col 6, broken: content overflows the page -->
-  <rect x="1309" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <rect x="1309" y="54" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF8C1A" stroke-width="2"/>
   <g fill="#94A3B8">
     <rect x="1323" y="68" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
     <rect x="1323" y="85" width="199" height="28" rx="6" fill-opacity="0.20"/>
@@ -82,7 +100,7 @@
     <rect x="1323" y="140" width="150" height="7" rx="3.5" fill-opacity="0.32"/>
     <rect x="1323" y="153" width="98" height="7" rx="3.5" fill-opacity="0.32"/>
   </g>
-  <circle cx="1520" cy="76" r="5" fill="#FF6600"/>
+  <circle cx="1520" cy="76" r="5" fill="#FF8C1A"/>
 
   <!-- ============ row 2 ============ -->
   <!-- col 1, the one page you opened -->
@@ -90,7 +108,7 @@
   <use href="#pA" x="64" y="192"/>
 
   <!-- col 2, broken: a column slipped out of line -->
-  <rect x="313" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <rect x="313" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF8C1A" stroke-width="2"/>
   <g fill="#94A3B8">
     <rect x="327" y="206" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
     <rect x="327" y="223" width="61" height="46" rx="5" fill-opacity="0.20"/>
@@ -99,7 +117,7 @@
     <rect x="327" y="280" width="104" height="7" rx="3.5" fill-opacity="0.32"/>
     <rect x="327" y="293" width="72" height="7" rx="3.5" fill-opacity="0.32"/>
   </g>
-  <circle cx="524" cy="214" r="5" fill="#FF6600"/>
+  <circle cx="524" cy="214" r="5" fill="#FF8C1A"/>
 
   <!-- col 3, healthy -->
   <rect x="562" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
@@ -110,14 +128,14 @@
   <use href="#pC" x="811" y="192"/>
 
   <!-- col 5, broken: the second column dropped -->
-  <rect x="1060" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF6600" stroke-width="2"/>
+  <rect x="1060" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#FF8C1A" stroke-width="2"/>
   <g fill="#94A3B8">
     <rect x="1074" y="206" width="170" height="9" rx="4.5" fill-opacity="0.60"/>
     <rect x="1074" y="223" width="92" height="60" rx="6" fill-opacity="0.20"/>
     <rect x="1150" y="241" width="96" height="60" rx="6" fill-opacity="0.34"/>
     <rect x="1074" y="290" width="64" height="7" rx="3.5" fill-opacity="0.32"/>
   </g>
-  <circle cx="1271" cy="214" r="5" fill="#FF6600"/>
+  <circle cx="1271" cy="214" r="5" fill="#FF8C1A"/>
 
   <!-- col 6, healthy -->
   <rect x="1309" y="192" width="227" height="118" rx="12" fill="#FFFFFF" stroke="#E9EDF2" stroke-width="1"/>
@@ -127,14 +145,14 @@
   <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569">
     <circle cx="70" cy="328" r="4" fill="#3DD68C"/>
     <text x="84" y="332">you looked here</text>
-    <circle cx="1066" cy="328" r="4" fill="#FF6600"/>
+    <circle cx="1066" cy="328" r="4" fill="#FF8C1A"/>
     <text x="1080" y="332">4 of them came back broken</text>
   </g>
 
-  <line x1="64" y1="372" x2="1536" y2="372" stroke="#FFEDD9" stroke-width="1.5"/>
+  <line x1="64" y1="372" x2="1536" y2="372" stroke="url(#ruleTint)" stroke-width="1.5"/>
 
   <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
     <text x="64" y="424" font-size="34" font-weight="700" fill="#0F172A">Your AI edited 12 pages. You looked at one.</text>
-    <text x="64" y="460" font-size="18" fill="#475569">stm looks at all of them, then tells you which ones actually changed.</text>
+    <text x="64" y="460" font-size="18" fill="#475569">stm screenshots all of them, then tells you which ones look different from last time.</text>
   </g>
 </svg>

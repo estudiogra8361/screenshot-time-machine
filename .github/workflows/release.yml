@@ -54,8 +54,12 @@ jobs:
         env: { GH_TOKEN: '${{ github.token }}' }
         run: |
           node -e '
+            // Take the first "## [x.y.z]" section, skipping "## [Unreleased]".
+            // Splitting beats a regex here: a multiline $ terminator matches the
+            // end of the first line and silently truncates the notes.
             const md = require("fs").readFileSync("CHANGELOG.md", "utf8");
-            const m = md.match(/^## \[(?!Unreleased)[^\]]+\][^\n]*\n([\s\S]*?)(?=^## \[|\s*$)/m);
-            require("fs").writeFileSync("/tmp/notes.md", (m ? m[1] : "").trim() || "See CHANGELOG.md");
+            const section = md.split(/^## /m).find((s) => /^\[(?!Unreleased)/.test(s));
+            const notes = section ? section.split("\n").slice(1).join("\n").trim() : "";
+            require("fs").writeFileSync("/tmp/notes.md", notes || "See CHANGELOG.md");
           '
           gh release create "$GITHUB_REF_NAME" --verify-tag --title "$GITHUB_REF_NAME" --notes-file /tmp/notes.md

@@ -3,16 +3,42 @@
   <desc>Five steps in a row: detect the app, discover its pages, capture screenshots, compare hashes, report what changed.</desc>
 
   <defs>
-    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="252" y1="140" x2="1148" y2="140">
-      <stop offset="0" stop-color="#FF6600"/>
-      <stop offset="1" stop-color="#FF9A1F"/>
+    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="252" y1="140" x2="1180" y2="140">
+      <stop offset="0" stop-color="#7FB0F5"/>
+      <stop offset="0.1" stop-color="#A98BEB"/>
+      <stop offset="0.2" stop-color="#C88AE0"/>
+      <stop offset="0.34" stop-color="#FF8C1A"/>
+      <stop offset="0.66" stop-color="#FFC24A"/>
+      <stop offset="1" stop-color="#F0509F"/>
     </linearGradient>
 
-    <radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="700" cy="140" r="620" gradientTransform="matrix(1 0 0 0.34 0 92.4)">
-      <stop offset="0" stop-color="#FF8A18" stop-opacity="0.11"/>
-      <stop offset="0.45" stop-color="#FF9A1F" stop-opacity="0.055"/>
-      <stop offset="1" stop-color="#FFC46B" stop-opacity="0"/>
+    <linearGradient id="dots" gradientUnits="userSpaceOnUse" x1="40" y1="93" x2="1185" y2="93">
+      <stop offset="0" stop-color="#7FB0F5"/>
+      <stop offset="0.13" stop-color="#A98BEB"/>
+      <stop offset="0.25" stop-color="#C88AE0"/>
+      <stop offset="0.5" stop-color="#FF8C1A"/>
+      <stop offset="0.74" stop-color="#FFC24A"/>
+      <stop offset="1" stop-color="#F0509F"/>
+    </linearGradient>
+
+    <linearGradient id="hazeHue" gradientUnits="userSpaceOnUse" x1="90" y1="140" x2="1310" y2="140">
+      <stop offset="0" stop-color="#7FB0F5" stop-opacity="0.1"/>
+      <stop offset="0.18" stop-color="#A98BEB" stop-opacity="0.1"/>
+      <stop offset="0.32" stop-color="#C88AE0" stop-opacity="0.1"/>
+      <stop offset="0.5" stop-color="#FF8C1A" stop-opacity="0.15"/>
+      <stop offset="0.72" stop-color="#FFC24A" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#F0509F" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <radialGradient id="hazeFade" gradientUnits="userSpaceOnUse" cx="700" cy="140" r="620" gradientTransform="matrix(1 0 0 0.34 0 92.4)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </radialGradient>
+
+    <mask id="hazeMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1400" height="280">
+      <rect x="0" y="0" width="1400" height="280" fill="url(#hazeFade)"/>
+    </mask>
 
     <filter id="cardShadow" x="-6%" y="-16%" width="112%" height="140%">
       <feDropShadow dx="0" dy="3" stdDeviation="4.5" flood-color="#0F172A" flood-opacity="0.07"/>
@@ -26,7 +52,7 @@
   <!-- panel -->
   <rect x="0" y="0" width="1400" height="280" rx="20" fill="#FFFFFF"/>
   <g clip-path="url(#panelClip)">
-    <rect x="0" y="0" width="1400" height="280" fill="url(#glow)"/>
+    <rect x="0" y="0" width="1400" height="280" fill="url(#hazeHue)" mask="url(#hazeMask)"/>
   </g>
   <rect x="0.5" y="0.5" width="1399" height="279" rx="19.5" fill="none" stroke="#E9EDF2" stroke-width="1"/>
 
@@ -58,14 +84,14 @@
   </g>
 
   <!-- step numbers -->
-  <g fill="#FF6600">
+  <g fill="url(#dots)">
     <circle cx="51" cy="93" r="3.5"/>
     <circle cx="331" cy="93" r="3.5"/>
     <circle cx="611" cy="93" r="3.5"/>
     <circle cx="891" cy="93" r="3.5"/>
     <circle cx="1171" cy="93" r="3.5"/>
   </g>
-  <g fill="#FF6600" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="0.08em">
+  <g fill="#FF8C1A" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.08em">
     <text x="62" y="97">01</text>
     <text x="342" y="97">02</text>
     <text x="622" y="97">03</text>

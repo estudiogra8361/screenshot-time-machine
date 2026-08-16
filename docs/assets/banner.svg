@@ -9,28 +9,46 @@
     </clipPath>
 
     <radialGradient id="stmGlow">
-      <stop offset="0" stop-color="#FF6600" stop-opacity="0.34"/>
-      <stop offset="0.45" stop-color="#FF6600" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="#FF6600" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FF8C1A" stop-opacity="0.36"/>
+      <stop offset="0.26" stop-color="#FF8C1A" stop-opacity="0.24"/>
+      <stop offset="0.42" stop-color="#FFC24A" stop-opacity="0.16"/>
+      <stop offset="0.58" stop-color="#F0509F" stop-opacity="0.15"/>
+      <stop offset="0.74" stop-color="#C88AE0" stop-opacity="0.11"/>
+      <stop offset="0.88" stop-color="#7FB0F5" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#7FB0F5" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="stmGlowWarm">
-      <stop offset="0" stop-color="#FF9A1F" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#FF9A1F" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFC24A" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#FF8C1A" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FF8C1A" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="stmSheen" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.055"/>
-      <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0.012"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.28" stop-color="#A98BEB" stop-opacity="0.035"/>
+      <stop offset="0.55" stop-color="#C88AE0" stop-opacity="0.018"/>
+      <stop offset="1" stop-color="#FFC24A" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="stmEdge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFC46B"/>
-      <stop offset="0.38" stop-color="#FF9A1F"/>
-      <stop offset="1" stop-color="#F04E23"/>
+      <stop offset="0" stop-color="#7FB0F5"/>
+      <stop offset="0.2" stop-color="#A98BEB"/>
+      <stop offset="0.36" stop-color="#C88AE0"/>
+      <stop offset="0.58" stop-color="#FF8C1A"/>
+      <stop offset="0.78" stop-color="#FFC24A"/>
+      <stop offset="1" stop-color="#F0509F"/>
     </linearGradient>
     <linearGradient id="stmRule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F04E23"/>
-      <stop offset="0.4" stop-color="#FF9A1F"/>
-      <stop offset="1" stop-color="#FF9A1F" stop-opacity="0"/>
+      <stop offset="0" stop-color="#7FB0F5"/>
+      <stop offset="0.24" stop-color="#A98BEB"/>
+      <stop offset="0.5" stop-color="#FF8C1A"/>
+      <stop offset="0.72" stop-color="#FFC24A"/>
+      <stop offset="0.9" stop-color="#F0509F"/>
+      <stop offset="1" stop-color="#F0509F" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stmDash" gradientUnits="userSpaceOnUse" x1="88" y1="0" x2="828" y2="0">
+      <stop offset="0" stop-color="#7FB0F5"/>
+      <stop offset="0.42" stop-color="#A98BEB"/>
+      <stop offset="0.68" stop-color="#D46FC0"/>
+      <stop offset="1" stop-color="#F0509F"/>
     </linearGradient>
     <linearGradient id="stmScreen" x1="0" y1="0" x2="0.55" y2="1">
       <stop offset="0" stop-color="#141C27"/>
@@ -110,29 +128,29 @@
 
       <!-- the one element that changed -->
       <rect x="1370" y="264" width="124" height="88" rx="12" fill="#1A212C"/>
-      <rect x="1370" y="264" width="124" height="88" rx="12" fill="#FF6600" opacity="0.07"/>
-      <rect x="1370.75" y="264.75" width="122.5" height="86.5" rx="11.25" fill="none" stroke="url(#stmEdge)" stroke-width="1.5"/>
-      <rect x="1386" y="280" width="22" height="22" rx="7" fill="#FF6600" opacity="0.55"/>
-      <g fill="#FFC46B">
-        <rect x="1386" y="316" width="68" height="7" rx="3.5" opacity="0.55"/>
-        <rect x="1386" y="331" width="44" height="7" rx="3.5" opacity="0.34"/>
+      <rect x="1370" y="264" width="124" height="88" rx="12" fill="#FF8C1A" opacity="0.08"/>
+      <rect x="1370.75" y="264.75" width="122.5" height="86.5" rx="11.25" fill="none" stroke="#FF8C1A" stroke-width="1.5"/>
+      <rect x="1386" y="280" width="22" height="22" rx="7" fill="#FF8C1A" opacity="0.6"/>
+      <g fill="#FFC24A">
+        <rect x="1386" y="316" width="68" height="7" rx="3.5" opacity="0.6"/>
+        <rect x="1386" y="331" width="44" height="7" rx="3.5" opacity="0.36"/>
       </g>
 
       <rect x="1082" y="370" width="412" height="10" rx="5" fill="#8A97A8" opacity="0.16"/>
     </g>
-    <circle cx="1494" cy="264" r="17" fill="#FF6600" opacity="0.2"/>
-    <circle cx="1494" cy="264" r="8" fill="#FF6600"/>
+    <circle cx="1494" cy="264" r="17" fill="#FF8C1A" opacity="0.2"/>
+    <circle cx="1494" cy="264" r="8" fill="#FF8C1A"/>
     <rect x="1058.75" y="116.75" width="458.5" height="282.5" rx="15.25" fill="none" stroke="url(#stmEdge)" stroke-width="1.5"/>
 
     <!-- wordmark block -->
-    <text x="88" y="152" textLength="740" lengthAdjust="spacingAndGlyphs" font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">screenshot<tspan fill="#FF6600">-</tspan>time<tspan fill="#FF6600">-</tspan>machine</text>
+    <text x="88" y="152" textLength="740" lengthAdjust="spacingAndGlyphs" font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">screenshot<tspan fill="url(#stmDash)">-</tspan>time<tspan fill="url(#stmDash)">-</tspan>machine</text>
     <rect x="88" y="182" width="264" height="3" rx="1.5" fill="url(#stmRule)"/>
     <g font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="24" fill="#8A97A8">
       <text x="88" y="226">Every page of your localhost app.</text>
       <text x="88" y="258">Screenshotted, dated, and diffed. One command.</text>
     </g>
     <rect x="88.5" y="298.5" width="457" height="55" rx="14" fill="#131A24" stroke="#232C3A" stroke-width="1"/>
-    <text x="112" y="333" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="20" fill="#FFC46B">npx screenshot-time-machine@latest</text>
+    <text x="112" y="333" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="20" fill="#FFC24A">npx screenshot-time-machine@latest</text>
 
     <rect x="0.75" y="0.75" width="1598.5" height="458.5" rx="19.25" fill="none" stroke="#232C3A" stroke-width="1.5"/>
   </g>
