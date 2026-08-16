@@ -358,8 +358,15 @@ function settlePage() {
     } catch {
       // a page can break or override this API; the screenshot still happens
     }
-    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    // Return to the top BEFORE waiting for paint. Doing it the other way round
+    // means the final scroll never gets a paint cycle, so sticky headers and
+    // scroll-linked effects can be captured mid-settle.
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    // A loaded machine can still be compositing after two frames. This is the
+    // difference between a trustworthy "0 changed" and an occasional false one.
+    await new Promise((r) => setTimeout(r, 120));
+    await new Promise((r) => requestAnimationFrame(r));
     return {
       width: document.documentElement.scrollWidth,
       height: document.documentElement.scrollHeight,

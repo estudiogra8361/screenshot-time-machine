@@ -4,9 +4,9 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
-## [0.1.2] - 2026-08-15
+## [0.1.3] - 2026-08-15
 ### Fixed
-- A page could be reported as changed when nothing about it had changed. The capture waited for images but not for webfonts, so a page could render with a fallback font on one run and the real font on the next. Caught by the macOS CI job, which reported `/p/4` as changed between two identical runs. The capture now waits for `document.fonts.ready` (up to 3 seconds) before screenshotting.
+- A page could be reported as changed when nothing about it had changed, on a busy machine. Two causes, both in the settle step before the screenshot. It waited for images but not for webfonts, so a page could render with a fallback font on one run and the real font on the next. And it scrolled back to the top after waiting for paint rather than before, so that final scroll never got a paint cycle. Caught by the macOS CI job, which reported a different unchanged page on each run. The capture now waits for `document.fonts.ready`, scrolls to the top first, then waits for two frames, a short settle and one more frame.
 
 ### Changed
 - The README no longer claims to show what changed inside a page. stm names the pages that changed and hands you the files; there is no visual diff, and that limit is now stated where the mechanism is explained.
