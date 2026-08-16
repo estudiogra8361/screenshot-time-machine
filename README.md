@@ -2,8 +2,11 @@
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/banner.svg" alt="screenshot-time-machine: every page of your localhost app, screenshotted, dated and diffed, in one command" width="100%">
 </p>
 
+<h1 align="center">screenshot-time-machine</h1>
+
 <p align="center">
-  <b>Take a full-page screenshot of every page of your website with one command.</b><br>
+  <b>Full-page screenshot CLI: screenshot every page of your localhost website with one command.</b><br>
+  Take a full-page screenshot of every page of the app you are building, in one go.<br>
   Saved in dated folders. Next time you run it, it tells you exactly which pages changed.<br>
   <b>Free and open source. Runs entirely on your own machine.</b>
 </p>
@@ -61,8 +64,8 @@ npx skills add mdsohaib/screenshot-time-machine  # teach Claude Code, Cursor, Co
 `stm` is a free, open-source command-line tool. You run it while your website is running on your computer. It:
 
 1. **Finds your site** on localhost automatically, or wherever you point it with `--url`.
-2. **Finds every page** from your sitemap and your links.
-3. **Screenshots each page in full**, top to bottom, plus a top-of-page view that is quick to read.
+2. **Finds your pages** by following the `<a href>` links on them, and by reading your `sitemap.xml` if you have one, up to 100 pages per run. Pages reached only by a button click, and hash routes like `/#/about`, cannot be followed. Name those yourself: `stm /about /pricing`.
+3. **Screenshots each page in full**, top to bottom, plus a second image of just the top of the page, the part that fits on one screen. That second one is called the `fold` image, and it is the one to look at first.
 4. **Saves them as ordinary PNG files** in a folder named after the date and time.
 5. **Compares with last time** and tells you exactly which pages changed.
 
@@ -100,28 +103,26 @@ Your app needs to be running on localhost (`npm run dev`, `rails s`, `python man
 npx screenshot-time-machine@latest
 ```
 
+**Needs Node 22 or newer.** Run `node -v` to check. If it prints 21 or lower, update Node from [nodejs.org](https://nodejs.org) first.
+
+The first run uses the Chrome or Edge already on your machine. If you have neither, it downloads a browser once, about 120 MB, and tells you before it does. That download is the only thing stm ever fetches from the internet.
+
 Change something, run it again, and read the `changed` line. That is the whole workflow.
 
-<details>
-<summary><b>Install it once, run it as <code>stm</code></b></summary>
+Everything below this point writes the command as `stm` for short. To get that short name, install it once:
 
 ```bash
 npm install -g screenshot-time-machine
-stm
 ```
 
-Always write `npx screenshot-time-machine@latest`, never `npx stm`. The npm name `stm` belongs to an unrelated package from 2014.
-</details>
+Not installing is fine. Write `npx screenshot-time-machine@latest` wherever you see `stm`. Never write `npx stm`: that is an unrelated package from 2014.
 
 <details>
-<summary><b>What happens on the first run</b></summary>
+<summary><b>What else happens on the first run</b></summary>
 
 - `stm` probes ports 3000, 3001, 5173, 5174, 8080, 4321, 4322, 8000, 4200 and 5000, in that order, and uses the first app that answers. If several answer, it prefers the one this project used last time and tells you about the others.
-- It uses a Playwright browser you already have, or the Chrome or Edge on your machine. If none is found, it downloads a headless Chrome once (about 120 MB) and says so.
 - If your project has a `.gitignore`, it adds `screenshots/` to it once and tells you. It never creates a `.gitignore`, and it never deletes anything.
 </details>
-
-**Requirements:** Node 22 or newer. If you run `npm run dev` you almost certainly have it. Not sure? `node -v`.
 
 ## Install it in your AI coding agent
 
@@ -129,7 +130,7 @@ Always write `npx screenshot-time-machine@latest`, never `npx stm`. The npm name
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/agent-loop.svg" alt="The loop: the agent edits UI, runs stm --json, gets the changed list, views the fold images, fixes and runs again" width="820">
 </p>
 
-One command installs `stm` as a skill, so the agent knows when to run it and how to read the result. Pick your agent:
+One command installs `stm` as a skill: a short instruction file your agent reads, so it knows when to run `stm` and how to read the result. `npx skills add` is a separate open-source installer that copies that one folder into your project and changes nothing else. Pick your agent:
 
 | Agent | Command | Skill lands in |
 |---|---|---|
@@ -150,11 +151,23 @@ Or just tell your agent, in plain words:
 
 > Install screenshot-time-machine, run `stm` on my app, and show me what changed.
 
-Then add one line to the memory file your agent reads (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.cursor/rules`), so it verifies its own work without being asked:
+Then add one line to the file your agent reads on every request, so it verifies its own work without being asked:
 
 ```
-After changing anything a user can see, run `stm --json` and view the `fold` image of every entry in `changed` and `new` before saying you're done. Never claim a UI change is verified without viewing a screenshot.
+After changing anything a user can see, run `stm --json` (or `npx -y screenshot-time-machine@latest --json` if `stm` is not installed) and view the `fold` image of every entry in `changed` and `new` before saying you're done. On the very first snapshot both lists are empty, so view the fold images of the pages you edited instead. Never claim a UI change is verified without viewing a screenshot.
 ```
+
+Where that line goes, by agent:
+
+| Agent | File |
+|---|---|
+| Claude Code | `CLAUDE.md` |
+| Codex, Antigravity, OpenCode | `AGENTS.md` |
+| Gemini CLI | `GEMINI.md` |
+| Cursor | `.cursor/rules/stm.mdc`, starting with `---`, then `alwaysApply: true`, then `---` |
+| GitHub Copilot | `.github/copilot-instructions.md` |
+| Windsurf | `.windsurf/rules/stm.md` |
+| Cline | `.clinerules/stm.md` |
 
 <details>
 <summary><b>Claude Code: plugin install, and how the loop feels</b></summary>
@@ -186,10 +199,10 @@ Put the memory line in a rule under `.cursor/rules/`. The agent runs `stm --json
 <details>
 <summary><b>Any agent, no skills support</b></summary>
 
-`stm skill` prints the skill text. Paste it into whatever instruction file your agent reads.
+`stm skill` prints the skill text. Paste it into whatever instruction file your agent reads. This works without installing anything:
 
 ```bash
-stm skill
+npx screenshot-time-machine@latest skill
 ```
 </details>
 
@@ -217,7 +230,9 @@ stm skill
 }
 ```
 
-One JSON document on stdout, at most two lines on stderr, printed even when some pages fail. `code` mirrors the exit code. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output never contains page text, only paths and numbers.
+One JSON document on stdout, at most two lines on stderr, printed even when some pages fail. `code` mirrors the exit code.
+
+A run that cannot start prints a much smaller object instead: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Bad arguments print `{"error": "bad_args", "message": "...", "fix": "Run stm --help"}`. Check `error` before you read `changed`. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output never contains page text, only paths and numbers.
 
 **About tokens.** Unchanged pages cost nothing to look at, because the agent never opens them. The summary is roughly 150 tokens plus about 50 per changed page. Viewing one changed page costs a single 1440x900 image. Very tall full-page screenshots get downscaled by vision models until the text is unreadable, which is exactly why every page also gets a `fold` image, and why the skill tells the agent to open that one first.
 
@@ -265,13 +280,13 @@ Exit codes: `0` everything captured, `1` nothing captured (no app, no browser, b
 The details that make the screenshots trustworthy:
 
 - Pages are scrolled to the bottom before capture so lazy images and lazy sections load, then scrolled back. Smooth-scroll sites are handled.
-- Animations are frozen at their end state, so fade-ins are visible and spinners hold still. Two runs on the same machine produce byte-identical PNGs, which is what makes "changed" mean something.
+- Animations are frozen at their end state, so fade-ins are visible and spinners hold still. Two runs on the same machine produce byte-identical PNGs of a page whose content did not change, which is what makes "changed" mean something. A page showing a clock, a relative time, a rotating hero image or a canvas animation will always report as changed.
 - Dev toolbars (Astro, Nuxt, the Next.js badge) are hidden. Dev **error** overlays never are: the page is captured as it is and flagged with a warning, because a broken page is exactly what you want to see.
 - Long-lived connections (HMR sockets, event streams) never stall a capture. Each page gets a 30 second budget and one retry, then it is recorded as failed and the run moves on.
 - The manifest is written after every page, so an interrupted run still leaves a folder `stm list` can read, and the summary says it stopped early.
 - Links to `/logout`, `/delete` and friends are never followed. Neither are files, `/api/`, other origins, or your own `screenshots/` folder.
 
-## How it compares
+## How it compares to visual regression tools
 
 | | stm | Claude Code Desktop auto-verify | Playwright MCP, agent-browser, DevTools MCP | Percy, Chromatic |
 |---|---|---|---|---|
@@ -281,7 +296,7 @@ The details that make the screenshots trustworthy:
 | History on disk you can browse | yes | no | no | in their cloud |
 | Runs entirely on your machine | yes | yes | yes | no |
 
-These are complementary, not rivals. Use a browser tool when your agent needs to click around. Use `stm` when it needs to see everything it just touched.
+`stm` is the free, local half of visual regression testing: it tells you which pages changed and hands you the pixels, with no CI pipeline, no account and no monthly bill. These tools are complementary, not rivals. Use a browser tool when your agent needs to click around. Use `stm` when it needs to see everything it just touched.
 
 ## Privacy
 
