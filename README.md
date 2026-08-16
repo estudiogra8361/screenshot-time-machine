@@ -1,14 +1,17 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/banner.svg" alt="screenshot-time-machine: every page of your localhost app, screenshotted, dated and diffed, in one command" width="100%">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/banner.svg" alt="screenshot-time-machine: a full-page screenshot of every page of your website, in one command" width="100%">
 </p>
 
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>Full-page screenshot CLI: screenshot every page of your localhost website with one command.</b><br>
-  Take a full-page screenshot of every page of the app you are building, in one go.<br>
-  Saved in dated folders. Next time you run it, it tells you exactly which pages changed.<br>
-  <b>Free and open source. Runs entirely on your own machine.</b>
+  <b>Screenshot every page of your website with one command.</b><br>
+  <code>stm</code> walks your site page by page and saves a full-page screenshot<br>
+  of every one into a folder stamped with the date and time.<br>
+  Point it at any URL, or let it find the app you have running on localhost.<br>
+  Run it whenever you ship something and a visual history builds itself:<br>
+  every page, every version, on your own disk, as plain PNGs.<br>
+  <b>Free and open source. Runs entirely on your machine.</b>
 </p>
 
 <p align="center">
@@ -32,73 +35,113 @@
 </p>
 
 ```bash
-npx screenshot-time-machine@latest               # your app is on localhost? that is the whole setup
-npx skills add mdsohaib/screenshot-time-machine  # teach Claude Code, Cursor, Codex and friends to run it
+npx screenshot-time-machine@latest                              # the app you have running on localhost
+npx screenshot-time-machine@latest --url https://your-site.com  # or any site you are allowed to capture
+npx skills add mdsohaib/screenshot-time-machine                 # teach Claude Code, Cursor, Codex and friends to run it
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/hero.svg" alt="stm reporting one changed page in the terminal, next to a folder of dated snapshots" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="The same page across three dated snapshots, replaying how the design evolved" width="820">
 </p>
 
+<p align="center"><i>Three runs during one evening's redesign, replayed from the dated folders stm saved them in.</i></p>
+
+<h3 align="center">Works with</h3>
+
 <p align="center">
-  <b>Works with</b><br>
-  Claude Code · Codex · Cursor · Gemini CLI · Antigravity · GitHub Copilot · Windsurf · OpenCode · Cline<br>
-  <i>and the humans who prompt them</i>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Claude%20Code-FF8C1A?style=for-the-badge&logo=claude&logoColor=white" alt="Claude Code"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Codex-0A0E14?style=for-the-badge&logo=openai&logoColor=white" alt="Codex"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Cursor-7FB0F5?style=for-the-badge&logo=cursor&logoColor=0A0E14" alt="Cursor"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Gemini%20CLI-A98BEB?style=for-the-badge&logo=googlegemini&logoColor=0A0E14" alt="Gemini CLI"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Antigravity-C88AE0?style=for-the-badge&logo=google&logoColor=0A0E14" alt="Antigravity"></a>
+  <br>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/GitHub%20Copilot-F0509F?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
+  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/70%2B%20more-5A6478?style=for-the-badge" alt="70+ more agents"></a>
 </p>
+
+<p align="center"><i>and the humans who prompt them</i></p>
 
 ---
 
-## What it is
+## The one command
 
-`stm` is a free, open-source command-line tool. You run it while your website is running on your computer. It:
-
-1. **Finds your site** on localhost automatically, or wherever you point it with `--url`.
-2. **Finds your pages** by following the `<a href>` links on them, and by reading your `sitemap.xml` if you have one, up to 100 pages per run. Pages reached only by a button click, and hash routes like `/#/about`, cannot be followed. Name those yourself: `stm /about /pricing`.
-3. **Screenshots each page in full**, top to bottom, plus a second image of just the top of the page, the part that fits on one screen. That second one is called the `fold` image, and it is the one to look at first.
-4. **Saves them as ordinary PNG files** in a folder named after the date and time.
-5. **Compares with last time** and tells you exactly which pages changed.
+You are building. Your app is running on localhost. You type three letters:
 
 ```
 $ stm
 7 pages saved → screenshots/localhost-3000_2026-08-15_14-32/
-   1 changed since last snapshot (Aug 12, 09:10): /pricing
+   Run stm again after your next change to see which pages look different.
 ```
 
-No account. No cloud. No subscription. No config file. No background process. One dependency, MIT licensed, yours forever.
+Seven full-page screenshots, top to bottom, are now sitting in a dated folder next to your code. Open it in Finder or Explorer and your entire site is right there as a contact sheet: home, pricing, about, every product page, the whole thing, exactly as it looks today.
 
-## The problem it solves
+Already live? Point it at the real thing and it works the same way, reading your `sitemap.xml` to find the pages:
+
+```
+$ stm --url https://your-site.com
+24 pages saved → screenshots/your-site-com_2026-08-15_14-40/
+```
+
+That is the tool. Everything below is what that simple thing turns into once you have run it a few times.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/the-problem.svg" alt="Twelve page thumbnails. One is marked as the page you looked at. Four came back broken." width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/hero.svg" alt="stm in the terminal beside a folder of dated snapshots, each holding a full-page screenshot of every page" width="820">
 </p>
 
-Change one shared component, layout or stylesheet and you have no idea what it did to the other forty pages. The only honest way to find out is to open every page and look, so nobody does it.
+## What you get
 
-AI coding agents made this sharper. You ask for a fix on the pricing page, the agent edits a shared file, and the About page quietly grows a gap. The agent never sees the result, and neither do you.
+**Your whole site in one folder.** Not the one page you happen to have open. Every page, full length, top to bottom, in a folder you can scroll through in ten seconds. It is the fastest way to answer "how does my site actually look right now".
 
-Git tracks every line of your code and not a single pixel of your site. Visual testing services want a CI pipeline and a monthly bill. Screenshotting by hand does not survive page four, and nobody keeps the files.
+**The pages you would never have opened.** Padding that collapsed on the pricing page. A heading that wrapped badly. A card that lost its image. A footer that drifted. It is all sitting in the same folder waiting to be noticed, instead of waiting to be reported.
 
-## Why it helps
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/the-problem.svg" alt="Twelve page thumbnails from one run, laid out side by side, with four of them showing layouts that need attention" width="820">
+</p>
 
-- **Catch broken pages before your users do.** One command, every page, and a list of which pages changed so you know where to look.
-- **Give your AI agent eyes.** `stm --json` hands it the file paths of the changed pages, so it opens only those and fixes what it broke.
-- **Keep a visual history.** Every run is a dated folder of plain PNGs. Scroll back and see what your site looked like in March, straight from Finder or Explorer.
+<p align="center"><i>Twelve pages from a single run, side by side. Four of them wanted attention, and all four were pages nobody had open.</i></p>
+
+**A history that builds itself.** Every run is its own dated folder, so they stack into a timeline on their own. Last month's home page and today's home page are two files you can flip between. Six months in, you have proof of how far the thing came.
+
+**Phone views in the same run.** `stm --mobile` also captures a 390x844 view of every page, so the heading that wraps badly on a phone lands right next to the desktop shot.
+
+**A shortlist instead of forty tabs.** From the second run onward, `stm` prints the pages whose screenshots came out different from last time. Start there.
+
+**Eyes for your agent.** `stm --json` hands Claude Code, Cursor or Codex the absolute path of every page it just built, so it can look at its own work and fix it before telling you it is done.
+
+**Yours, permanently.** Plain PNG files on your own disk. No account, no cloud, no subscription, no config file, no background process. One dependency, MIT licensed, yours forever.
+
+## Who reaches for it
+
+- **You prompt, the agent builds, and you find out later.** You asked for one page, it edited a shared component, and eleven pages came along for the ride. One command shows you all eleven.
+- **You are shipping alone at 1am.** The design pass felt right in the moment. The folder from Tuesday tells you whether it actually was.
+- **You are three weeks into a redesign** and cannot quite remember what it used to look like. Capture the site on day one and every screenshot after that is a comparison you never had to set up.
+- **You are handing work over.** A folder of full-page screenshots is the clearest status update a client or a teammate will ever get.
+- **You want proof of the work.** Version one of anything is worth keeping. Most people work that out around version four.
 
 ## Quick start
 
-Your app needs to be running on localhost (`npm run dev`, `rails s`, `python manage.py runserver`, a static server, anything that serves HTML). Then:
+If you are building locally, start your app the way you normally do (`npm run dev`, `rails s`, `python manage.py runserver`, a static server, anything that serves HTML) and run:
 
 ```bash
 npx screenshot-time-machine@latest
 ```
 
+If the site is already online, skip all of that and name it:
+
+```bash
+npx screenshot-time-machine@latest --url https://your-site.com
+```
+
 **Needs Node 22 or newer.** Run `node -v` to check. If it prints 21 or lower, update Node from [nodejs.org](https://nodejs.org) first.
 
-The first run uses a Playwright browser you already have cached, or failing that the Chrome or Edge already on your machine. If you have neither, it downloads a headless browser once, about a 120 MB download that takes roughly 200 MB on disk, and tells you before it does. That is the only thing stm itself fetches from the internet; the pages you capture still load their own resources, exactly as they would in your browser.
+For screenshots, `stm` uses a Playwright browser you already have cached, or failing that the Chrome or Edge already on your machine. If you have neither, it downloads a headless browser once, about a 120 MB download that takes roughly 200 MB on disk, and tells you before it does. That is the only thing `stm` itself fetches from the internet; the pages you capture load their own resources, exactly as they would in your browser.
 
-Change something, run it again, and read the `changed` line. That is the whole workflow.
+Change something, run it again. That is the whole workflow.
 
-Everything below this point writes the command as `stm` for short. To get that short name, install it once:
+Everything below writes the command as `stm` for short. To get that short name, install it once:
 
 ```bash
 npm install -g screenshot-time-machine
@@ -111,15 +154,22 @@ Not installing is fine. Write `npx screenshot-time-machine@latest` wherever you 
 
 - `stm` probes ports 3000, 3001, 5173, 5174, 8080, 4321, 4322, 8000, 4200 and 5000, in that order, and uses the first app that answers. If several answer, it prefers the one this project used last time and tells you about the others.
 - If your project has a `.gitignore`, it adds `screenshots/` to it once and tells you. It never creates a `.gitignore`, and it never deletes anything.
+- Pages are found by following the `<a href>` links on them and by reading your `sitemap.xml` if you have one, up to 100 pages per run. Pages reached only by a button click, and hash routes like `/#/about`, have no link to follow, so name those yourself: `stm /about /pricing`.
 </details>
 
 ## Install it in your AI coding agent
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/agent-loop.svg" alt="The loop: the agent edits UI, runs stm --json, gets the changed list, views the fold images, fixes and runs again" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/agent-loop.svg" alt="The loop: the agent edits UI, runs stm --json, reads the screenshot paths, views the fold images, fixes and runs again" width="820">
 </p>
 
-One command installs `stm` as a skill: a short instruction file your agent reads, so it knows when to run `stm` and how to read the result. `npx skills add` is a separate open-source installer that copies that one folder into your project and changes nothing else. Pick your agent:
+Your agent wrote the pricing page. It wrote the nav. It touched a shared component and eleven pages moved with it. It has never actually looked at any of them, because it has no eyes.
+
+`stm --json` gives it some. The agent runs one command, gets back the absolute path of every page it just built, opens the `fold` image of the ones that came out different, and checks its own work before it tells you it is done.
+
+The good part is what you stop doing. No clicking through eleven pages. No "looks fine" that turns out not to be. You get a folder, you scroll it in ten seconds, and you already know which pages to open first.
+
+One command installs `stm` as a skill: a short instruction file your agent reads, so it knows when to run `stm` and what to do with the result. `npx skills add` is a separate open-source installer that copies that one folder into your project and changes nothing else. Pick your agent:
 
 | Agent | Command | Skill lands in |
 |---|---|---|
@@ -138,9 +188,9 @@ Add `-g` to any of those to install it for every project instead of this one.
 
 Or just tell your agent, in plain words:
 
-> Install screenshot-time-machine, run `stm` on my app, and show me what changed.
+> Install screenshot-time-machine, run `stm` on my app, and show me how the pages look.
 
-Then add one line to the file your agent reads on every request, so it verifies its own work without being asked:
+Then add one line to the file your agent reads on every request, so it checks its own work without being asked:
 
 ```
 After changing anything a user can see, run `stm --json` (or `npx -y screenshot-time-machine@latest --json` if `stm` is not installed) and view the `fold` image of every entry in `changed` and `new` before saying you're done. On the very first snapshot both lists are empty, so view the fold images of the pages you edited instead. Never claim a UI change is verified without viewing a screenshot.
@@ -170,19 +220,19 @@ Skills are the simple path. If you prefer plugins, run this inside Claude Code:
 
 No SSH key on GitHub? Use the URL form: `/plugin marketplace add https://github.com/mdsohaib/screenshot-time-machine.git`
 
-Claude Code opens screenshots with its Read tool, and `stm --json` hands it absolute paths. The loop is: edit, `stm --json`, Read the changed `fold` images, fix, repeat. Ask it to "check the UI" and it will reach for the skill on its own.
+Claude Code opens screenshots with its Read tool, and `stm --json` hands it absolute paths. The loop is: edit, `stm --json`, Read the `fold` images, fix, repeat. Ask it to "check the UI" and it will reach for the skill on its own.
 </details>
 
 <details>
 <summary><b>Codex</b></summary>
 
-Put the memory line in `AGENTS.md`. Codex opens images with `view_image`, so if it hesitates, say "view the fold image of every changed page".
+Put the memory line in `AGENTS.md`. Codex opens images with `view_image`, so if it hesitates, say "view the fold image of every page you touched".
 </details>
 
 <details>
 <summary><b>Cursor</b></summary>
 
-Put the memory line in a rule under `.cursor/rules/`. The agent runs `stm --json` in its terminal and opens the PNG paths it returns. Cursor's built-in browser shows one page at a time; `stm` hands it all of them, plus the diff.
+Put the memory line in a rule under `.cursor/rules/`. The agent runs `stm --json` in its terminal and opens the PNG paths it returns. Cursor's built-in browser shows one page at a time; `stm` hands it all of them at once.
 </details>
 
 <details>
@@ -221,16 +271,18 @@ npx screenshot-time-machine@latest skill
 
 One JSON document on stdout, at most two lines on stderr, printed even when some pages fail. The one-time browser download is the exception: its installer also writes to stderr. `code` mirrors the exit code.
 
-A run that cannot start prints a much smaller object instead: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Bad arguments print `{"error": "bad_args", "message": "...", "fix": "..."}`, where `fix` is `Run stm --help` for an unknown flag and a worked example for a malformed `--url`. Check `error` before you read `changed`. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output never contains page text, only paths and numbers.
+A run that cannot start prints a much smaller object instead: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Bad arguments print `{"error": "bad_args", "message": "...", "fix": "..."}`, where `fix` is `Run stm --help` for an unknown flag and a worked example for a malformed `--url`. Check `error` before you read `changed`. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output carries paths and numbers only, never text taken from your pages.
 
-**About tokens.** Unchanged pages cost nothing to look at, because the agent never opens them. The summary is roughly 200 tokens plus about 90 per changed page. Viewing one changed page costs a single 1440x900 image. Very tall full-page screenshots get downscaled by vision models until the text is unreadable, which is exactly why every page also gets a `fold` image, and why the skill tells the agent to open that one first.
+**About tokens.** Every page is captured every run, but the agent only opens the ones you point it at, so a quiet run costs almost nothing to read. The summary is roughly 200 tokens plus about 90 per listed page. Viewing one page costs a single 1440x900 image. Very tall full-page screenshots get downscaled by vision models until the text is unreadable, which is exactly why every page also gets a `fold` image, and why the skill tells the agent to open that one first.
 
 ## A visual history on disk
 
 ```
 screenshots/
-└── localhost-3000_2026-08-15_14-32/
-    ├── manifest_2026-08-15_14-32.json          what was captured, from where, with which browser, which pages changed
+├── localhost-3000_2026-08-01_09-14/            three weeks ago
+├── localhost-3000_2026-08-08_18-02/            last Friday
+└── localhost-3000_2026-08-15_14-32/            just now
+    ├── manifest_2026-08-15_14-32.json          what was captured, from where, with which browser
     ├── index_2026-08-15_14-32.png              full page, 1440 px wide, as tall as the page
     ├── pricing_2026-08-15_14-32.png
     ├── blog--hello-world_2026-08-15_14-32.png  "/" becomes "--" in file names
@@ -241,15 +293,15 @@ screenshots/
 
 Every run is a new folder named after the app and the minute it ran. Every file inside carries the same timestamp, so a screenshot dragged out of its folder still says what it is and when it happened. Two runs in the same minute get `-2`, `-3` on the timestamp. Pages taller than 16,384 px are cut at that height, Chromium's limit, and marked `truncated`.
 
-Open the folder in Finder or Explorer and you have a photo album of your project. The history is plain PNGs, so it outlives this tool. Uninstalling leaves nothing behind but the `screenshots/` folder and, if you had a `.gitignore`, one line in it.
+Sort the folders by date and you are looking at your product's timeline. Pick one page and step through its file in each folder and you are watching it get better. It is plain PNGs all the way down, so this history outlives the tool that made it: no database, no proprietary format, nothing to export. Uninstalling leaves nothing behind but your `screenshots/` folder and, if you had a `.gitignore`, one line in it.
 
 ## Commands
 
 | Command | What it does |
 |---|---|
-| `stm` | Snapshot every page of the app running on localhost |
+| `stm` | Snapshot every page of the app you have running on localhost |
 | `stm /pricing /about` | Snapshot only these pages, in seconds. This is the edit-check loop |
-| `stm --url http://localhost:4321` | Snapshot this app instead of auto-detecting. A path starts the crawl there |
+| `stm --url https://your-site.com` | Snapshot any site by URL, local or live. A path starts the crawl there |
 | `stm --mobile` | Also capture a 390x844 phone view (`@mobile` files) |
 | `stm --max 100` | Stop discovering after this many pages (default 100) |
 | `stm --out screenshots` | Where snapshots go (default `screenshots`) |
@@ -260,47 +312,70 @@ Open the folder in Finder or Explorer and you have a photo album of your project
 
 Exit codes: `0` everything captured, `1` nothing captured (no app, no browser, bad arguments), `2` finished with some pages failed or the run interrupted. A failing page never stops the run.
 
-## How it finds pages and tracks what changed
+### A few things worth trying
+
+```bash
+stm --mobile                     # desktop and phone views of every page, same run
+stm /checkout --mobile           # the one flow you just touched, both sizes, in seconds
+stm --url https://staging.example.com   # any site you are allowed to capture, not just localhost
+stm list                         # every snapshot you have ever taken, oldest to newest
+stm open                         # jump straight into the latest folder
+```
+
+## How it works
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/how-it-works.svg" alt="detect, discover, capture, compare, report" width="820">
 </p>
 
-### How it knows what changed
+1. **Detect.** Probe the usual localhost ports and pick the app that answers, or use `--url`.
+2. **Discover.** Read `sitemap.xml` if there is one, then follow `<a href>` links from page to page, staying on the same origin.
+3. **Capture.** Load each page, scroll it so lazy content arrives, hold everything still, then save a full-page PNG plus a `fold` image of the top screen.
+4. **File.** Write everything into a folder named after the app and the minute, with the manifest updated after every single page.
+5. **Report.** Print a one-line summary, including which pages came out different from the previous run.
 
-It screenshots every page on every run. What it compares is not the images, it is their fingerprints:
+### Why the screenshots are steady
 
-1. After saving a page's PNG, stm computes a **sha256 hash** of that file's bytes.
-2. The hash is stored in that run's manifest, next to the page path.
-3. On the next run, stm looks up the same page in the **previous run's manifest** and compares the two hashes.
-4. Different hash means the page changed. Same hash means it did not. No earlier entry means it is new.
+A screenshot tool is only as good as its consistency: capture the same page twice and you should get the same picture. That takes real work, and it is where most of this code lives.
 
-Old screenshots are never reopened, only the small manifest is read, so comparing a hundred pages is instant.
-
-**What this does and does not give you.** stm tells you *which pages* changed. It does not tell you *what* changed inside a page: there is no visual diff, no highlighted regions, no before-and-after overlay. You get the page names and the file paths, then you open those screenshots and look, or your agent does. Region-level diffing is `stm diff` on the roadmap.
-
-This only works because an unchanged page produces a byte-for-byte identical file. That is the point of the work below: freezing animations, pinning the device pixel ratio, waiting for fonts and images, and hiding dev toolbars. Without it every page would look changed on every run and the number would be meaningless.
-
-The details that make the screenshots trustworthy:
-
-- Pages are scrolled to the bottom before capture so lazy images and lazy sections load, then scrolled back. Smooth-scroll sites are handled.
-- Animations are frozen at their end state, so fade-ins are visible and spinners hold still. Two runs on the same machine produce byte-identical PNGs of a page whose content did not change, which is what makes "changed" mean something. A page showing a clock, a relative time, a rotating hero image or a canvas animation will always report as changed.
+- Pages are scrolled to the bottom before capture so lazy images and lazy sections load, then scrolled back to the top. Smooth-scroll sites are handled.
+- Web fonts are awaited, so nothing is captured mid-swap from the fallback face.
+- Animations are frozen at their end state, so fade-ins are fully visible and spinners hold still.
+- The device pixel ratio is pinned to 1 and the viewport to 1440x900, so a screenshot is the same on your laptop, your desktop and CI.
 - Dev toolbars (Astro, Nuxt, the Next.js badge) are hidden. Dev **error** overlays never are: the page is captured as it is and flagged with a warning, because a broken page is exactly what you want to see.
-- Long-lived connections (HMR sockets, event streams) never stall a capture. Each page gets a 30 second budget and one retry, then it is recorded as failed and the run moves on.
-- The manifest is written after every page, so an interrupted run still leaves a folder `stm list` can read, and the summary says it stopped early.
+- Long-lived connections (HMR sockets, event streams) never stall a capture. Each page gets a 30 second budget and one retry, then it is recorded and the run moves on.
+- The manifest is written after every page, so an interrupted run still leaves a folder `stm list` can read.
 - Links to `/logout`, `/delete` and friends are never followed. Neither are files, `/api/`, other origins, or your own `screenshots/` folder.
 
-## How it compares to visual regression tools
+The payoff: two runs on the same machine produce byte-identical PNGs of a page whose content did not change.
+
+<details>
+<summary><b>How the "changed" line is worked out</b></summary>
+
+Every page is captured on every run. What gets compared is not the images, it is their fingerprints:
+
+1. After saving a page's PNG, `stm` computes a **sha256 hash** of that file's bytes.
+2. The hash goes into that run's manifest, next to the page path.
+3. On the next run, `stm` looks up the same page in the **previous run's manifest** and compares the two hashes.
+4. A different hash means the screenshot came out different. The same hash means it did not. No earlier entry means the page is new.
+
+Old screenshots are never reopened, only the small manifest is read, so comparing a hundred pages is instant. You get page names and file paths, which is exactly what you need to open the right screenshots first, or to hand your agent the right ones. Region-level visual diffing is `stm diff` on the roadmap.
+
+A page that shows a clock, a relative time like "3 minutes ago", a rotating hero image or a canvas animation genuinely does look different every run, and will be listed every run.
+</details>
+
+## How it compares
 
 | | stm | Claude Code Desktop auto-verify | Playwright MCP, agent-browser, DevTools MCP | Percy, Chromatic |
 |---|---|---|---|---|
 | Every page in one command | yes | one page at a time | one page per tool call | yes, in CI |
-| Tells you which pages changed | yes | no | no | yes, in the cloud |
+| Browsable history on disk | yes | no | no | in their cloud |
+| Lists which pages came out different | yes | no | no | yes, in the cloud |
 | Works in the terminal, Cursor, Codex | yes | Desktop only | yes | CI only |
-| History on disk you can browse | yes | no | no | in their cloud |
 | Runs entirely on your machine | yes | yes | yes | no |
+| Free | yes | yes | yes | paid above a free tier |
 
-`stm` is the free, local half of visual regression testing: it tells you which pages changed and hands you the pixels, with no CI pipeline, no account and no monthly bill. These tools are complementary, not rivals. Use a browser tool when your agent needs to click around. Use `stm` when it needs to see everything it just touched.
+These tools are complementary, not rivals. Use a browser tool when your agent needs to click around and interact. Use `stm` when you or your agent needs to see everything, all at once, and keep it.
 
 ## Privacy
 
@@ -315,7 +390,12 @@ Yes. MIT licensed, open source, no paid tier, no hosted service, nothing to sign
 
 <details>
 <summary><b>Does it work with Next.js, Vite, Astro, SvelteKit, Rails, Django, static sites?</b></summary>
-Yes. Anything that serves HTML on localhost. The usual ports for all of those are probed automatically; use <code>--url</code> for anything else.
+Yes. Anything that serves HTML, whether it is on your machine or on the internet. The usual localhost ports for all of those are probed automatically; use <code>--url</code> for anything else.
+</details>
+
+<details>
+<summary><b>How long does a run take?</b></summary>
+Pages are captured a few at a time, and most small sites finish in well under a minute. A big site on a cold dev server takes longer, because the first visit to each page is your framework compiling it. Pass the pages you care about (<code>stm /pricing /about</code>) when you want it instant.
 </details>
 
 <details>
@@ -329,13 +409,13 @@ Your app redirects to sign-in. <code>stm</code> cannot sign in yet, and it tells
 </details>
 
 <details>
-<summary><b>Everything shows as changed after a while.</b></summary>
-Usual causes: your browser updated, which shifts rendering slightly (<code>stm</code> records the browser version and warns you), or a page shows something that moves on its own, like a clock, "3 minutes ago", a random hero image, a canvas animation, or a cookie banner that disappears after the first visit. Pass those pages explicitly and eyeball them until <code>stm diff</code> lands.
+<summary><b>Every page is listed as different after a while.</b></summary>
+Usual causes: your browser updated, which shifts rendering slightly (<code>stm</code> records the browser version and tells you), or your pages show something that moves on its own, like a clock, "3 minutes ago", a random hero image, a canvas animation, or a cookie banner that only appears on the first visit. The screenshots are still correct, so open the ones you care about.
 </details>
 
 <details>
 <summary><b>Can it run automatically, watching my files?</b></summary>
-No, on purpose. <code>stm</code> is a save-point button, like <code>git commit</code>: you, or your agent, decide when a moment is worth keeping. If you want it automatic, put the one-line instruction in your agent's memory file and let the agent decide.
+It runs when you say so, like <code>git commit</code>: you, or your agent, decide when a moment is worth keeping. For automatic capture, put the one-line instruction in your agent's memory file and let the agent run it after every UI change.
 </details>
 
 <details>
@@ -347,12 +427,12 @@ A first-class <code>stm timelapse</code> is on the roadmap. Today, with ffmpeg:
 
 <details>
 <summary><b>I use Lovable, Bolt or v0. Can I use this?</b></summary>
-Those run your app in their cloud, so there is no localhost to screenshot. Export the project, run it locally, and <code>stm</code> works. Anything built with Claude Code, Cursor, Codex, Windsurf or Copilot on your own machine works out of the box.
+Yes, two ways. Point <code>stm</code> at the URL they publish for you: <code>stm --url https://your-project.lovable.app</code>. Or export the project, run it locally, and <code>stm</code> finds it by itself. Anything built with Claude Code, Cursor, Codex, Windsurf or Copilot on your own machine works out of the box.
 </details>
 
 <details>
 <summary><b>Why not just write a Playwright script?</b></summary>
-You could. <code>stm</code> is that script, plus page discovery, a stable folder layout, change detection, agent-friendly output, dev-overlay handling, and all the edge cases, maintained. It is also one command your agent already knows.
+You could. <code>stm</code> is that script, plus page discovery, a stable folder layout, steady repeatable captures, agent-friendly output, dev-overlay handling, and all the edge cases, maintained. It is also one command your agent already knows.
 </details>
 
 <details>
@@ -366,8 +446,8 @@ Playwright's cache: <code>~/Library/Caches/ms-playwright</code> on macOS, <code>
 </details>
 
 <details>
-<summary><b>Can I point it at a site that is not on localhost?</b></summary>
-Yes: <code>stm --url https://staging.example.com</code>. It stays on that origin and skips destructive-looking links. Please only screenshot sites you are allowed to.
+<summary><b>Can I use it on my live or staging site?</b></summary>
+Yes: <code>stm --url https://staging.example.com</code>. It reads that site's <code>sitemap.xml</code> and follows its links exactly as it would locally, stays on that one origin, and never follows destructive-looking links like <code>/logout</code> or <code>/delete</code>. Please only screenshot sites you are allowed to.
 </details>
 
 ## Roadmap
@@ -388,13 +468,13 @@ Bug reports with a real run attached are the most useful thing right now. Start 
 
 ## About
 
-Built by **Mohammed Sohaib Uddin**, because agents that ship UI nobody looks at needed a way to look.
+Built by **Mohammed Sohaib Uddin**, because software that changes every day deserves a record of how it looked.
 
 <p align="left">
   <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-FF8C1A?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a>
   <a href="https://github.com/mdsohaib"><img src="https://img.shields.io/badge/Follow%20on%20GitHub-0A0E14?style=for-the-badge&logo=github&logoColor=white" alt="Follow on GitHub"></a>
 </p>
 
-If `stm` saves you from shipping a broken page, a star costs nothing and helps other people find it.
+If `stm` shows you something you are glad you saw, a star costs nothing and helps other people find it.
 
 MIT © Mohammed Sohaib Uddin

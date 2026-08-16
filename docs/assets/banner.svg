@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" width="1600" height="460" role="img" aria-labelledby="stmBannerTitle" text-rendering="geometricPrecision">
-  <title id="stmBannerTitle">screenshot-time-machine: every page of your localhost app, screenshotted, dated, and checked for changes, in one command</title>
+  <title id="stmBannerTitle">screenshot-time-machine: every page of your website, screenshotted, dated and saved on your own machine, in one command</title>
   <defs>
     <clipPath id="stmClip">
       <rect x="0" y="0" width="1600" height="460" rx="20"/>
@@ -117,8 +117,8 @@
     <text x="88" y="152" textLength="740" lengthAdjust="spacingAndGlyphs" font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">screenshot<tspan fill="url(#stmDash)">-</tspan>time<tspan fill="url(#stmDash)">-</tspan>machine</text>
     <rect x="88" y="182" width="264" height="3" rx="1.5" fill="url(#stmRule)"/>
     <g font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif" font-size="24" fill="#8A97A8">
-      <text x="88" y="226">Every page of your localhost app.</text>
-      <text x="88" y="258">Screenshotted, dated, and checked for changes.</text>
+      <text x="88" y="226">Every page of your website.</text>
+      <text x="88" y="258">Screenshotted, dated, saved on your own machine.</text>
     </g>
     <rect x="88.5" y="298.5" width="457" height="55" rx="14" fill="#131A24" stroke="#232C3A" stroke-width="1"/>
     <text x="112" y="333" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, monospace" font-size="20" fill="#FFC24A">npx screenshot-time-machine@latest</text>

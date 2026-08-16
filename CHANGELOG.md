@@ -3,6 +3,19 @@
 All notable changes to this project are documented here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [SemVer](https://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Repositioned the README around what the tool does first: screenshot every page with one command, look at them, and build a visual history you can watch evolve. The changed-pages list is still there and still works, but it is now a supporting benefit rather than the headline, and it is worded so it cannot be read as a visual diff.
+- The docs now say "website" rather than "localhost app". `--url` has always accepted any http(s) origin, and a capture of a live site was verified end to end, so the copy no longer implies stm is localhost-only.
+- Restored the nine agent badges under "Works with", each in its own colour, and added a "70+ more" badge. Every badge links to the install section.
+- `package.json` description and keywords rewritten to match, including terms people actually search for (website-screenshot, screenshot-every-page, sitemap-screenshots, bulk-screenshots).
+- All ten translations regenerated against the new English. They had been lagging since 0.1.1 and still carried the retired badge row and the old brand colour.
+
+### Added
+- `docs/assets/demo.gif`: three real stm runs against a demo store as it gets redesigned, showing the dated folders stacking up beside the page as it looked at each one.
+
+### Fixed
+- `docs/assets/the-problem.svg` marked four pages as broken, but one of them was not. The injected CSS targeted `.hero`, which product pages do not have, so that thumbnail rendered perfectly while being labelled a failure. Re-shot with a failure the page can actually suffer.
+- The README said `stm` was four letters.
 
 ## [0.1.3] - 2026-08-15
 ### Fixed
