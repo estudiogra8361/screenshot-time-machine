@@ -1,23 +1,4 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/banner.svg" alt="screenshot-time-machine: cada página de tu app en localhost, capturada, fechada y comparada, con un solo comando" width="100%">
-</p>
-
-<p align="center">
-  <b>Captura una pantalla completa de cada página de tu sitio web con un solo comando.</b><br>
-  Se guardan en carpetas con fecha. La próxima vez que lo ejecutes, te dice exactamente qué páginas cambiaron.<br>
-  <b>Gratis y de código abierto. Funciona por completo en tu propia máquina.</b>
-</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=FF6600&labelColor=0A0E14" alt="versión en npm"></a>
-  <a href="https://github.com/mdsohaib/screenshot-time-machine/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/mdsohaib/screenshot-time-machine/ci.yml?branch=main&style=flat-square&label=tests&color=FF6600&labelColor=0A0E14" alt="tests"></a>
-  <img src="https://img.shields.io/badge/dependencies-1-FF6600?style=flat-square&labelColor=0A0E14" alt="una sola dependencia">
-  <img src="https://img.shields.io/badge/node-22%2B-FF6600?style=flat-square&labelColor=0A0E14&logo=nodedotjs&logoColor=white" alt="Node 22+">
-  <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-FF6600?style=flat-square&labelColor=0A0E14" alt="licencia MIT"></a>
-  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Sohaib%20Uddin-FF6600?style=flat-square&labelColor=0A0E14&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-</p>
-
-<p align="center">
   <a href="../../README.md">English</a> ·
   <a href="README.zh-CN.md">简体中文</a> ·
   Español ·
@@ -31,7 +12,29 @@
   <a href="README.ar.md">العربية</a>
 </p>
 
-<i>Traducido del README en inglés. En caso de duda, la versión en inglés es la referencia.</i>
+*Traducido del README en inglés. Ante cualquier duda, la versión en inglés es la referencia.*
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/banner.svg" alt="screenshot-time-machine: cada página de tu app en localhost, capturada, fechada y comparada, con un solo comando" width="100%">
+</p>
+
+<h1 align="center">screenshot-time-machine</h1>
+
+<p align="center">
+  <b>CLI de capturas de página completa: haz una captura de cada página de tu sitio en localhost con un solo comando.</b><br>
+  Captura de pantalla completa de todas las páginas de la app que estás construyendo, de una sola vez.<br>
+  Se guardan en carpetas con fecha. La próxima vez que lo ejecutes, te dice exactamente qué páginas cambiaron.<br>
+  <b>Gratis y de código abierto. Funciona por completo en tu propia máquina.</b>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=FF6600&labelColor=0A0E14" alt="versión en npm"></a>
+  <a href="https://github.com/mdsohaib/screenshot-time-machine/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/mdsohaib/screenshot-time-machine/ci.yml?branch=main&style=flat-square&label=tests&color=FF6600&labelColor=0A0E14" alt="tests"></a>
+  <img src="https://img.shields.io/badge/dependencies-1-FF6600?style=flat-square&labelColor=0A0E14" alt="una sola dependencia">
+  <img src="https://img.shields.io/badge/node-22%2B-FF6600?style=flat-square&labelColor=0A0E14&logo=nodedotjs&logoColor=white" alt="Node 22+">
+  <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-FF6600?style=flat-square&labelColor=0A0E14" alt="licencia MIT"></a>
+  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Sohaib%20Uddin-FF6600?style=flat-square&labelColor=0A0E14&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
 
 ```bash
 npx screenshot-time-machine@latest               # your app is on localhost? that is the whole setup
@@ -39,7 +42,7 @@ npx skills add mdsohaib/screenshot-time-machine  # teach Claude Code, Cursor, Co
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/hero.svg" alt="stm informando en la terminal de una página cambiada, junto a una carpeta de capturas fechadas" width="820">
+  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/hero.svg" alt="stm informando de una página cambiada en la terminal, junto a una carpeta de capturas fechadas" width="820">
 </p>
 
 <p align="center">
@@ -53,18 +56,18 @@ npx skills add mdsohaib/screenshot-time-machine  # teach Claude Code, Cursor, Co
   <img src="https://img.shields.io/badge/Windsurf-0A0E14?style=flat-square&logo=windsurf&logoColor=FF6600" alt="Windsurf">
   <img src="https://img.shields.io/badge/OpenCode-0A0E14?style=flat-square&logo=opencode&logoColor=FF6600" alt="OpenCode">
   <img src="https://img.shields.io/badge/Cline-0A0E14?style=flat-square" alt="Cline">
-  <br><i>y con las personas que les escriben los prompts</i>
+  <br><i>y con las personas que los usan</i>
 </p>
 
 ---
 
 ## Qué es
 
-`stm` es una herramienta de línea de comandos gratuita y de código abierto. La ejecutas mientras tu sitio web corre en tu computadora. Lo que hace:
+`stm` es una herramienta de línea de comandos gratuita y de código abierto. La ejecutas mientras tu sitio corre en tu computadora. Lo que hace:
 
 1. **Encuentra tu sitio** en localhost automáticamente, o donde tú le indiques con `--url`.
-2. **Encuentra todas las páginas** a partir de tu sitemap y de tus enlaces.
-3. **Captura cada página completa**, de arriba abajo, más una vista de la parte superior que se lee de un vistazo.
+2. **Encuentra tus páginas** siguiendo los enlaces `<a href>` que hay en ellas y leyendo tu `sitemap.xml` si lo tienes, hasta 100 páginas por ejecución. Las páginas a las que solo se llega con un clic en un botón, y las rutas con hash como `/#/about`, no se pueden seguir. Indícalas tú mismo: `stm /about /pricing`.
+3. **Captura cada página completa**, de arriba abajo, más una segunda imagen solo de la parte superior, la que cabe en una pantalla. Esa segunda imagen se llama imagen `fold`, y es la primera que conviene mirar.
 4. **Las guarda como archivos PNG normales** en una carpeta con el nombre de la fecha y la hora.
 5. **Compara con la vez anterior** y te dice exactamente qué páginas cambiaron.
 
@@ -74,7 +77,7 @@ $ stm
    1 changed since last snapshot (Aug 12, 09:10): /pricing
 ```
 
-Sin cuenta. Sin nube. Sin suscripción. Sin archivo de configuración. Sin procesos en segundo plano. Una sola dependencia, licencia MIT, tuyo para siempre.
+Sin cuenta. Sin nube. Sin suscripción. Sin archivo de configuración. Sin procesos en segundo plano. Una dependencia, licencia MIT, tuyo para siempre.
 
 ## El problema que resuelve
 
@@ -82,48 +85,46 @@ Sin cuenta. Sin nube. Sin suscripción. Sin archivo de configuración. Sin proce
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/the-problem.svg" alt="Doce miniaturas de páginas. Una está marcada como la página que revisaste. Cuatro quedaron rotas." width="820">
 </p>
 
-Cambias un componente compartido, un layout o una hoja de estilos y no tienes ni idea de qué le hizo eso a las otras cuarenta páginas. La única forma honesta de saberlo es abrir cada página y mirarla, así que nadie lo hace.
+Cambias un componente compartido, un layout o una hoja de estilos y no tienes ni idea de qué le hizo eso a las otras cuarenta páginas. La única forma honesta de averiguarlo es abrir cada página y mirar, así que nadie lo hace.
 
-Los agentes de programación con IA agudizaron el problema. Pides un arreglo en la página de precios, el agente edita un archivo compartido, y la página Acerca de se llena de un hueco en silencio. El agente nunca ve el resultado, y tú tampoco.
+Los agentes de programación con IA agudizaron el problema. Pides un arreglo en la página de precios, el agente edita un archivo compartido y la página Acerca de se llena de un hueco silencioso. El agente nunca ve el resultado, y tú tampoco.
 
-Git registra cada línea de tu código y ni un solo píxel de tu sitio. Los servicios de testing visual quieren un pipeline de CI y una factura mensual. Capturar pantallas a mano no sobrevive a la cuarta página, y nadie guarda los archivos.
+Git registra cada línea de tu código y ni un solo píxel de tu sitio. Los servicios de testing visual quieren un pipeline de CI y una factura mensual. Capturar a mano no sobrevive a la cuarta página, y nadie guarda los archivos.
 
 ## Por qué ayuda
 
 - **Detecta páginas rotas antes que tus usuarios.** Un comando, todas las páginas, una lista de lo que cambió.
 - **Dale ojos a tu agente de IA.** `stm --json` le entrega las rutas de archivo de las páginas cambiadas, así abre solo esas y arregla lo que rompió.
-- **Conserva un historial visual.** Cada ejecución es una carpeta fechada de PNGs normales. Retrocede y mira cómo se veía tu sitio en marzo, directo desde Finder o el Explorador.
+- **Conserva un historial visual.** Cada ejecución es una carpeta fechada con PNG normales. Retrocede y mira cómo se veía tu sitio en marzo, directamente desde Finder o el Explorador.
 
 ## Inicio rápido
 
-Tu app tiene que estar corriendo en localhost (`npm run dev`, `rails s`, `python manage.py runserver`, un servidor estático, cualquier cosa que sirva HTML). Entonces:
+Tu app tiene que estar corriendo en localhost (`npm run dev`, `rails s`, `python manage.py runserver`, un servidor estático, cualquier cosa que sirva HTML). Luego:
 
 ```bash
 npx screenshot-time-machine@latest
 ```
 
+**Necesita Node 22 o superior.** Ejecuta `node -v` para comprobarlo. Si imprime 21 o menos, actualiza Node desde [nodejs.org](https://nodejs.org) primero.
+
+La primera ejecución usa el Chrome o el Edge que ya tienes en tu máquina. Si no tienes ninguno, descarga un navegador una sola vez, unos 120 MB, y te avisa antes de hacerlo. Esa descarga es lo único que stm obtiene de internet.
+
 Cambia algo, vuelve a ejecutarlo y lee la línea `changed`. Ese es todo el flujo de trabajo.
 
-<details>
-<summary><b>Instálalo una vez y ejecútalo como <code>stm</code></b></summary>
+De aquí en adelante el comando se escribe como `stm`, más corto. Para tener ese nombre corto, instálalo una vez:
 
 ```bash
 npm install -g screenshot-time-machine
-stm
 ```
 
-Escribe siempre `npx screenshot-time-machine@latest`, nunca `npx stm`. El nombre `stm` en npm pertenece a un paquete sin relación, de 2014.
-</details>
+No instalarlo también está bien. Escribe `npx screenshot-time-machine@latest` donde veas `stm`. Nunca escribas `npx stm`: es un paquete sin relación, de 2014.
 
 <details>
-<summary><b>Qué pasa en la primera ejecución</b></summary>
+<summary><b>Qué más pasa en la primera ejecución</b></summary>
 
-- `stm` prueba los puertos 3000, 3001, 5173, 5174, 8080, 4321, 4322, 8000, 4200 y 5000, en ese orden, y usa la primera app que responda. Si responden varias, prefiere la que este proyecto usó la última vez y te avisa de las demás.
-- Usa un navegador de Playwright que ya tengas, o el Chrome o Edge de tu máquina. Si no encuentra ninguno, descarga una vez un Chrome headless (unos 120 MB) y te lo dice.
-- Si tu proyecto tiene un `.gitignore`, añade `screenshots/` una sola vez y te avisa. Nunca crea un `.gitignore`, y nunca borra nada.
+- `stm` prueba los puertos 3000, 3001, 5173, 5174, 8080, 4321, 4322, 8000, 4200 y 5000, en ese orden, y usa la primera app que responda. Si responden varias, prefiere la que este proyecto usó la última vez y te informa de las demás.
+- Si tu proyecto tiene un `.gitignore`, le añade `screenshots/` una vez y te lo dice. Nunca crea un `.gitignore`, y nunca borra nada.
 </details>
-
-**Requisitos:** Node 22 o superior. Si ejecutas `npm run dev`, casi seguro ya lo tienes. ¿No estás seguro? `node -v`.
 
 ## Instálalo en tu agente de programación con IA
 
@@ -131,7 +132,7 @@ Escribe siempre `npx screenshot-time-machine@latest`, nunca `npx stm`. El nombre
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/agent-loop.svg" alt="El ciclo: el agente edita la interfaz, ejecuta stm --json, obtiene la lista de cambios, mira las imágenes fold, corrige y vuelve a ejecutar" width="820">
 </p>
 
-Un solo comando instala `stm` como skill, para que el agente sepa cuándo ejecutarlo y cómo leer el resultado. Elige tu agente:
+Un solo comando instala `stm` como skill: un archivo corto de instrucciones que tu agente lee, para que sepa cuándo ejecutar `stm` y cómo leer el resultado. `npx skills add` es un instalador de código abierto independiente que copia esa única carpeta en tu proyecto y no cambia nada más. Elige tu agente:
 
 | Agente | Comando | La skill queda en |
 |---|---|---|
@@ -146,31 +147,43 @@ Un solo comando instala `stm` como skill, para que el agente sepa cuándo ejecut
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
 | **Cualquier otro** | `npx skills add mdsohaib/screenshot-time-machine` | elige de la lista de más de 70 agentes |
 
-Añade `-g` a cualquiera de esos para instalarlo en todos tus proyectos en vez de solo en este.
+Añade `-g` a cualquiera de esos comandos para instalarlo en todos tus proyectos en lugar de solo en este.
 
 O simplemente díselo a tu agente, con palabras normales:
 
 > Instala screenshot-time-machine, ejecuta `stm` en mi app y muéstrame qué cambió.
 
-Después añade una línea al archivo de memoria que lee tu agente (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.cursor/rules`), para que verifique su propio trabajo sin que se lo pidas:
+Después añade una línea al archivo que tu agente lee en cada petición, para que verifique su propio trabajo sin que se lo pidas:
 
 ```
-After changing anything a user can see, run `stm --json` and view the `fold` image of every entry in `changed` and `new` before saying you're done. Never claim a UI change is verified without viewing a screenshot.
+After changing anything a user can see, run `stm --json` (or `npx -y screenshot-time-machine@latest --json` if `stm` is not installed) and view the `fold` image of every entry in `changed` and `new` before saying you're done. On the very first snapshot both lists are empty, so view the fold images of the pages you edited instead. Never claim a UI change is verified without viewing a screenshot.
 ```
+
+Dónde va esa línea, según el agente:
+
+| Agente | Archivo |
+|---|---|
+| Claude Code | `CLAUDE.md` |
+| Codex, Antigravity, OpenCode | `AGENTS.md` |
+| Gemini CLI | `GEMINI.md` |
+| Cursor | `.cursor/rules/stm.mdc`, empezando con `---`, luego `alwaysApply: true`, luego `---` |
+| GitHub Copilot | `.github/copilot-instructions.md` |
+| Windsurf | `.windsurf/rules/stm.md` |
+| Cline | `.clinerules/stm.md` |
 
 <details>
 <summary><b>Claude Code: instalación como plugin, y cómo se siente el ciclo</b></summary>
 
-Las skills son el camino sencillo. Si prefieres plugins, ejecuta esto dentro de Claude Code:
+Las skills son el camino simple. Si prefieres los plugins, ejecuta esto dentro de Claude Code:
 
 ```
 /plugin marketplace add mdsohaib/screenshot-time-machine
 /plugin install stm@stm
 ```
 
-¿No tienes una clave SSH en GitHub? Usa la forma con URL: `/plugin marketplace add https://github.com/mdsohaib/screenshot-time-machine.git`
+¿No tienes clave SSH en GitHub? Usa la forma con URL: `/plugin marketplace add https://github.com/mdsohaib/screenshot-time-machine.git`
 
-Claude Code abre las capturas con su herramienta Read, y `stm --json` le entrega rutas absolutas. El ciclo es: editar, `stm --json`, leer las imágenes `fold` que cambiaron, corregir, repetir. Pídele que "revise la interfaz" y usará la skill por su cuenta.
+Claude Code abre las capturas con su herramienta Read, y `stm --json` le entrega rutas absolutas. El ciclo es: editar, `stm --json`, leer las imágenes `fold` cambiadas, corregir, repetir. Pídele que "revise la interfaz" y recurrirá a la skill por su cuenta.
 </details>
 
 <details>
@@ -182,16 +195,16 @@ Pon la línea de memoria en `AGENTS.md`. Codex abre imágenes con `view_image`, 
 <details>
 <summary><b>Cursor</b></summary>
 
-Pon la línea de memoria en una regla dentro de `.cursor/rules/`. El agente ejecuta `stm --json` en su terminal y abre las rutas PNG que devuelve. El navegador integrado de Cursor muestra una página a la vez; `stm` le entrega todas, además de la comparación.
+Pon la línea de memoria en una regla dentro de `.cursor/rules/`. El agente ejecuta `stm --json` en su terminal y abre las rutas PNG que devuelve. El navegador integrado de Cursor muestra una página a la vez; `stm` le entrega todas, más las diferencias.
 </details>
 
 <details>
 <summary><b>Cualquier agente, sin soporte de skills</b></summary>
 
-`stm skill` imprime el texto de la skill. Pégalo en el archivo de instrucciones que lea tu agente.
+`stm skill` imprime el texto de la skill. Pégalo en el archivo de instrucciones que lea tu agente. Esto funciona sin instalar nada:
 
 ```bash
-stm skill
+npx screenshot-time-machine@latest skill
 ```
 </details>
 
@@ -219,9 +232,11 @@ stm skill
 }
 ```
 
-Un documento JSON en stdout, como máximo dos líneas en stderr, impresas incluso cuando algunas páginas fallan. `code` refleja el código de salida. `truncated` cuenta las entradas que quedaron fuera de la lista (el tope son 25; el manifest las tiene todas). La salida nunca contiene texto de las páginas, solo rutas y números.
+Un único documento JSON en stdout, como mucho dos líneas en stderr, impreso incluso cuando algunas páginas fallan. `code` refleja el código de salida.
 
-**Sobre los tokens.** Las páginas sin cambios no cuestan nada de mirar, porque el agente nunca las abre. El resumen ronda los 150 tokens más unos 50 por cada página cambiada. Ver una página cambiada cuesta una sola imagen de 1440x900. Las capturas de página completa muy altas son reducidas por los modelos de visión hasta que el texto se vuelve ilegible, y por eso exactamente cada página tiene también una imagen `fold`, y por eso la skill le dice al agente que abra esa primero.
+Una ejecución que no puede arrancar imprime un objeto mucho más pequeño: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Los argumentos incorrectos imprimen `{"error": "bad_args", "message": "...", "fix": "Run stm --help"}`. Comprueba `error` antes de leer `changed`. `truncated` cuenta las entradas que quedaron fuera de la lista (el límite es 25; el manifiesto las tiene todas). La salida nunca contiene el texto de las páginas, solo rutas y números.
+
+**Sobre los tokens.** Las páginas sin cambios no cuestan nada de mirar, porque el agente nunca las abre. El resumen ronda los 150 tokens más unos 50 por página cambiada. Ver una página cambiada cuesta una sola imagen de 1440x900. Las capturas de página completa muy altas los modelos de visión las reducen hasta que el texto se vuelve ilegible, que es exactamente por lo que cada página también recibe una imagen `fold`, y por lo que la skill le dice al agente que abra esa primero.
 
 ## Un historial visual en disco
 
@@ -237,9 +252,9 @@ screenshots/
         └── pricing_2026-08-15_14-32.png
 ```
 
-Cada ejecución es una carpeta nueva con el nombre de la app y el minuto en que se ejecutó. Cada archivo dentro lleva la misma marca de tiempo, así que una captura arrastrada fuera de su carpeta sigue diciendo qué es y cuándo ocurrió. Dos ejecuciones en el mismo minuto reciben `-2`, `-3` en la marca de tiempo. Las páginas de más de 16.384 px de alto se cortan a esa altura, el límite de Chromium, y se marcan como `truncated`.
+Cada ejecución es una carpeta nueva con el nombre de la app y el minuto en que se ejecutó. Cada archivo dentro lleva la misma marca de tiempo, así que una captura sacada de su carpeta sigue diciendo qué es y cuándo ocurrió. Dos ejecuciones en el mismo minuto reciben `-2`, `-3` en la marca de tiempo. Las páginas de más de 16.384 px de alto se cortan a esa altura, el límite de Chromium, y se marcan como `truncated`.
 
-Abre la carpeta en Finder o en el Explorador y tienes un álbum de fotos de tu proyecto. El historial son PNGs normales, así que sobrevive a esta herramienta. Desinstalarla no deja nada atrás salvo la carpeta `screenshots/` y, si tenías un `.gitignore`, una línea en él.
+Abre la carpeta en Finder o en el Explorador y tienes un álbum de fotos de tu proyecto. El historial son PNG normales, así que sobrevive a esta herramienta. Desinstalarla no deja nada atrás salvo la carpeta `screenshots/` y, si tenías un `.gitignore`, una línea en él.
 
 ## Comandos
 
@@ -247,53 +262,53 @@ Abre la carpeta en Finder o en el Explorador y tienes un álbum de fotos de tu p
 |---|---|
 | `stm` | Captura cada página de la app que corre en localhost |
 | `stm /pricing /about` | Captura solo estas páginas, en segundos. Este es el ciclo de editar y revisar |
-| `stm --url http://localhost:4321` | Captura esta app en vez de detectarla automáticamente. Una ruta hace que el rastreo empiece ahí |
+| `stm --url http://localhost:4321` | Captura esta app en lugar de detectarla automáticamente. Una ruta inicia el rastreo ahí |
 | `stm --mobile` | Captura además una vista de móvil de 390x844 (archivos `@mobile`) |
-| `stm --max 100` | Deja de descubrir páginas al llegar a este número (por defecto 100) |
+| `stm --max 100` | Deja de descubrir después de esta cantidad de páginas (por defecto 100) |
 | `stm --out screenshots` | Dónde van las capturas (por defecto `screenshots`) |
 | `stm --json` | Resumen legible por máquinas en stdout, para agentes |
 | `stm list` | Capturas anteriores: carpeta, número de páginas, cambiadas, fallidas |
 | `stm open` | Abre la carpeta de la última captura |
 | `stm skill` | Imprime la skill del agente |
 
-Códigos de salida: `0` todo capturado, `1` no se capturó nada (sin app, sin navegador, argumentos incorrectos), `2` terminó con algunas páginas fallidas o la ejecución interrumpida. Una página que falla nunca detiene la ejecución.
+Códigos de salida: `0` todo capturado, `1` nada capturado (sin app, sin navegador, argumentos incorrectos), `2` terminó con algunas páginas fallidas o la ejecución interrumpida. Una página que falla nunca detiene la ejecución.
 
-## Cómo encuentra las páginas y sigue lo que cambió
+## Cómo encuentra páginas y detecta lo que cambió
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/how-it-works.svg" alt="detectar, descubrir, capturar, comparar, informar" width="820">
 </p>
 
-Los detalles que hacen que las capturas sean confiables:
+Los detalles que hacen que las capturas sean fiables:
 
-- Las páginas se desplazan hasta abajo antes de capturarlas, para que carguen las imágenes y secciones diferidas, y luego vuelven arriba. Los sitios con scroll suave están contemplados.
-- Las animaciones se congelan en su estado final, así los fundidos de entrada se ven y los spinners se quedan quietos. Dos ejecuciones en la misma máquina producen PNGs idénticos byte a byte, que es lo que hace que "cambiado" signifique algo.
-- Las barras de herramientas de desarrollo (Astro, Nuxt, el distintivo de Next.js) se ocultan. Las superposiciones de **error** de desarrollo nunca: la página se captura tal cual y se marca con una advertencia, porque una página rota es exactamente lo que quieres ver.
-- Las conexiones de larga duración (sockets de HMR, flujos de eventos) nunca bloquean una captura. Cada página tiene un presupuesto de 30 segundos y un reintento; después se registra como fallida y la ejecución continúa.
-- El manifest se escribe después de cada página, así que una ejecución interrumpida igual deja una carpeta que `stm list` puede leer, y el resumen dice que se detuvo antes de tiempo.
-- Los enlaces a `/logout`, `/delete` y compañía nunca se siguen. Tampoco los archivos, `/api/`, otros orígenes ni tu propia carpeta `screenshots/`.
+- Las páginas se desplazan hasta abajo antes de la captura, para que se carguen las imágenes y secciones diferidas, y después vuelven arriba. Los sitios con desplazamiento suave están contemplados.
+- Las animaciones se congelan en su estado final, así los efectos de aparición se ven y los indicadores de carga se quedan quietos. Dos ejecuciones en la misma máquina producen PNG idénticos byte a byte de una página cuyo contenido no cambió, que es lo que hace que "changed" signifique algo. Una página que muestra un reloj, una hora relativa, una imagen principal rotatoria o una animación en canvas siempre aparecerá como cambiada.
+- Las barras de desarrollo (Astro, Nuxt, el distintivo de Next.js) se ocultan. Las superposiciones de **error** de desarrollo nunca: la página se captura tal cual y se marca con una advertencia, porque una página rota es exactamente lo que quieres ver.
+- Las conexiones de larga duración (sockets HMR, flujos de eventos) nunca bloquean una captura. Cada página tiene un presupuesto de 30 segundos y un reintento, luego se registra como fallida y la ejecución continúa.
+- El manifiesto se escribe después de cada página, así que una ejecución interrumpida deja igualmente una carpeta que `stm list` puede leer, y el resumen indica que se detuvo antes de tiempo.
+- Los enlaces a `/logout`, `/delete` y similares nunca se siguen. Tampoco los archivos, `/api/`, otros orígenes ni tu propia carpeta `screenshots/`.
 
-## Cómo se compara
+## Cómo se compara con las herramientas de regresión visual
 
 | | stm | Verificación automática de Claude Code Desktop | Playwright MCP, agent-browser, DevTools MCP | Percy, Chromatic |
 |---|---|---|---|---|
-| Todas las páginas con un comando | sí | una página a la vez | una página por llamada a la herramienta | sí, en CI |
+| Todas las páginas en un comando | sí | una página a la vez | una página por llamada de herramienta | sí, en CI |
 | Te dice qué páginas cambiaron | sí | no | no | sí, en la nube |
 | Funciona en la terminal, Cursor, Codex | sí | solo en Desktop | sí | solo en CI |
 | Historial en disco que puedes explorar | sí | no | no | en su nube |
 | Funciona por completo en tu máquina | sí | sí | sí | no |
 
-Son complementarios, no rivales. Usa una herramienta de navegador cuando tu agente necesite hacer clic por ahí. Usa `stm` cuando necesite ver todo lo que acaba de tocar.
+`stm` es la mitad gratuita y local del testing de regresión visual: te dice qué páginas cambiaron y te entrega los píxeles, sin pipeline de CI, sin cuenta y sin factura mensual. Estas herramientas son complementarias, no rivales. Usa una herramienta de navegador cuando tu agente necesite hacer clic por la interfaz. Usa `stm` cuando necesite ver todo lo que acaba de tocar.
 
 ## Privacidad
 
-**Funciona 100% en local.** `stm` solo habla con la URL de tu app y, una única vez, con el CDN de navegadores de Playwright si no tienes Chrome ni Edge. Tus capturas nunca salen de tu máquina. Sin cuentas, sin claves de API, sin telemetría. Las páginas que capturas cargan sus propios recursos exactamente igual que lo harían en tu navegador. El modelo de amenazas completo está en [SECURITY.md](../../SECURITY.md).
+**Funciona 100% en local.** `stm` solo habla con la URL de tu app y, una vez, con la CDN de navegadores de Playwright si no tienes Chrome ni Edge. Tus capturas nunca salen de tu máquina. Sin cuentas, sin claves de API, sin telemetría. Las páginas que capturas cargan sus propios recursos exactamente igual que lo harían en tu navegador. El modelo de amenazas completo está en [SECURITY.md](../../SECURITY.md).
 
 ## Preguntas frecuentes
 
 <details>
 <summary><b>¿De verdad es gratis?</b></summary>
-Sí. Licencia MIT, código abierto, sin plan de pago, sin servicio alojado, sin nada para registrarse. Instálalo, úsalo para siempre, haz un fork si quieres.
+Sí. Licencia MIT, código abierto, sin plan de pago, sin servicio alojado, nada que registrar. Instálalo, úsalo para siempre, haz un fork si quieres.
 </details>
 
 <details>
@@ -303,7 +318,7 @@ Sí. Con cualquier cosa que sirva HTML en localhost. Los puertos habituales de t
 
 <details>
 <summary><b>Solo encontró mi página de inicio.</b></summary>
-Las páginas se descubren desde tu sitemap y desde los enlaces <code>&lt;a href&gt;</code>. Las apps que navegan con botones o con rutas de hash (<code>/#/about</code>) no tienen enlaces que seguir. Nombra las páginas: <code>stm /about /pricing</code>. A los agentes se les indica que pasen las páginas que tocaron.
+Las páginas se descubren desde tu sitemap y desde los enlaces <code>&lt;a href&gt;</code>. Las apps que navegan con botones o rutas con hash (<code>/#/about</code>) no tienen enlaces que seguir. Indica las páginas: <code>stm /about /pricing</code>. A los agentes se les indica que pasen las páginas que tocaron.
 </details>
 
 <details>
@@ -312,62 +327,62 @@ Tu app redirige al inicio de sesión. <code>stm</code> todavía no puede iniciar
 </details>
 
 <details>
-<summary><b>Después de un tiempo todo aparece como cambiado.</b></summary>
-Causas habituales: tu navegador se actualizó, lo que desplaza el renderizado ligeramente (<code>stm</code> registra la versión del navegador y te avisa), o una página muestra algo que se mueve por su cuenta, como un reloj, un "hace 3 minutos", una imagen de portada aleatoria, una animación en canvas o un aviso de cookies que desaparece tras la primera visita. Pasa esas páginas de forma explícita y revísalas a ojo hasta que llegue <code>stm diff</code>.
+<summary><b>Al cabo de un tiempo todo aparece como cambiado.</b></summary>
+Causas habituales: tu navegador se actualizó, lo que desplaza ligeramente el renderizado (<code>stm</code> registra la versión del navegador y te avisa), o una página muestra algo que se mueve por su cuenta, como un reloj, un "hace 3 minutos", una imagen principal aleatoria, una animación en canvas o un aviso de cookies que desaparece tras la primera visita. Pasa esas páginas de forma explícita y revísalas a ojo hasta que llegue <code>stm diff</code>.
 </details>
 
 <details>
 <summary><b>¿Puede ejecutarse solo, vigilando mis archivos?</b></summary>
-No, a propósito. <code>stm</code> es un botón de punto de guardado, como <code>git commit</code>: tú, o tu agente, deciden cuándo vale la pena conservar un momento. Si lo quieres automático, pon la instrucción de una línea en el archivo de memoria de tu agente y deja que él decida.
+No, a propósito. <code>stm</code> es un botón de punto de guardado, como <code>git commit</code>: tú, o tu agente, decidís cuándo vale la pena conservar un momento. Si lo quieres automático, pon la instrucción de una línea en el archivo de memoria de tu agente y deja que el agente decida.
 </details>
 
 <details>
 <summary><b>¿Puedo convertir mi historial en un timelapse?</b></summary>
-Un <code>stm timelapse</code> de primera clase está en la hoja de ruta. Hoy, con ffmpeg:
+Un <code>stm timelapse</code> integrado está en la hoja de ruta. Hoy, con ffmpeg:
 <pre><code>ffmpeg -framerate 1 -pattern_type glob -i 'screenshots/*/pricing_*.png' \
   -vf "scale=720:-1,split[a][b];[a]palettegen[p];[b][p]paletteuse" pricing.gif</code></pre>
 </details>
 
 <details>
 <summary><b>Uso Lovable, Bolt o v0. ¿Puedo usar esto?</b></summary>
-Esos ejecutan tu app en su nube, así que no hay un localhost que capturar. Exporta el proyecto, ejecútalo en local y <code>stm</code> funciona. Todo lo construido con Claude Code, Cursor, Codex, Windsurf o Copilot en tu propia máquina funciona desde el primer momento.
+Esos ejecutan tu app en su nube, así que no hay ningún localhost que capturar. Exporta el proyecto, ejecútalo en local y <code>stm</code> funciona. Cualquier cosa construida con Claude Code, Cursor, Codex, Windsurf o Copilot en tu propia máquina funciona sin más.
 </details>
 
 <details>
 <summary><b>¿Por qué no escribir simplemente un script de Playwright?</b></summary>
-Podrías. <code>stm</code> es ese script, más el descubrimiento de páginas, una estructura de carpetas estable, detección de cambios, salida pensada para agentes, manejo de superposiciones de desarrollo y todos los casos límite, con mantenimiento incluido. Además es un comando que tu agente ya conoce.
+Podrías. <code>stm</code> es ese script, más el descubrimiento de páginas, una estructura de carpetas estable, la detección de cambios, una salida pensada para agentes, el manejo de las superposiciones de desarrollo y todos los casos límite, con mantenimiento. Además es un comando que tu agente ya conoce.
 </details>
 
 <details>
-<summary><b>Linux dice que al navegador le faltan librerías.</b></summary>
-Ejecuta una vez el comando <code>install-deps</code> que imprime. WSL y Codespaces también lo necesitan.
+<summary><b>En Linux dice que al navegador le faltan librerías.</b></summary>
+Ejecuta el comando <code>install-deps</code> que imprime, una vez. WSL y Codespaces también lo necesitan.
 </details>
 
 <details>
-<summary><b>¿Dónde queda el navegador descargado?</b></summary>
-En la caché de Playwright: <code>~/Library/Caches/ms-playwright</code> en macOS, <code>~/.cache/ms-playwright</code> en Linux, <code>%LOCALAPPDATA%\ms-playwright</code> en Windows. Bórrala cuando quieras; <code>stm</code> lo vuelve a descargar cuando haga falta.
+<summary><b>¿Dónde vive el navegador descargado?</b></summary>
+En la caché de Playwright: <code>~/Library/Caches/ms-playwright</code> en macOS, <code>~/.cache/ms-playwright</code> en Linux, <code>%LOCALAPPDATA%\ms-playwright</code> en Windows. Bórrala cuando quieras; <code>stm</code> la descarga de nuevo cuando haga falta.
 </details>
 
 <details>
 <summary><b>¿Puedo apuntarlo a un sitio que no esté en localhost?</b></summary>
-Sí: <code>stm --url https://staging.example.com</code>. Se mantiene en ese origen y evita los enlaces que parecen destructivos. Captura solo sitios que tengas permiso de capturar, por favor.
+Sí: <code>stm --url https://staging.example.com</code>. Se queda en ese origen y evita los enlaces que parecen destructivos. Por favor, captura solo sitios que tengas permiso de capturar.
 </details>
 
 ## Hoja de ruta
 
 Pequeña a propósito. Vota abriendo un issue.
 
-- `stm diff`: mostrar exactamente qué regiones de una página cambiaron, y entregar a los agentes recortes en vez de páginas enteras
-- `stm timelapse`: convertir el historial de una página en un GIF o MP4, con los mensajes de commit de git como subtítulos
+- `stm diff`: mostrar exactamente qué regiones de una página cambiaron, y entregar a los agentes recortes en lugar de páginas enteras
+- `stm timelapse`: convertir el historial de una página en un GIF o MP4, con leyendas de los commits de git
 - `stm backfill`: recorrer tu historial de git y construir el historial visual que nunca capturaste
 - Capturas con sesión iniciada (`--storage-state`)
-- Una galería local con una línea de tiempo deslizante
+- Una galería local con un control deslizante de tiempo
 
-No está previsto: sincronización en la nube, cuentas, telemetría, modo de vigilancia, archivo de configuración.
+No está previsto: sincronización en la nube, cuentas, telemetría, un modo de vigilancia, un archivo de configuración.
 
-## Cómo contribuir
+## Contribuir
 
-Los reportes de errores con una ejecución real adjunta son lo más útil ahora mismo. Empieza por [CONTRIBUTING.md](../../CONTRIBUTING.md), y luego [AGENTS.md](../../AGENTS.md) para el mapa de módulos y las reglas. Cada decisión y su motivo viven en [DECISIONS.md](../../DECISIONS.md).
+Los reportes de errores con una ejecución real adjunta son lo más útil ahora mismo. Empieza por [CONTRIBUTING.md](../../CONTRIBUTING.md), y después [AGENTS.md](../../AGENTS.md) para el mapa de módulos y las reglas. Cada decisión y su motivo viven en [DECISIONS.md](../../DECISIONS.md).
 
 ## Acerca de
 
@@ -378,6 +393,6 @@ Creado por **Mohammed Sohaib Uddin**, porque los agentes que publican interfaces
   <a href="https://github.com/mdsohaib"><img src="https://img.shields.io/badge/Follow%20on%20GitHub-0A0E14?style=for-the-badge&logo=github&logoColor=white" alt="Sígueme en GitHub"></a>
 </p>
 
-Si `stm` te salva de publicar una página rota, una estrella no cuesta nada y ayuda a que otras personas lo encuentren.
+Si `stm` te evita publicar una página rota, una estrella no cuesta nada y ayuda a otras personas a encontrarlo.
 
 MIT © Mohammed Sohaib Uddin
