@@ -33,7 +33,14 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: Tag must match package.json version
         run: test "v$(node -p 'require("./package.json").version')" = "$GITHUB_REF_NAME"
-      - run: npm publish
+      - name: Publish, unless this version is already on npm
+        run: |
+          VERSION=$(node -p 'require("./package.json").version')
+          if npm view "screenshot-time-machine@$VERSION" version > /dev/null 2>&1; then
+            echo "screenshot-time-machine@$VERSION is already published, nothing to do."
+          else
+            npm publish
+          fi
   github-release:
     needs: publish
     runs-on: ubuntu-latest
