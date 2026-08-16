@@ -21,7 +21,7 @@
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>サイトの全ページを、コマンド 1 つでスクリーンショット。</b><br>
+  <b>Wayback Machine のように、あなた自身のサイトのために。</b><br>
   <code>stm</code> はサイトを 1 ページずつ巡回し、すべてのページのフルページスクリーンショットを、<br>
   日付と時刻を付けたフォルダに保存します。<br>
   任意の URL を指定しても、localhost で動いているアプリを見つけさせても構いません。<br>

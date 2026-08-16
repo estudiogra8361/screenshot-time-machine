@@ -1,7 +1,7 @@
 {
   "name": "screenshot-time-machine",
   "version": "0.1.4",
-  "description": "Screenshot every page of your website with one command. Full-page PNGs in dated folders, building a visual history on your own disk.",
+  "description": "Like a Wayback Machine for your own website. One command screenshots every page into dated folders on your machine, and shows which pages changed since your last run.",
   "type": "module",
   "license": "MIT",
   "author": "Mohammed Sohaib Uddin (https://github.com/mdsohaib)",
@@ -59,7 +59,9 @@
     "ai-agents",
     "cursor",
     "codex",
-    "vibe-coding"
+    "vibe-coding",
+    "wayback",
+    "visual-archive"
   ],
   "dependencies": {
     "playwright-core": "1.62.1"

@@ -21,7 +21,7 @@
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>명령 한 번으로 웹사이트의 모든 페이지를 스크린샷합니다.</b><br>
+  <b>Wayback Machine처럼, 당신의 웹사이트를 위해.</b><br>
   <code>stm</code>은 사이트를 페이지 단위로 훑으면서 모든 페이지의 전체 스크린샷을<br>
   날짜와 시각이 찍힌 폴더에 저장합니다.<br>
   원하는 URL을 지정해도 되고, localhost에서 돌고 있는 앱을 알아서 찾게 두어도 됩니다.<br>

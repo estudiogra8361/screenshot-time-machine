@@ -5,11 +5,11 @@
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>Screenshot every page of your website with one command.</b><br>
+  <b>Like a Wayback Machine, for your own website.</b><br>
   <code>stm</code> walks your site page by page and saves a full-page screenshot<br>
   of every one into a folder stamped with the date and time.<br>
   Point it at any URL, or let it find the app you have running on localhost.<br>
-  Run it whenever you ship something and a visual history builds itself:<br>
+  Run it whenever you ship something and a visual archive builds itself:<br>
   every page, every version, on your own disk, as plain PNGs.<br>
   <b>Free and open source. Runs entirely on your machine.</b>
 </p>

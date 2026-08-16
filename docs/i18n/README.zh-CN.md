@@ -21,7 +21,7 @@
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>一条命令，为你网站的每个页面截图。</b><br>
+  <b>就像 Wayback Machine，只不过是为你自己的网站。</b><br>
   <code>stm</code> 会逐个页面走遍你的站点，把每个页面的整页截图<br>
   存进一个以日期和时间命名的文件夹。<br>
   可以指向任意 URL，也可以让它自己找到你跑在 localhost 上的应用。<br>

@@ -4,6 +4,11 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-08-16
+### Changed
+- The README, all ten translations and the package description now lead with the analogy that explains the whole product in one line: like a Wayback Machine, for your own website. The wording keeps "like a" in every language, so it reads as an analogy and never as a claim of any relationship with the Internet Archive.
+- Added `wayback` and `visual-archive` to the package keywords.
+
 ## [0.1.4] - 2026-08-16
 ### Changed
 - Repositioned the README around what the tool does first: screenshot every page with one command, look at them, and build a visual history you can watch evolve. The changed-pages list is still there and still works, but it is now a supporting benefit rather than the headline, and it is worded so it cannot be read as a visual diff.

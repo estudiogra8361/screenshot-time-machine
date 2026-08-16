@@ -21,7 +21,7 @@
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>Captura cada página de tu sitio con un solo comando.</b><br>
+  <b>Como una Wayback Machine, pero para tu propio sitio web.</b><br>
   <code>stm</code> recorre tu sitio página por página y guarda una captura de página completa<br>
   de cada una en una carpeta con la fecha y la hora.<br>
   Apúntalo a cualquier URL, o deja que encuentre la app que tienes corriendo en localhost.<br>

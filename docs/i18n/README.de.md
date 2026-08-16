@@ -21,7 +21,7 @@
 <h1 align="center">screenshot-time-machine</h1>
 
 <p align="center">
-  <b>Mach mit einem Befehl einen Screenshot von jeder Seite deiner Website.</b><br>
+  <b>Wie eine Wayback Machine, aber für deine eigene Website.</b><br>
   <code>stm</code> geht deine Website Seite für Seite durch und speichert von jeder einzelnen<br>
   einen Ganzseiten-Screenshot in einem Ordner mit Datum und Uhrzeit.<br>
   Richte es auf eine beliebige URL, oder lass es die App finden, die bei dir auf localhost läuft.<br>
