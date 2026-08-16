@@ -1,6 +1,6 @@
 {
   "name": "screenshot-time-machine",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Screenshot every page of your website with one command. Full-page PNGs in dated folders, building a visual history on your own disk.",
   "type": "module",
   "license": "MIT",
