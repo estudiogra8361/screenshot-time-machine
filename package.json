@@ -1,6 +1,6 @@
 {
   "name": "screenshot-time-machine",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Like a Wayback Machine for your own website. One command screenshots every page into dated folders on your machine, and shows which pages changed since your last run.",
   "type": "module",
   "license": "MIT",
