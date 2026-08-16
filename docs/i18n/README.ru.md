@@ -52,7 +52,7 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
 
 <p align="center">
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Claude%20Code-FF8C1A?style=for-the-badge&logo=claude&logoColor=white" alt="Claude Code"></a>
-  <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Codex-0A0E14?style=for-the-badge&logo=openai&logoColor=white" alt="Codex"></a>
+  <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Codex-0A0E14?style=for-the-badge" alt="Codex"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Cursor-7FB0F5?style=for-the-badge&logo=cursor&logoColor=0A0E14" alt="Cursor"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Gemini%20CLI-A98BEB?style=for-the-badge&logo=googlegemini&logoColor=0A0E14" alt="Gemini CLI"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Antigravity-C88AE0?style=for-the-badge&logo=google&logoColor=0A0E14" alt="Antigravity"></a>
