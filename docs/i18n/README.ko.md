@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#ai-코딩-에이전트에-설치하기"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="70개 이상의 에이전트"></a>
+  <a href="#설치할-수-있는-모든-에이전트"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#설치할-수-있는-모든-에이전트"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#설치할-수-있는-모든-에이전트"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#설치할-수-있는-모든-에이전트"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#설치할-수-있는-모든-에이전트"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="에이전트 전체 목록"></a>
 </p>
 
 <p align="center"><i>그리고 이 도구들에게 프롬프트를 쓰는 사람들</i></p>
@@ -184,9 +188,21 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **그 밖의 도구** | `npx skills add mdsohaib/screenshot-time-machine` | 76개 에이전트 전체 목록에서 선택 |
+| **그 밖의 도구** | `npx skills add mdsohaib/screenshot-time-machine` | 아래 목록에서 원하는 에이전트를 고르세요 |
 
 위 명령에 `-g`를 붙이면 이 프로젝트가 아니라 모든 프로젝트에 설치됩니다.
+
+### 설치할 수 있는 모든 에이전트
+
+설치 도구가 `-a` 뒤에 받아 주는 이름들입니다. 이 중 아무거나 넘기거나, `-a`를 빼고 실행해서 나오는 메뉴에서 고르면 됩니다.
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+쓰는 에이전트가 위에 없다면 `universal`을 고르세요. 여러 에이전트가 함께 읽는 공용 위치인 `.agents/skills/stm/`에 스킬을 씁니다. 목록은 이 README가 아니라 설치 도구 안에 있어서, 이 문서를 고치지 않아도 계속 늘어납니다. 지금 시점의 목록을 보려면 존재하지 않는 에이전트를 넘겨 보세요. 전부 출력해 줍니다.
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 아니면 그냥 평범한 말로 에이전트에게 부탁해도 됩니다.
 

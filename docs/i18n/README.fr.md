@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#installer-dans-votre-agent-de-code-ia"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#installer-dans-votre-agent-de-code-ia"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#installer-dans-votre-agent-de-code-ia"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#installer-dans-votre-agent-de-code-ia"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="plus de 70 autres agents"></a>
+  <a href="#tous-les-agents-dans-lesquels-vous-pouvez-linstaller"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#tous-les-agents-dans-lesquels-vous-pouvez-linstaller"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#tous-les-agents-dans-lesquels-vous-pouvez-linstaller"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#tous-les-agents-dans-lesquels-vous-pouvez-linstaller"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#tous-les-agents-dans-lesquels-vous-pouvez-linstaller"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="la liste complète des agents"></a>
 </p>
 
 <p align="center"><i>et les humains qui les pilotent</i></p>
@@ -184,9 +188,21 @@ Une seule commande installe `stm` en tant que skill : un court fichier d'instruc
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Autre chose** | `npx skills add mdsohaib/screenshot-time-machine` | à choisir dans la liste complète de 76 agents |
+| **Autre chose** | `npx skills add mdsohaib/screenshot-time-machine` | choisissez votre agent dans la liste ci-dessous |
 
 Ajoutez `-g` à n'importe laquelle de ces commandes pour l'installer pour tous vos projets au lieu de celui-ci.
+
+### Tous les agents dans lesquels vous pouvez l'installer
+
+Ce sont les noms que l'installeur accepte après `-a`. Passez-en un, ou omettez `-a` et choisissez dans le menu qu'il vous affiche.
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+`universal` est le choix à faire quand votre agent n'est pas nommé ci-dessus : il écrit le skill dans `.agents/skills/stm/`, l'emplacement partagé que plusieurs de ces agents lisent. La liste vit dans l'installeur plutôt qu'ici, elle s'allonge donc sans que ce README change. Pour voir la liste actuelle, demandez un agent qui n'existe pas et il les affiche tous :
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 Ou dites-le simplement à votre agent, en langage courant :
 

@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#instale-no-seu-agente-de-codificação-com-ia"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="mais de 70 outros agentes"></a>
+  <a href="#todos-os-agentes-em-que-você-pode-instalar"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#todos-os-agentes-em-que-você-pode-instalar"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#todos-os-agentes-em-que-você-pode-instalar"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#todos-os-agentes-em-que-você-pode-instalar"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#todos-os-agentes-em-que-você-pode-instalar"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="a lista completa de agentes"></a>
 </p>
 
 <p align="center"><i>e com as pessoas que escrevem os prompts deles</i></p>
@@ -184,9 +188,21 @@ Um comando instala o `stm` como uma skill: um arquivo curto de instruções que 
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Qualquer outro** | `npx skills add mdsohaib/screenshot-time-machine` | escolha na lista completa de 76 agentes |
+| **Qualquer outro** | `npx skills add mdsohaib/screenshot-time-machine` | escolha o seu agente na lista abaixo |
 
 Acrescente `-g` a qualquer um desses para instalar para todos os projetos, em vez de só para este.
+
+### Todos os agentes em que você pode instalar
+
+Estes são os nomes que o instalador aceita depois de `-a`. Passe qualquer um deles, ou deixe o `-a` de fora e escolha no menu que ele mostra.
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+O `universal` é o que você usa quando o seu agente não aparece acima: ele escreve a skill em `.agents/skills/stm/`, o local compartilhado que vários desses agentes leem. A lista fica no instalador, e não aqui, então ela cresce sem que este README mude. Para ver a lista atual, peça um agente que não existe e ele imprime todos:
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 Ou simplesmente peça ao seu agente, em palavras comuns:
 

@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#in-deinem-ki-coding-agenten-installieren"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="über 70 weitere Agenten"></a>
+  <a href="#alle-agenten-in-die-du-es-installieren-kannst"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#alle-agenten-in-die-du-es-installieren-kannst"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#alle-agenten-in-die-du-es-installieren-kannst"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#alle-agenten-in-die-du-es-installieren-kannst"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#alle-agenten-in-die-du-es-installieren-kannst"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="die vollständige Liste der Agenten"></a>
 </p>
 
 <p align="center"><i>und mit den Menschen, die sie steuern</i></p>
@@ -184,9 +188,21 @@ Ein Befehl installiert `stm` als Skill: eine kurze Anweisungsdatei, die dein Age
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Alles andere** | `npx skills add mdsohaib/screenshot-time-machine` | wähl aus der vollständigen Liste von 76 Agenten |
+| **Alles andere** | `npx skills add mdsohaib/screenshot-time-machine` | wähl deinen Agenten aus der Liste weiter unten |
 
 Häng an jeden dieser Befehle `-g` an, um es für alle Projekte statt nur für dieses zu installieren.
+
+### Alle Agenten, in die du es installieren kannst
+
+Das sind die Namen, die der Installer nach `-a` akzeptiert. Übergib einen davon, oder lass `-a` weg und wähl aus dem Menü, das er dir zeigt.
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+`universal` ist die richtige Wahl, wenn dein Agent oben nicht dabei ist: es schreibt den Skill nach `.agents/skills/stm/`, den gemeinsamen Ort, den mehrere dieser Agenten lesen. Die Liste liegt im Installer und nicht hier, sie wächst also, ohne dass sich diese README ändert. Um die aktuelle zu sehen, frag nach einem Agenten, den es nicht gibt, und er gibt sie alle aus:
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 Oder sag deinem Agenten einfach in klaren Worten:
 

@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#ai-コーディングエージェントに導入する"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="70 以上のエージェント"></a>
+  <a href="#導入できるエージェント一覧"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#導入できるエージェント一覧"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#導入できるエージェント一覧"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#導入できるエージェント一覧"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#導入できるエージェント一覧"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="エージェントの全一覧"></a>
 </p>
 
 <p align="center"><i>そして、それらに指示を出す人間たち</i></p>
@@ -184,9 +188,21 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **その他すべて** | `npx skills add mdsohaib/screenshot-time-machine` | 76 エージェントの一覧から選択 |
+| **その他すべて** | `npx skills add mdsohaib/screenshot-time-machine` | 下の一覧からエージェントを選択 |
 
 どのコマンドにも `-g` を付ければ、このプロジェクトだけでなく全プロジェクトに導入できます。
+
+### 導入できるエージェント一覧
+
+これらは、インストーラーが `-a` の後に受け付ける名前です。どれか 1 つを渡すか、`-a` を付けずに実行して表示されるメニューから選んでください。
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+上に自分のエージェントの名前がない場合は `universal` を使ってください。スキルを `.agents/skills/stm/` に書き出します。ここは上記のいくつかのエージェントが読む共有の場所です。この一覧はここではなくインストーラー側にあるので、この README を変えなくても増えていきます。最新の一覧を見るには、存在しないエージェント名を指定してください。すべて表示されます。
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 あるいは、エージェントに普通の言葉で伝えるだけでも構いません。
 

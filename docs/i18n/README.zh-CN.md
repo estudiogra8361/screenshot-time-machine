@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#装进你的-ai-编码智能体"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="另有 70 多个智能体"></a>
+  <a href="#可以装进的所有智能体"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#可以装进的所有智能体"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#可以装进的所有智能体"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#可以装进的所有智能体"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#可以装进的所有智能体"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="智能体完整列表"></a>
 </p>
 
 <p align="center"><i>以及使用它们的人</i></p>
@@ -184,9 +188,21 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **其他工具** | `npx skills add mdsohaib/screenshot-time-machine` | 从 76 个智能体的完整列表里挑 |
+| **其他工具** | `npx skills add mdsohaib/screenshot-time-machine` | 从下面的列表里挑你的智能体 |
 
 给上面任意一条加上 `-g`，就会为所有项目安装，而不只是当前这个。
+
+### 可以装进的所有智能体
+
+这些是安装器在 `-a` 后面接受的名字。传其中任意一个，或者干脆不写 `-a`，从它列出的菜单里挑。
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+如果上面没有你的智能体，就用 `universal`：它会把技能写到 `.agents/skills/stm/`，这是上述好几个智能体都会读取的共用位置。这份列表放在安装器里而不是这里，所以它会自己变长，而这份 README 不用跟着改。想看当前的列表，就要一个不存在的智能体，它会把它们全部打印出来：
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 或者，直接用大白话告诉你的智能体：
 

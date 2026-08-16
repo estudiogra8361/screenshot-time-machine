@@ -61,7 +61,11 @@ npx skills add mdsohaib/screenshot-time-machine                 # teach Claude C
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
   <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#установка-в-ваш-ии-агент"><img src="https://img.shields.io/badge/60%2B%20more-5A6478?style=for-the-badge" alt="ещё 70+ агентов"></a>
+  <a href="#все-агенты-в-которые-можно-установить"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
+  <a href="#все-агенты-в-которые-можно-установить"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
+  <a href="#все-агенты-в-которые-можно-установить"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
+  <a href="#все-агенты-в-которые-можно-установить"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
+  <a href="#все-агенты-в-которые-можно-установить"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="полный список агентов"></a>
 </p>
 
 <p align="center"><i>и с людьми, которые ими управляют</i></p>
@@ -184,9 +188,21 @@ npm install -g screenshot-time-machine
 | **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
 | **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
 | **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Что-то другое** | `npx skills add mdsohaib/screenshot-time-machine` | выберите из полного списка 76 агентов |
+| **Что-то другое** | `npx skills add mdsohaib/screenshot-time-machine` | выберите своего агента из списка ниже |
 
 Добавьте `-g` к любой из этих команд, чтобы поставить навык для всех проектов, а не только для текущего.
+
+### Все агенты, в которые можно установить
+
+Это имена, которые установщик принимает после `-a`. Передайте любое из них или не указывайте `-a` и выберите из меню, которое он покажет.
+
+`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
+
+`universal` стоит брать, когда вашего агента нет в списке выше: он записывает навык в `.agents/skills/stm/`, общее место, которое читают несколько из этих агентов. Список живёт в установщике, а не здесь, поэтому он пополняется без правок этого README. Чтобы увидеть актуальный, запросите несуществующего агента, и он напечатает их все.
+
+```bash
+npx skills add mdsohaib/screenshot-time-machine -a list-them-please
+```
 
 Или просто скажите агенту обычными словами:
 
